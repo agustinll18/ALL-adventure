@@ -1,0 +1,36 @@
+$darkBlue: #0a65a2;
+$bluePrincipal: #2980b9;
+$celesteClaro: #6dd5fa;
+$fondoClaro: #ffffff;
+$sombraGris: #6464646e;
+$fontColor: black;
+
+.stickyClass {
+  border-bottom: 2px solid black;
+  height: 0;
+}
+#navbarContainer {
+  margin: 0;
+  padding: 0;
+  height: 43px;
+  width: 100%;
+}
+#navbar {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.378);
+  padding: 0;
+  height: 43px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  margin-bottom: 0;
+
+  ul li a {
+    text-decoration: none !important;
+    margin-bottom: 0;
+  }
+}
+#brand {
+  font-size: 28px;
+  font-weight: bolder;
+}

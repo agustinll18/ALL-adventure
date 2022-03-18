@@ -1,0 +1,28 @@
+@import "../../variables";
+.ServiciosContainer {
+    width: 100%;
+    position: absolute;
+    #cardContainer {
+        display: inline-flex;
+        margin: 0 auto;
+        position: relative;
+    }
+    #itemList {
+        display: contents;
+        margin: 0 auto;
+        
+    #cardService{
+        background:linear-gradient(to top ,rgba(255, 255, 255, 0.364),rgba(255,255,255,0.7),$fondoClaro) ;
+        -webkit-backdrop-filter: blur(18px);
+        backdrop-filter: blur(18px);
+        border: 3px solid rgb(255, 255, 255);
+        border-radius: 12px; 
+        width: 18rem;
+        height: 445px;
+        justify-content: center;
+        gap: 5px;
+        margin: 5px;
+    }
+    }
+    
+}

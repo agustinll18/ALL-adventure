@@ -1,0 +1,80 @@
+@import "_header";
+@import "_variables";
+@import "./nav/_nav.scss";
+ * { 
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+  }
+  body{
+    background-color:$fontColor;
+  }
+  #pagepiling {
+    text-align: center;
+  }
+  #pagepiling .section {
+    color: rgb(11, 11, 11);
+    font-size: 5em;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  #pp-nav li .active span,
+  .pp-slidesNav .active span { 
+    background: rgb(0, 0, 0) !important; /*To change the active navigation bullets inner color*/
+  }
+  .sec1 {
+    background-size: cover;
+    background-color: rgba(82, 229, 245, 0.359)!important;
+  }
+  .sec2 {
+    background-color: rgba(0, 255, 255, 0.352);
+    background-size: cover;
+    height: 110%; 
+  }
+  
+  .sec4 {
+    background-color: rgb(255, 0, 0);
+    background-size: cover;
+  }/*
+
+* {
+    
+}
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+html body {
+    text-align: center;
+    background: #0575e6; 
+    background: -webkit-linear-gradient(
+        to top,
+        black,
+        $darkBlue,
+        $bluePrincipal,
+        $celesteClaro,
+        $fondoClaro
+    );
+    background: linear-gradient(
+        to top,
+        black,
+        $darkBlue,
+        $bluePrincipal,
+        $celesteClaro,
+        $fondoClaro
+    ); 
+}
+.dark-theme {
+    background: #232526; 
+    background: -webkit-linear-gradient(to top, #232526, #414345);
+    background: linear-gradient(
+        to top,
+        #232526,
+        #414345
+    ); 
+}
+#card {
+    width: 50%;
+    margin-left: 25%;
+    left: 0;
+}
+ */
