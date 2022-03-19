@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Item(productos) {
   return (
-    <div classname="col col-xs-12 col-sm-12 col-md-4 col-lg-3 reveal">
-      <div classname="reveal">
+    <div classname="col col-xs-12 col-sm-12 col-md-4 col-lg-3">
+      <div /* classname="reveal" */>
         <div>
           <div sm>
             <div

@@ -3,7 +3,7 @@ main {
   position: relative;
   width: 100%;
   top: -50px;
-  height: 900px;
+  height: 945px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -11,6 +11,7 @@ main {
   margin: 0;
   padding: 0;
   z-index: 9;
+  background: linear-gradient(to top, rgba(0, 145, 255, 0.5), rgb(255, 255, 255,0.5));
 
   &:before {
     content: "";
@@ -31,7 +32,7 @@ main {
     width: 74.69%;
     height: 100%;
     z-index: 2;
-    background: linear-gradient(to bottom, #0067b6, transparent);
+    background: linear-gradient(to top, #0091ff, transparent);
     mix-blend-mode: color;
   }
 

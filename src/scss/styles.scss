@@ -23,16 +23,18 @@
   }
   .sec1 {
     background-size: cover;
-    background-color: rgba(82, 229, 245, 0.359)!important;
+    background-image: url("https://www.necochea.gov.ar/wp-content/uploads/2018/01/foto-clima-2.jpg");
+    background-size: 1945px 890px;
+    background-repeat: no-repeat;
+    
   }
   .sec2 {
-    background-color: rgba(0, 255, 255, 0.352);
+    background:radial-gradient(ellipse at bottom, rgb(223, 104, 0) 0%, rgb(225, 169, 0)20%, rgb(37, 161, 255) 100%);
     background-size: cover;
-    height: 110%; 
   }
   
-  .sec4 {
-    background-color: rgb(255, 0, 0);
+  .sec3 { 
+    background:linear-gradient(to bottom,rgb(1,87, 13), rgb(19, 19, 19))!important; ;
     background-size: cover;
   }/*
 

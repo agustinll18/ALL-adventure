@@ -42,7 +42,7 @@ main {
   position: relative;
   width: 100%;
   top: -50px;
-  height: 900px;
+  height: 945px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -50,6 +50,7 @@ main {
   margin: 0;
   padding: 0;
   z-index: 9;
+  background: linear-gradient(to top, rgba(0, 145, 255, 0.5), rgba(255, 255, 255, 0.5));
 }
 main:before {
   content: "";
@@ -69,7 +70,7 @@ main:after {
   width: 74.69%;
   height: 100%;
   z-index: 2;
-  background: linear-gradient(to bottom, #0067b6, transparent);
+  background: linear-gradient(to top, #0091ff, transparent);
   mix-blend-mode: color;
 }
 main img {
@@ -125,6 +126,57 @@ main p {
 /*TEMA DE PALETA DE COLOR  */
 /* margin BOTTOM */
 /*TEMA DE PALETA DE COLOR  */
+/* OLAS */
+html, body {
+  height: 100%;
+}
+
+body {
+  /* background:linear-gradient(to bottom,rgb(1,87, 13), rgb(19, 19, 19)); */
+  overflow: hidden;
+}
+
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
 /* EDITOR DE TEXTO */
 .clearfix::after {
   content: "";
@@ -154,6 +206,8 @@ main p {
   padding: 0;
   overflow: hidden;
   margin-bottom: 3%;
+  position: relative;
+  top: -1950%;
 }
 
 #navCode {
@@ -670,17 +724,18 @@ body {
 
 .sec1 {
   background-size: cover;
-  background-color: rgba(82, 229, 245, 0.359) !important;
+  background-image: url("https://www.necochea.gov.ar/wp-content/uploads/2018/01/foto-clima-2.jpg");
+  background-size: 1945px 890px;
+  background-repeat: no-repeat;
 }
 
 .sec2 {
-  background-color: rgba(0, 255, 255, 0.352);
+  background: radial-gradient(ellipse at bottom, #df6800 0%, #e1a900 20%, #25a1ff 100%);
   background-size: cover;
-  height: 110%;
 }
 
-.sec4 {
-  background-color: red;
+.sec3 {
+  background: linear-gradient(to bottom, #01570d, #131313) !important;
   background-size: cover;
 }
 

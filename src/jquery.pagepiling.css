@@ -127,7 +127,7 @@ body {
 
 .pp-tooltip {
     position: absolute;
-    top: -2px;
+    top: -10px;
     color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 700;

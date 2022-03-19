@@ -3,7 +3,8 @@ import Code from "./codeVsc/Code.jsx";
 import Servicios from "./Servicios/Servicios.jsx";
 import $ from "jquery";
 //ICONS
-import angular from "../../ICONS/icons8-angularjs-56.png";
+/* 
+import angular from "../../ICONS/icons8-angularjs-56.png"; */
 $(document).ready(function(){
   $('.carousel').carousel();
 });
