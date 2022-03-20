@@ -10,19 +10,31 @@
     #itemList {
         display: contents;
         margin: 0 auto;
-        
-    #cardService{
-        background:linear-gradient(to top ,rgba(255, 255, 255, 0.364),rgba(255,255,255,0.7),$fondoClaro) ;
-        -webkit-backdrop-filter: blur(18px);
-        backdrop-filter: blur(18px);
-        border: 3px solid rgb(255, 255, 255);
-        border-radius: 12px; 
-        width: 18rem;
-        height: 445px;
-        justify-content: center;
-        gap: 5px;
-        margin: 5px;
+
+        #cardService {
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.364), rgba(255, 255, 255, 0.7), $fondoClaro);
+            -webkit-backdrop-filter: blur(18px);
+            backdrop-filter: blur(18px);
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 12px;
+            width: 18rem;
+            height: 445px;
+            justify-content: center;
+            margin: 25px;
+            -webkit-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+            -moz-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+            box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+
+            div .cardItem{
+                position: relative;
+                    width: 180px;
+                    height: 160px;
+                    justify-content: center;
+                    top: 35px;
+                    -webkit-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+                    -moz-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+                    box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+            }
+        }
     }
-    }
-    
 }

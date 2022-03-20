@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap");
@@ -15,7 +16,7 @@
 }
 
 #navbar {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.378);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.824);
   padding: 0;
   height: 43px;
   width: 100%;
@@ -42,7 +43,7 @@ main {
   position: relative;
   width: 100%;
   top: -50px;
-  height: 945px;
+  height: 1045px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -51,6 +52,9 @@ main {
   padding: 0;
   z-index: 9;
   background: linear-gradient(to top, rgba(0, 145, 255, 0.5), rgba(255, 255, 255, 0.5));
+  -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 main:before {
   content: "";
@@ -127,12 +131,13 @@ main p {
 /* margin BOTTOM */
 /*TEMA DE PALETA DE COLOR  */
 /* OLAS */
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
-  /* background:linear-gradient(to bottom,rgb(1,87, 13), rgb(19, 19, 19)); */
+  /* ñ */
   overflow: hidden;
 }
 
@@ -142,7 +147,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #015871;
+  background: #016885;
 }
 
 .wave {
@@ -161,6 +166,18 @@ body {
   opacity: 1;
 }
 
+.wave:nth-of-type(3) {
+  top: -175px;
+  animation: wave 4s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.4125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+.wave:nth-of-type(4) {
+  top: -175px;
+  animation: wave 4s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.2725s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
 @keyframes wave {
   0% {
     margin-left: 0;
@@ -174,9 +191,144 @@ body {
     transform: translate3d(0, -25px, 0);
   }
   50% {
-    transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 50px, 0);
+    position: absolute;
+    bottom: -20px;
   }
 }
+/*FISHER MEN*/
+.pesca .muelle {
+  height: 80%;
+  width: 13%;
+  background: linear-gradient(to bottom, black 0%, brown 10%, black 100%);
+  position: absolute;
+  bottom: 530%;
+  border: 2.5px solid black;
+}
+.pesca .muelle:nth-child(2) {
+  width: 13%;
+  background: linear-gradient(to bottom, #b13838 0%, brown 10%, black 100%);
+  bottom: 230%;
+  transform: rotate(90deg);
+}
+.pesca .muelle:nth-child(3) {
+  width: 13%;
+  background: linear-gradient(to bottom, #b13838 0%, brown 10%, black 100%);
+  bottom: 230%;
+  transform: rotate(90deg);
+  left: 5%;
+}
+.pesca .fisherman .body {
+  width: 6px;
+  height: 160px;
+  background: black;
+  position: absolute;
+  left: 11.3%;
+  bottom: 750%;
+  transform: rotate(13deg);
+}
+.pesca .fisherman .arm {
+  width: 6px;
+  height: 80px;
+  background: black;
+  position: absolute;
+  left: 12.9%;
+  bottom: 860%;
+  transform: rotate(69deg);
+}
+.pesca .fisherman .legs .leg1 {
+  width: 6px;
+  height: 90px;
+  background: black;
+  position: absolute;
+  left: 11.2%;
+  bottom: 600%;
+  transform: rotate(-20deg);
+}
+.pesca .fisherman .leg2 {
+  width: 6px;
+  height: 90px;
+  background: black;
+  position: absolute;
+  left: 10.2%;
+  bottom: 600%;
+  transform: rotate(10deg);
+}
+.pesca .fisherman .headF {
+  height: 70px;
+  width: 70px;
+  border-radius: 180px;
+  background: black;
+  position: absolute;
+  left: 11.1%;
+  bottom: 1050%;
+}
+.pesca .stick {
+  width: 8px;
+  height: 180px;
+  background: black;
+  position: absolute;
+  left: 16.1%;
+  bottom: 930%;
+  transform: rotate(27deg);
+}
+.pesca .pendulo {
+  display: grid;
+  grid-template: 31fr 2fr/1fr;
+  grid-template-areas: "cuerda" "bola";
+  justify-items: center;
+  position: absolute;
+  bottom: -652%;
+  left: 15.5%;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: 4% 0%;
+  animation-timing-function: cubic-bezier(0.78, -0.04, 0.42, 1.14);
+  will-change: transform;
+}
+.pesca .p1 {
+  grid-area: p1;
+  animation-name: p1;
+}
+.pesca .cuerda {
+  grid-area: cuerda;
+  background: black;
+  position: absolute;
+  top: 30px;
+  width: 2px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.pesca .bola {
+  grid-area: bola;
+  background-image: url("https://lesser-dawns.000webhostapp.com/multimedia/recursos/external-bait-all-for-fishing-flat-icons-inmotus-design-5-removebg-preview.png");
+  position: relative;
+  left: 10px;
+  top: -10px;
+  width: 80px;
+  height: 60px;
+  border-radius: 50%;
+}
+.pesca .b1 {
+  animation-name: bola;
+}
+@keyframes p1 {
+  0% {
+    transform: rotateZ(-40deg);
+    animation-timing-function: cubic-bezier(0.78, -0.04, 0.42, 1.14);
+  }
+  50% {
+    transform: scale(1.1);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: rotateZ(8deg);
+    animation-timing-function: cubic-bezier(0.78, -0.04, 0.42, 1.14);
+  }
+}
+
 /* EDITOR DE TEXTO */
 .clearfix::after {
   content: "";
@@ -692,8 +844,20 @@ body {
   width: 18rem;
   height: 445px;
   justify-content: center;
-  gap: 5px;
-  margin: 5px;
+  margin: 25px;
+  -webkit-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+  -moz-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+  box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+}
+.ServiciosContainer #itemList #cardService div .cardItem {
+  position: relative;
+  width: 180px;
+  height: 160px;
+  justify-content: center;
+  top: 35px;
+  -webkit-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+  -moz-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+  box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
 }
 
 * {
@@ -723,20 +887,26 @@ body {
 }
 
 .sec1 {
-  background-size: cover;
+  /* 
+  background-size: cover; */
   background-image: url("https://www.necochea.gov.ar/wp-content/uploads/2018/01/foto-clima-2.jpg");
-  background-size: 1945px 890px;
+  background-size: 2160px 960px;
   background-repeat: no-repeat;
 }
 
-.sec2 {
-  background: radial-gradient(ellipse at bottom, #df6800 0%, #e1a900 20%, #25a1ff 100%);
-  background-size: cover;
+.sec2 .pp-tableCell {
+  background: radial-gradient(ellipse at bottom, #df6800 0%, #e1a900 1%, #25a1ff 100%);
+  background-size: 1945px 920px;
 }
 
 .sec3 {
-  background: linear-gradient(to bottom, #01570d, #131313) !important;
-  background-size: cover;
+  background: linear-gradient(to bottom, #015871 0%, #015871 30%, #00485c 60%, #131313) !important;
+  background-size: 1945px 920px;
+}
+
+.sec4 {
+  background: linear-gradient(to bottom, #131313, black) !important;
+  background-size: 1945px 920px;
 }
 
 /*

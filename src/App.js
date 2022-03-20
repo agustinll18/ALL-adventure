@@ -78,6 +78,7 @@ import Header from "./components/header/Header.jsx";
 import Nav from "./components/nav/Nav";
 import Code from "./components/nav/codeVsc/Code";
 import Servicios from "./components/nav/Servicios/Servicios";
+import Contact from "./components/contact/Contact";
 class App extends Component {
   componentDidMount() {
     $(document).ready(function () {
@@ -145,18 +146,42 @@ class App extends Component {
           </div>
           <div class="section sec2 " id="#codeVsc">
             <div class="ocean">
-              <Code  />
+              <div class="pesca">
+                <div class="fisherman">
+                  <div class="body"></div>
+                  <div class="arm"></div>
+                  <div class="legs">
+                    <div class="leg1">
+                      <div class="legLow_1"></div>
+                    </div>
+                    <div class="leg2">
+                      <div class="legLow_2"></div>
+                    </div>
+                  </div>
+                  <div class="headF"></div>
+                  <div class="stick"></div>
+                  <div class="pendulo p1">
+                    <div class="cuerda c1"></div>
+                    <div class="bola b1"></div>
+                  </div>
+                </div>
+
+                <div class="muelle"></div>
+                <div class="muelle"></div>
+                <div class="muelle"></div>
+              </div>
+              <Code />
+              <div class="wave"></div>
+              <div class="wave"></div>
               <div class="wave"></div>
               <div class="wave"></div>
             </div>
-            
           </div>
           <div class="section sec3 ServiciosContainer">
             <Servicios />
           </div>
           <div class="section sec4">
-            {/* 
-            <Servicios /> */}
+            <Contact />
           </div>
         </div>
       </div>
@@ -164,3 +189,4 @@ class App extends Component {
   }
 }
 export default App;
+/*  */

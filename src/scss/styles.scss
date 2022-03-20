@@ -21,21 +21,25 @@
   .pp-slidesNav .active span { 
     background: rgb(0, 0, 0) !important; /*To change the active navigation bullets inner color*/
   }
-  .sec1 {
-    background-size: cover;
+  .sec1 {/* 
+    background-size: cover; */
     background-image: url("https://www.necochea.gov.ar/wp-content/uploads/2018/01/foto-clima-2.jpg");
-    background-size: 1945px 890px;
+    background-size: 2160px 960px;
     background-repeat: no-repeat;
     
   }
-  .sec2 {
-    background:radial-gradient(ellipse at bottom, rgb(223, 104, 0) 0%, rgb(225, 169, 0)20%, rgb(37, 161, 255) 100%);
-    background-size: cover;
+  .sec2 .pp-tableCell {
+    background:radial-gradient(ellipse at bottom, rgb(223, 104, 0) 0%, rgb(225, 169, 0)1%, rgb(37, 161, 255) 100%);
+    background-size: 1945px 920px;
   }
   
   .sec3 { 
-    background:linear-gradient(to bottom,rgb(1,87, 13), rgb(19, 19, 19))!important; ;
-    background-size: cover;
+    background:linear-gradient(to bottom,rgb(1, 88, 113)0%, #015871 30%,#00485c 60%, rgb(19, 19, 19))!important; 
+    background-size: 1945px 920px;
+  }
+  .sec4 { 
+    background:linear-gradient(to bottom, rgb(19, 19, 19), rgb(0,0 ,0 ))!important; 
+    background-size: 1945px 920px;
   }/*
 
 * {

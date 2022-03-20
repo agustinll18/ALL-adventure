@@ -8,34 +8,47 @@ $sombraGris: #6464646e;
 $fontColor: black;
 $colorGris: #646464;
 /* OLAS */
-html, body { height: 100%; }
+html,
 body {
-  /* background:linear-gradient(to bottom,rgb(1,87, 13), rgb(19, 19, 19)); */
+  height: 100%;
+}
+body {
+  /* ñ */
   overflow: hidden;
 }
 
-.ocean { 
+.ocean {
   height: 5%;
-  width:100%;
-  position:absolute;
-  bottom:0;
-  left:0;
-  background: #015871;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #016885;
 }
 
 .wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
   position: absolute;
   top: -198px;
   width: 6400px;
   height: 198px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
 
 .wave:nth-of-type(2) {
   top: -175px;
-  animation: wave 7s cubic-bezier( 0.76, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  animation: wave 7s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+.wave:nth-of-type(3) {
+  top: -175px;
+  animation: wave 4s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.4125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+.wave:nth-of-type(4) {
+  top: -175px;
+  animation: wave 4s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.2725s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
 }
 
@@ -49,13 +62,157 @@ body {
 }
 
 @keyframes swell {
-  0%, 100% {
-    transform: translate3d(0,-25px,0);
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
   }
   50% {
-    transform: translate3d(0,5px,0);
+    transform: translate3d(0, 50px, 0);
+    position: absolute;
+    bottom: -20px;
   }
 }
+/*FISHER MEN*/
+.pesca {
+  .muelle {
+    height: 80%;
+    width: 13%;
+    background: linear-gradient(to bottom, black 0%, brown 10%, black 100%);
+    position: absolute;
+    bottom: 530%;
+    border: 2.5px solid black;
+  }
+  .muelle:nth-child(2) {
+    width: 13%;
+    background: linear-gradient(to bottom, rgb(177, 56, 56) 0%, brown 10%, black 100%);
+    bottom: 230%;
+    transform: rotate(90deg);
+  }
+  .muelle:nth-child(3) {
+    width: 13%;
+    background: linear-gradient(to bottom, rgb(177, 56, 56) 0%, brown 10%, black 100%);
+    bottom: 230%;
+    transform: rotate(90deg);
+    left: 5%;
+  }
+  .fisherman {
+    .body {
+      width: 6px;
+      height: 160px;
+      background: black;
+      position: absolute;
+      left: 11.3%;
+      bottom: 750%;
+      transform: rotate(13deg);
+    }
+    .arm {
+      width: 6px;
+      height: 80px;
+      background: black;
+      position: absolute;
+      left: 12.9%;
+      bottom: 860%;
+      transform: rotate(69deg);
+    }
+    .legs {
+      .leg1 {
+        width: 6px;
+        height: 90px;
+        background: black;
+        position: absolute;
+        left: 11.2%;
+        bottom: 600%;
+        transform: rotate(-20deg);
+      }
+    }
+    .leg2 {
+      width: 6px;
+      height: 90px;
+      background: black;
+      position: absolute;
+      left: 10.2%;
+      bottom: 600%;
+      transform: rotate(10deg);
+    }
+    .headF{
+      height:70px;
+      width: 70px;
+      border-radius: 180px;
+      background: black;
+      position: absolute;
+      left: 11.1%;
+      bottom: 1050%;
+    }
+  }
+  .stick {
+    width: 8px;
+    height: 180px;
+    background: black;
+    position: absolute;
+    left: 16.1%;
+    bottom: 930%;
+    transform: rotate(27deg);
+  }
+  .pendulo {
+    display: grid;
+    grid-template: 31fr 2fr/ 1fr;
+    grid-template-areas:
+      "cuerda"
+      "bola";
+      justify-items: center;
+      position: absolute;
+      bottom: -652%;
+      left: 15.5%;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 4% 0%;
+    animation-timing-function: cubic-bezier(0.78, -0.04, 0.42, 1.14);
+    will-change: transform;
+  }
+
+  .p1 {
+    grid-area: p1;
+    animation-name: p1;
+  }
+  .cuerda {
+    grid-area: cuerda;
+    background: black;
+    position: absolute;
+    top: 30px;
+    width: 2px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .bola {
+    grid-area: bola;
+    background-image: url("https://lesser-dawns.000webhostapp.com/multimedia/recursos/external-bait-all-for-fishing-flat-icons-inmotus-design-5-removebg-preview.png");
+    position: relative;
+    left: 10px;
+    top: -10px;
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .b1 {
+    animation-name: bola;
+  }
+  @keyframes p1 {
+    0% {
+      transform: rotateZ(-40deg);animation-timing-function: cubic-bezier(0.78, -0.04, 0.42, 1.14);
+    }
+    50%{
+       transform: scale(1.1);animation-timing-function: linear;
+    }
+    100% {
+      transform: rotateZ(8deg);animation-timing-function: cubic-bezier(0.78, -0.04, 0.42, 1.14);
+    }
+  }
+}
+
 /* EDITOR DE TEXTO */
 .clearfix::after {
   content: "";

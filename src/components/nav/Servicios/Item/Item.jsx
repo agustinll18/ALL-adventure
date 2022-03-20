@@ -11,6 +11,7 @@ export default function Item(productos) {
             >
               <div>
                 <img
+                  classname="cardItem"
                   src={productos.pic}
                   variant="top"
                   style={{
