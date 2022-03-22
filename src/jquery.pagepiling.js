@@ -37,8 +37,8 @@ import jQuery from "jquery";
             loopTop: false,
             css3: true,
             navigation: {
-                textColor: '#000',
-                bulletsColor: '#000',
+                textColor: '#fff',
+                bulletsColor: '#fff',
                 position: 'right',
                 tooltips: []
             },

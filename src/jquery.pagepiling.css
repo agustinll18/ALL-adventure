@@ -109,7 +109,7 @@ body {
 
 #pp-nav li .active span,
 .pp-slidesNav .active span {
-    background: #333;
+    background: rgb(255, 255, 255);
 }
 
 #pp-nav span,
@@ -118,8 +118,8 @@ body {
     left: 2px;
     width: 8px;
     height: 8px;
-    border: 1px solid #000;
-    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0);
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -128,7 +128,7 @@ body {
 .pp-tooltip {
     position: absolute;
     top: -10px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 700;
     font-family: (var(--font));

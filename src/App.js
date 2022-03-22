@@ -1,74 +1,4 @@
-/*import "./App.css";
-  
-import "./pageP/jquery.pagepiling";
 
-
-import Nav from "./components/nav/Nav.jsx";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Contact from "./components/contact/Contact";
-import CustomizedMenus from "./components/language/Language"; 
-import $ from "jquery";
-
-function App() {
-  let section = document.querySelectorAll("section");
-  let menu = document.querySelectorAll("header nav a");
-
-  window.onscroll = () => {
-    section.forEach((i) => {
-      let top = window.scrollY;
-      let offset = i.offsetTop - 150;
-      let height = i.offsetHeight;
-      let id = i.getAttribute("id");
-
-      if (top >= offset && top < offset + height) {
-        menu.forEach((link) => {
-          link.classList.remove("active");
-          document
-            .querySelector("header nav a[href*=" + id + "]")
-            .classList.add("active");
-        });
-      }
-    });
-  };
-
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 10;
-
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-
-  window.addEventListener("scroll", reveal);
-
-  // To check the scroll position on page load
-  reveal();
-  $(document).ready(function () {
-    $(".red").click(function () {
-      $("#bodyCode6").text("Hello world!");
-    });
-  });
-  $(document).ready(function () {
-    $("#pagepiling").pagepiling({
-      navigation: {
-        textColor: "#ffffff",
-        bulletsColor: "#ffffff",
-        position: "right",
-        tooltips: ["Norway", "Switzerland", "Austria", "Italy"],
-      },
-    });
-  });
-  $(document).ready(function () {
-    $('#pagepiling').pagepiling();
-});*/
 import React, { Component } from "react";
 import $ from "jquery";
 import "./jquery.pagepiling";
@@ -80,44 +10,25 @@ import Code from "./components/nav/codeVsc/Code";
 import Servicios from "./components/nav/Servicios/Servicios";
 import Contact from "./components/contact/Contact";
 class App extends Component {
+  /* PAGELPILLING */
   componentDidMount() {
     $(document).ready(function () {
       $("#pagepiling").pagepiling({
         navigation: {
-          textColor: "#000000",
-          bulletscolor: "#000000",
+          textColor: "#fff",
+          bulletscolor: "#fff",
           position: "right",
-          tooltips: ["About Me", "Education & Projects", "sec3", "sec4"],
+          tooltips: ["About Me", "Education & Projects", "Services", "Contact "],
         },
       });
     });
-    function reveal() {
-      var reveals = document.querySelectorAll(".reveal");
-
-      for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 1;
-
-        if (elementTop < windowHeight - elementVisible) {
-          reveals[i].classList.add("active");
-        } else {
-          reveals[i].classList.remove("active");
-        }
-      }
-    }
-
-    window.addEventListener("scroll", reveal);
-
-    // To check the scroll position on page load
-    reveal();
     let section = document.querySelectorAll("section");
     let menu = document.querySelectorAll("header nav a");
 
     window.onscroll = () => {
       section.forEach((i) => {
         let top = window.scrollY;
-        let offset = i.offsetTop - 150;
+        let offset = i.offsetTop - 1;
         let height = i.offsetHeight;
         let id = i.getAttribute("id");
 
@@ -132,8 +43,70 @@ class App extends Component {
       });
     };
   }
+  /* PENDULO */
 
   render() {
+    /* $(window).scroll(function() {
+      var windowYmax = 1;
+      var scrolledY = $(window).scrollTop();
+    
+      if (scrolledY > windowYmax) {
+    
+        $('#myp').addClass("penduloScroll");
+      } else {
+        $('#myp').removeClass("penduloScroll");
+        $('#myp').addClass("pendulo");
+      }
+    }); */
+    /*window.onscroll = function () {
+      myFunction();
+    };
+
+    function myFunction() {
+       if (document.documentElement.scrollTop < 130) {
+        document.getElementById("myP").className = "";
+      } else if (
+        1 < document.documentElement.scrollTop &&
+        document.documentElement.scrollTop < 2
+      ) {
+        document.getElementById("myP").className = "penduloScroll";
+      } else {
+        document.getElementById("myP").className = "penduloScroll";
+      }
+    } */
+
+    /* $(document).ready(function(){
+      if ( $('div.section.sec4').hasClass('active') ) {
+        $('.caña').toggleClass('caña',false)
+      }
+    }); */
+     /*  $(document).ready(function(){
+        $("button").click(function(){
+          $(".caña").toggleClass("caña",false);
+        });
+      });
+
+
+    $(function() {
+      var caña = $(".caña");
+      $(window).scroll(function() {    
+          var scroll = $(window).scrollTop();
+      
+          if (scroll >= 2) {
+              caña.toggleClass("caña",false);
+          } else {
+              caña.removeClass("caña-alt").addClass('caña');
+          }
+      });
+  }); */
+
+  $(document).ready(function(){
+    $("sec3").on({
+      mouseout: function(){
+        $("caña").css("display","none")
+      }
+    })
+  })
     return (
       <div>
         <header className="App-header">
@@ -160,7 +133,7 @@ class App extends Component {
                   </div>
                   <div class="headF"></div>
                   <div class="stick"></div>
-                  <div class="pendulo p1">
+                  <div class="caña p1 " id="myP">
                     <div class="cuerda c1"></div>
                     <div class="bola b1"></div>
                   </div>
@@ -182,6 +155,7 @@ class App extends Component {
           </div>
           <div class="section sec4">
             <Contact />
+            
           </div>
         </div>
       </div>

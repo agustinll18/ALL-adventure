@@ -7,11 +7,11 @@ const Code = () => {
   const share = () => {
     alert("Gracias por compartir nuestra pagina!");
   };
-  /* $(document).ready(function(){
+  $(document).ready(function(){
     $("#red").click(function(){
       $("#bodyCode6").text("Hello world!");
     })
-  }); */
+  });
   $(document).ready(function(){
     $("#textES").click(function(){
       $("#bodyCode6").text("Hello world!");

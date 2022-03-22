@@ -19,7 +19,7 @@
   }
   #pp-nav li .active span,
   .pp-slidesNav .active span { 
-    background: rgb(0, 0, 0) !important; /*To change the active navigation bullets inner color*/
+    background: rgb(255, 255, 255) !important; /*To change the active navigation bullets inner color*/
   }
   .sec1 {/* 
     background-size: cover; */
@@ -28,7 +28,7 @@
     background-repeat: no-repeat;
     
   }
-  .sec2 .pp-tableCell {
+  .sec2  {
     background:radial-gradient(ellipse at bottom, rgb(223, 104, 0) 0%, rgb(225, 169, 0)1%, rgb(37, 161, 255) 100%);
     background-size: 1945px 920px;
   }
@@ -36,9 +36,13 @@
   .sec3 { 
     background:linear-gradient(to bottom,rgb(1, 88, 113)0%, #015871 30%,#00485c 60%, rgb(19, 19, 19))!important; 
     background-size: 1945px 920px;
+    display: table-cell;
+    vertical-align: middle;/* 
+    width: 100%;
+    height: 100%; */
   }
   .sec4 { 
-    background:linear-gradient(to bottom, rgb(19, 19, 19), rgb(0,0 ,0 ))!important; 
+    background:/* linear-gradient(to bottom, rgb(19, 19, 19), rgb(0,0 ,0 )) */ black !important; 
     background-size: 1945px 920px;
   }/*
 
