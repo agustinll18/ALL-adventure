@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Contact = () => {
   return (
-    <div id="contact">
+    <div className="contact">
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label"></label>
         <input

@@ -21,9 +21,7 @@
             height: 445px;
             justify-content: center;
             margin: 25px;
-            -webkit-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
-            -moz-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
-            box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+            margin-bottom: 80px;
 
             .overlay {
                 position: absolute;
@@ -50,6 +48,12 @@
                     -ms-transform: translate(-50%, -50%);
                 }
             }
+            &:hover {
+                transition: box-shadow 1.2s linear;
+                -webkit-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+                -moz-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+                box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+            }
             &:hover .overlay {
                 bottom: 0;
                 height: 100%;
@@ -58,7 +62,6 @@
                     animation: move 4.5s;
                     transition: 4s ease;
                     animation-fill-mode: both;
-                    
 
                     @keyframes move {
                         0% {

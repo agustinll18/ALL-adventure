@@ -11,10 +11,10 @@ main {
   margin: 0;
   padding: 0;
   z-index: 9;
-  background: linear-gradient(to top, rgba(0, 145, 255, 0.5), rgb(255, 255, 255,0.5));
+  background: linear-gradient(to top, rgba(0, 145, 255, 0.5), rgb(255, 255, 255, 0.5));
   -webkit-backdrop-filter: blur(13px);
   backdrop-filter: blur(13px);
-  border: 1px solid rgba(255,255,255,0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 
   &:before {
     content: "";
@@ -80,18 +80,3 @@ main {
   transform: translateY(0);
   opacity: 1;
 }
-/* .reveal:nth-child(1){
-  position: relative;
-  transform: translateX(30px);
-  opacity: 0;
-  transition: 3s all ease;
-}
-.reveal.active:nth-child(1) {
-  transform: translateX(0);
-  opacity: 1;
-} */
-
-
-@import "./code/code";
-@import "./fotos/fotos";
-@import "./cardContainer/cardContainer"

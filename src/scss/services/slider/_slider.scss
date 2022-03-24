@@ -1,0 +1,117 @@
+@import "../../variables";
+@mixin gradientBlanco {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.359) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+$velocidad: 40s;
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9.59));
+    }
+}
+.gradient-border {
+    margin: auto;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 970px;
+    height: 100px;
+    color: white;
+    background: rgba(0, 0, 0, 0.468) !important;
+    border-radius: 12px;/* 
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.364), rgba(255, 255, 255, 0.7), $fondoClaro);
+            -webkit-backdrop-filter: blur(18px);
+            backdrop-filter: blur(18px); */
+
+    .slider {
+        background: rgba(255, 255, 255, 0.331);
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+        height: 100px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        width: 970px;
+        justify-content: center;
+        border-radius: 12px;
+
+        &::before,
+        &::after {
+            @include gradientBlanco;
+            content: "";
+            height: 100px;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+        }
+
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+
+        &::before {
+            left: 0;
+            top: 0;
+        }
+
+        .slide-track {
+            animation: scroll $velocidad linear infinite;
+            display: flex;
+            width: calc(250px * 14);
+            justify-content: center;
+
+        }
+
+        .slide {
+            margin: auto;
+            height: 100px;
+            width: 250px;
+            position: relative;
+            bottom: 20px;
+
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: -3px;
+        left: -3px;
+        z-index: -1;
+        width: 976px;
+        height: 106px;
+        background: linear-gradient(
+            20deg,
+            rgb(0, 0, 0),
+            rgb(100, 100, 100),
+            rgb(10, 101, 162),
+            rgb(48, 149, 216),
+            rgb(125, 220, 255),
+            rgb(255, 255, 255)
+        );
+        background-size: 300% 300%;
+        background-position: 0 50%;
+        border-radius: 6px;
+        animation: gradiente 4s alternate infinite;
+
+    }
+}
+
+@keyframes gradiente {
+    50% {
+        background-position: 100% 50%;
+    }
+}
