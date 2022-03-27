@@ -23,7 +23,7 @@ const sidebarVscEN = () => {
           ></path>
           <polyline points="13 2 13 9 20 9"></polyline>
         </svg>
-        <p class="texto">Files</p>
+        <p class="texto" id="filesVsc">Files</p>
       </div>
     </div>
   );

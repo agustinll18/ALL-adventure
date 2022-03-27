@@ -2,8 +2,8 @@
 main {
   position: relative;
   width: 100%;
-  top: -50px;
-  height: 1045px;
+  top: -120px;
+  height: 1115px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -16,6 +16,11 @@ main {
   backdrop-filter: blur(13px);
   border: 1px solid rgba(255, 255, 255, 0.25);
 
+  h1{
+    font-weight: 1000;
+    font-family: italic;
+    font-size: 40px;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -38,6 +43,23 @@ main {
     background: linear-gradient(to top, #0091ff, transparent);
     mix-blend-mode: color;
   }
+  .saludo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size:.81em;
+    font-weight: bold;
+    z-index: 2;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    background: 1inear-gradient(rgb(255, 255, 255) 20%, transparent 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.9);
+  }
 
   img {
     position: absolute;
@@ -54,11 +76,11 @@ main {
 
   aside {
     position: absolute;
-    right: 0;
+    right: 50px;
     height: 800px;
-    width: 25.31%;
-    padding-left: 15px;
-    margin-left: 15px;
+    width: 22.31%;
+    padding-left: 0px;
+    margin-left: 0px;
     font-size: 22px;
   }
   p {

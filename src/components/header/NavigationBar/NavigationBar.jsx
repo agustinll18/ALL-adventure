@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
+import Navbar from 'react-bootstrap/Navbar';
+import Container from'react-bootstrap/Container';
+import $ from 'jquery'
 
-export default function Navbar() {
+export default function NavigationBar() {
   const [stickyClass, setStickyClass] = useState("");
   useEffect(() => {
     window.addEventListener("scroll", stickNavbar);
@@ -63,10 +66,25 @@ export default function Navbar() {
       }else{
       }
   } */
+  $(document).ready(function(){
+    $(".textES").click(function(){
+      $(".saludo").text("Hola, soy Agustín LLadós");
+      $('#navH').text("Hola, soy Agustín LLadós").css("fontSize","38px");
 
+      $("#filesVsc").text("Archivos"); 
+      $(".asd").text("> Hola <");
+    });
+  });
   return (
     <div className={`navbar ${stickyClass}`} id="navbarContainer">
-      <nav
+      <Navbar collapseOnSelect expand="lg" bg="lg" variant="lg" id="navbar">
+        <Container class="container-fluid" id="containerUl">
+          <Navbar.Brand href="#home" id="brandN">ALL</Navbar.Brand>
+         
+        </Container>
+      </Navbar>
+      
+      {/* <nav
         class="navbar fixed-top navbar-expand-lg navbar-light bg-light"
         id="navbar"
       >
@@ -110,7 +128,7 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </div>
   );
 }

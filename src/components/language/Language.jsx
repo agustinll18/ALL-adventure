@@ -2,14 +2,6 @@ import * as React from "react";
 import { styled, alpha } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import $ from "jquery"; /* 
-import EditIcon from '@mui/icons-material/Edit';
-import Divider from '@mui/material/Divider';
-import ArchiveIcon from '@mui/icons-material/Archive';
-import FileCopyIcon from '@mui/icons-material/FileCopy';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'; */
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -26,12 +18,10 @@ const StyledMenu = styled((props) => (
   />
 ))(({ theme }) => ({
   "& .MuiPaper-root": {
-    /* 
-    borderRadius: 800, */
-    margin: 0 /* theme.spacing(1) */,
+    
+    margin: 0,
     Width: 0,
-    opacity: 0 /* 
-    content:"↓", */,
+    opacity: 0,
     color:
       theme.palette.mode === "light"
         ? "rgb(55, 65, 81)"
@@ -76,7 +66,7 @@ export default function CustomizedMenus() {
   return (
     <div>
       <Button
-        id="demo-customized-button" /* className="red" */
+        id="demo-customized-button" className="red"
         aria-controls={open ? "demo-customized-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
@@ -91,6 +81,7 @@ export default function CustomizedMenus() {
           backgroundColor: "black",
           position: "fixed",
           bottom: "10px",
+          zIndex:400,
           right: "27px",
         }}
       >
@@ -104,7 +95,37 @@ export default function CustomizedMenus() {
           }}
         />
       </Button>
-      <StyledMenu
+      <Button
+        id="demo-customized-button" className="textES"
+        aria-controls={open ? "demo-customized-menu" : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? "true" : undefined}
+        variant="contained"
+        disableElevation
+        onClick={handleClick}
+        style={{
+          borderRadius: "30px",
+          width: "65px",
+          padding: "0px",
+          height: "65px",
+          backgroundColor: "black",
+          position: "fixed",
+          bottom: "100px",
+          zIndex:400,
+          right: "27px",
+        }}
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/125px-Bandera_de_Espa%C3%B1a.svg.png"
+          style={{
+            borderRadius: "30px",
+            width: "60px",
+            padding: "0px",
+            height: "60px",
+          }}
+        />
+      </Button>
+      {/* <StyledMenu
         id="demo-customized-menu"
         MenuListProps={{
           "aria-labelledby": "demo-customized-button",
@@ -185,8 +206,8 @@ export default function CustomizedMenus() {
               }}
             />
           </Button>
-        </MenuItem>
-        {/*<MenuItem onClick={handleClose} disableRipple>
+        </MenuItem> */}
+        {/* <MenuItem onClick={handleClose} disableRipple>
           <FileCopyIcon />
           Duplicate
         </MenuItem>
@@ -198,8 +219,8 @@ export default function CustomizedMenus() {
         <MenuItem onClick={handleClose} disableRipple>
           <MoreHorizIcon />
           More
-        </MenuItem> */}
-      </StyledMenu>
+        </MenuItem> 
+      </StyledMenu>*/}
     </div>
   );
 }

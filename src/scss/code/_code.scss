@@ -83,17 +83,18 @@ body {
     border: 2.5px solid black;
   }
   .muelle:nth-child(2) {
-    width: 13%;
+    width: 10%;
     background: linear-gradient(to bottom, rgb(177, 56, 56) 0%, brown 10%, black 100%);
-    bottom: 230%;
+    bottom: 330%;
     transform: rotate(90deg);
+    left: 6.9%;
   }
   .muelle:nth-child(3) {
-    width: 13%;
+    width: 10%;
     background: linear-gradient(to bottom, rgb(177, 56, 56) 0%, brown 10%, black 100%);
-    bottom: 230%;
+    bottom: 330%;
     transform: rotate(90deg);
-    left: 5%;
+    left: 2%;
   }
   .fisherman {
     .body {
@@ -155,13 +156,13 @@ body {
   }
   .caña {
     display: grid;
-    grid-template: 27fr 2fr/ 1fr;
+    grid-template: 24fr 2fr/ 1fr;
     grid-template-areas:
       "cuerda"
       "bola";
     justify-items: center;
     position: absolute;
-    bottom: -562%;
+    bottom: -512%;
     left: 16.1%;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -491,11 +492,13 @@ body {
   }
   #bodyCode6 {
     color: aliceblue;
-    font-weight: 900;
-    font-size: 18px;
+    position: relative;
+    top: 5px;
+    font-weight: 500;
+    font-size: 14px;
     float: left;
     text-align: left;
-    margin-left: 62.5px;
+    margin-left: 12.5px;
     width: 92%;
     display: flex;
   }

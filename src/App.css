@@ -14,26 +14,40 @@
   padding: 0;
   height: 43px;
   width: 100%;
+  color: #fff;
 }
-
-#navbar {
+#navbarContainer #navbar {
   border-bottom: 3px solid rgba(0, 0, 0, 0.824);
   padding: 0;
-  height: 43px;
+  height: 49px;
+  left: 0;
   width: 100%;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   margin-bottom: 0;
+  background: white;
+  z-index: 10;
 }
-#navbar ul li a {
+#navbarContainer #navbar #containerUl {
+  background: white;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.824);
+  top: 0;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  width: 100% !important;
+  color: #fff;
+}
+#navbarContainer #navbar #containerUl #brandN {
+  color: black !important;
+  margin-right: 50px;
+  font-weight: 900;
+  font-size: 24px;
+}
+#navbarContainer #navbar ul li a {
   text-decoration: none !important;
   margin-bottom: 0;
-}
-
-#brand {
-  font-size: 28px;
-  font-weight: bolder;
 }
 
 /*TEMA DE PALETA DE COLOR  */
@@ -47,8 +61,8 @@
 main {
   position: relative;
   width: 100%;
-  top: -50px;
-  height: 1045px;
+  top: -120px;
+  height: 1115px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -60,6 +74,11 @@ main {
   -webkit-backdrop-filter: blur(13px);
   backdrop-filter: blur(13px);
   border: 1px solid rgba(255, 255, 255, 0.25);
+}
+main h1 {
+  font-weight: 1000;
+  font-family: italic;
+  font-size: 40px;
 }
 main:before {
   content: "";
@@ -82,6 +101,23 @@ main:after {
   background: linear-gradient(to top, #0091ff, transparent);
   mix-blend-mode: color;
 }
+main .saludo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+  margin: 0;
+  padding: 0;
+  font-size: 0.81em;
+  font-weight: bold;
+  z-index: 2;
+  font-family: sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  background: 1inear-gradient white 20%, transparent 80%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.9);
+}
 main img {
   position: absolute;
   top: 0;
@@ -96,11 +132,11 @@ main img {
 }
 main aside {
   position: absolute;
-  right: 0;
+  right: 50px;
   height: 800px;
-  width: 25.31%;
-  padding-left: 15px;
-  margin-left: 15px;
+  width: 22.31%;
+  padding-left: 0px;
+  margin-left: 0px;
   font-size: 22px;
 }
 main p {
@@ -203,17 +239,18 @@ body {
   border: 2.5px solid black;
 }
 .pesca .muelle:nth-child(2) {
-  width: 13%;
+  width: 10%;
   background: linear-gradient(to bottom, #b13838 0%, brown 10%, black 100%);
-  bottom: 230%;
+  bottom: 330%;
   transform: rotate(90deg);
+  left: 6.9%;
 }
 .pesca .muelle:nth-child(3) {
-  width: 13%;
+  width: 10%;
   background: linear-gradient(to bottom, #b13838 0%, brown 10%, black 100%);
-  bottom: 230%;
+  bottom: 330%;
   transform: rotate(90deg);
-  left: 5%;
+  left: 2%;
 }
 .pesca .fisherman .body {
   width: 6px;
@@ -271,11 +308,11 @@ body {
 }
 .pesca .caña {
   display: grid;
-  grid-template: 27fr 2fr/1fr;
+  grid-template: 24fr 2fr/1fr;
   grid-template-areas: "cuerda" "bola";
   justify-items: center;
   position: absolute;
-  bottom: -562%;
+  bottom: -512%;
   left: 16.1%;
   animation-duration: 15s;
   animation-iteration-count: infinite;
@@ -604,11 +641,13 @@ body {
 }
 .containerCode #bodyCode6 {
   color: aliceblue;
-  font-weight: 900;
-  font-size: 18px;
+  position: relative;
+  top: 5px;
+  font-weight: 500;
+  font-size: 14px;
   float: left;
   text-align: left;
-  margin-left: 62.5px;
+  margin-left: 12.5px;
   width: 92%;
   display: flex;
 }
@@ -659,6 +698,26 @@ body {
   justify-content: center;
   margin: 25px;
   margin-bottom: 80px;
+  transition: box-shadow 2.5s ease;
+  /* .cardImg {
+      .cardItem {
+          position: relative;
+          width: 100px;
+          height: 80px;
+          justify-content: center;
+          top: 35px;
+          -webkit-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+          -moz-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+          box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+      }
+  } */
+}
+.ServiciosContainer #itemList #cardService .cardImg img {
+  position: relative;
+  width: 100px;
+  height: 80px;
+  justify-content: center;
+  top: 35px;
 }
 .ServiciosContainer #itemList #cardService .overlay {
   position: absolute;
@@ -670,7 +729,6 @@ body {
   width: 100%;
   height: 0;
   transition: 2.5s ease;
-  animation-play-state: paused;
   border-radius: 12px;
 }
 .ServiciosContainer #itemList #cardService .overlay .text {
@@ -684,8 +742,11 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+.ServiciosContainer #itemList #cardService .overlay img {
+  transition: 2.1s ease;
+  transition-delay: 0.15s;
+}
 .ServiciosContainer #itemList #cardService:hover {
-  transition: box-shadow 1.2s linear;
   -webkit-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
   -moz-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
   box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
@@ -695,27 +756,19 @@ body {
   height: 100%;
 }
 .ServiciosContainer #itemList #cardService:hover .overlay img {
-  animation: move 4.5s;
-  transition: 4s ease;
-  animation-fill-mode: both;
-}
-@keyframes move {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(100px);
-  }
-}
-.ServiciosContainer #itemList #cardService .cardImg .cardItem {
-  position: relative;
-  width: 180px;
-  height: 160px;
-  justify-content: center;
-  top: 35px;
-  -webkit-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
-  -moz-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
-  box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+  /* 
+  animation: move 4.5s; */
+  transform: translateY(100px);
+  /* 
+  animation-fill-mode: both; 
+
+  @keyframes move {
+      0% {
+          transform: translateY(0px);
+      }
+      100% {*/
+  /* } */
+  /* } */
 }
 
 /*TEMA DE PALETA DE COLOR  */
@@ -796,12 +849,13 @@ body {
 .gradient-border::after {
   position: absolute;
   content: "";
+  /* 
   top: -3px;
-  left: -3px;
+  left: -3px; */
   z-index: -1;
-  width: 976px;
-  height: 106px;
-  background: linear-gradient(20deg, black, #646464, #0a65a2, #3095d8, #7ddcff, white);
+  width: 970px;
+  height: 100px;
+  background: linear-gradient(20deg, black, white);
   background-size: 300% 300%;
   background-position: 0 50%;
   border-radius: 6px;
@@ -821,9 +875,9 @@ body {
   overflow: hidden;
   border-radius: 25px;
   background: linear-gradient(to bottom, black, #4f6484);
+  transition: box-shadow 2.2s linear;
 }
 .contact:hover {
-  transition: box-shadow 1.2s linear;
   -webkit-box-shadow: 11px 15px 19.5px 3.5px gold;
   -moz-box-shadow: 11px 15px 19.5px 3.5px gold;
   box-shadow: 11px 15px 19.5px 3.5px gold;
@@ -860,8 +914,6 @@ body {
 }
 
 .sec1 {
-  /* 
-  background-size: cover; */
   background-image: url("https://www.necochea.gov.ar/wp-content/uploads/2018/01/foto-clima-2.jpg");
   background-size: 2160px 960px;
   background-repeat: no-repeat;
@@ -877,9 +929,6 @@ body {
   background-size: 1945px 920px;
   display: table-cell;
   vertical-align: middle;
-  /* 
-  width: 100%;
-  height: 100%; */
 }
 
 .sec4 {

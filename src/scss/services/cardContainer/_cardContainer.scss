@@ -22,7 +22,17 @@
             justify-content: center;
             margin: 25px;
             margin-bottom: 80px;
+            transition: box-shadow 2.5s ease;
 
+            .cardImg {
+                img {
+                    position: relative;
+                    width: 100px;
+                    height: 80px;
+                    justify-content: center;
+                    top: 35px;
+                }
+            }
             .overlay {
                 position: absolute;
                 bottom: 100%;
@@ -33,7 +43,6 @@
                 width: 100%;
                 height: 0;
                 transition: 2.5s ease;
-                animation-play-state: paused;
                 border-radius: 12px;
 
                 .text {
@@ -47,9 +56,12 @@
                     transform: translate(-50%, -50%);
                     -ms-transform: translate(-50%, -50%);
                 }
+                img{
+                    transition: 2.1s ease;
+                    transition-delay: .15s;
+                }
             }
             &:hover {
-                transition: box-shadow 1.2s linear;
                 -webkit-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
                 -moz-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
                 box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
@@ -58,31 +70,33 @@
                 bottom: 0;
                 height: 100%;
 
-                img {
-                    animation: move 4.5s;
-                    transition: 4s ease;
-                    animation-fill-mode: both;
+                img {/* 
+                    animation: move 4.5s; */
+                    transform: translateY(100px);/* 
+                    animation-fill-mode: both; 
 
                     @keyframes move {
                         0% {
                             transform: translateY(0px);
                         }
-                        100% {
-                            transform: translateY(100px);
-                        }
-                    }
+                        100% {*/
+                            
+                        /* } */
+                    /* } */
                 }
             }
-            .cardImg .cardItem {
-                position: relative;
-                width: 180px;
-                height: 160px;
-                justify-content: center;
-                top: 35px;
-                -webkit-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
-                -moz-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
-                box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
-            }
+            /* .cardImg {
+                .cardItem {
+                    position: relative;
+                    width: 100px;
+                    height: 80px;
+                    justify-content: center;
+                    top: 35px;
+                    -webkit-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+                    -moz-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+                    box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
+                }
+            } */
         }
     }
 }

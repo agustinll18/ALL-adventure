@@ -12,13 +12,6 @@ export default function Item(productos) {
                   classname="cardItem"
                   src={productos.pic}
                   variant="top"
-                  style={{
-                    position: "relative",
-                    width: "180px",
-                    height: "160px",
-                    justifyContent: "center",
-                    top: "35px",
-                  }}
                   alt="product pic"
                 />
               </div>
@@ -32,7 +25,7 @@ export default function Item(productos) {
                     fontSize: "12px",
                   }}
                 >
-                  <h1 style={{ fontSize: "22px" }}>{productos.modelo}</h1>
+                  <h1 style={{ fontSize: "22px", fontWeight: "bolder",margin:"25px" }}>{productos.modelo}</h1>
                 </div>
                 <div
                   style={{
@@ -41,14 +34,13 @@ export default function Item(productos) {
                     top: "35px",
                   }}
                 >
-                  <h2>{productos.precio}</h2>
+                  <h2 /* style={{width: "120px"}} */>{productos.precio}</h2>
                 </div>
               </div>
 
               <div class="overlay">
                 <img src="https://lesser-dawns.000webhostapp.com/multimedia/recursos/rbg/icons8-ship-50-removebg-preview.png" alt="" />
               </div>
-              
             </div>
           </div>
         </div>

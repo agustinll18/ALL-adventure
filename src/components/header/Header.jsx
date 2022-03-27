@@ -1,11 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./navbar/navbar";
+import NavigationBar from "./NavigationBar/NavigationBar";
 
 const Header = () => {
   return (
     <div>
-      <Navbar />
+      <NavigationBar />
     </div>
   );
 };

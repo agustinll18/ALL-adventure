@@ -116,8 +116,8 @@ body {
 .pp-slidesNav span {
     top: 2px;
     left: 2px;
-    width: 8px;
-    height: 8px;
+    width:14px;
+    height:14px;
     border: 1px solid rgb(0, 0, 0);
     background: rgba(255, 255, 255, 0);
     border-radius: 50%;
@@ -127,7 +127,7 @@ body {
 
 .pp-tooltip {
     position: absolute;
-    top: -10px;
+    top: -5px;
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 700;

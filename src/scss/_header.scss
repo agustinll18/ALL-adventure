@@ -14,23 +14,43 @@ $fontColor: black;
   padding: 0;
   height: 43px;
   width: 100%;
-}
-#navbar {
-  border-bottom: 3px solid rgba(0, 0, 0, 0.824);
-  padding: 0;
-  height: 43px;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-  margin-bottom: 0;
-
-  ul li a {
-    text-decoration: none !important;
+  color: #fff;
+  #navbar {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.824);
+    padding: 0;
+    height: 49px;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
     margin-bottom: 0;
+    background: rgb(255, 255, 255);
+    z-index: 10;
+
+    #containerUl {
+      background: rgb(255, 255, 255);
+      border-bottom: 3px solid rgba(0, 0, 0, 0.824);
+      top: 0;
+      position: absolute;
+      margin: 0;
+      left: 0;
+      width: 100% !important;
+      color: #fff;
+
+      #brandN{
+        color: $fontColor !important;
+        margin-right: 50px;
+        font-weight: 900;
+        font-size: 24px;
+      }
+
+      
+    }
+    ul li a {
+      text-decoration: none !important;
+      margin-bottom: 0;
+    }
   }
 }
-#brand {
-  font-size: 28px;
-  font-weight: bolder;
-}
+

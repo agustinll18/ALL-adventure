@@ -10,6 +10,7 @@ import Code from "./components/nav/codeVsc/Code";
 import Servicios from "./components/nav/Servicios/Servicios";
 import Contact from "./components/contact/Contact";
 import Slider from "./components/nav/Servicios/Slider/Slider";
+import Language from "./components/language/Language"
 class App extends Component {
   /* PAGELPILLING */
   componentDidMount() {
@@ -49,6 +50,7 @@ class App extends Component {
     
     return (
       <div>
+        <Language/>
         <header className="App-header">
           <Header />
         </header>

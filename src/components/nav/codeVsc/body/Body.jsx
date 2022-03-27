@@ -40,8 +40,8 @@ const BodyEN = () => {
         /&gt;
       </div>
 
-      <div id="bodyCode3">
-        &lt; <p className="redText">title </p> &gt;My Education & proyects &lt;/
+      <div id="bodyCode3" >
+        &lt; <p className="redText">title </p> <div className="asd">&gt;My Education & proyects &lt;/</div> 
         <p className="redText">title</p>&gt;
       </div>
 
@@ -62,38 +62,47 @@ const BodyEN = () => {
         <p className="redText">h1</p> &gt;
       </div>
 
-      <div id="bodyCode4">
+      <div id="bodyCode3">
+        &lt;/ <p className="redText">header</p> &gt;
+      </div>
+      <div id="bodyCode3">
         &lt; <p className="redText">nav</p> &gt;
       </div>
 
-      <div id="bodyCode5">
-        &lt; <p className="redText"> p</p>&gt;
-      </div>
-
-      <div id="bodyCode6">
-        I graduated from economic science in my school "Emaus" with an 7.66
-        average in highschool and awarded for "the best friend in the class",
-        then I started to see what was i would like to dedicate in my
-        professional career. First I looked up to be a AI developer but after I
-        do a basic AI course based in the principles of AI , I wasnt completely
-        sure. After do my research and see videos from people who work and they
-        mastered in their area I decided that I want to became a fullstack
-        developer. (hahah I didnt realized the AMOUNT OF HARD WORK I WILL HAVE
-        TO DO). Meanwhile I was working in one company to get money and doing a
-        course in Python and Front-end developer in Udemy ,I was looking a place
-        to study and instruct me in the fullstack area afterwards I found
-        CoderHouse that gives me all i was searching SO I STARTED MY STUDIES
-      </div>
-      <div id="bodyCode5">
-        &lt;/ <p className="redText">p</p> &gt;
-      </div>
-
       <div id="bodyCode4">
-        &lt;/ <p className="redText">nav</p> &gt;
+        &lt; <p className="redText"> ul</p>&gt;
+      </div>
+
+      <div id="bodyCode5">
+        &lt; <p className="redText"> li</p>&gt;
+        <div id="bodyCode6">
+          Graduated from economic science in my school "Emaus" with an 7.66
+          average in highschool and awarded for "the best friend in the class"
+        </div>
+      </div>
+
+      <div id="bodyCode5">
+        &lt; <p className="redText"> li</p>&gt;
+        <div id="bodyCode6">
+          Graduated from economic science in my school "Emaus" with an 7.66
+          average in highschool and awarded for "the best friend in the class"
+        </div>
+      </div>
+      
+      <div id="bodyCode5">
+        &lt; <p className="redText"> li</p>&gt;
+        <div id="bodyCode6">
+          Graduated from economic science in my school "Emaus" with an 7.66
+          average in highschool and awarded for "the best friend in the class"
+        </div>
+        &lt;/ <p className="redText"> li</p>&gt;
+      </div>
+      <div id="bodyCode4">
+        &lt;/ <p className="redText">ul</p> &gt;
       </div>
 
       <div id="bodyCode3">
-        &lt;/ <p className="redText">header</p> &gt;
+        &lt;/ <p className="redText">nav</p> &gt;
       </div>
 
       <div id="bodyCode2">
