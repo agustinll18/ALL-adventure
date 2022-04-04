@@ -70,33 +70,10 @@
                 bottom: 0;
                 height: 100%;
 
-                img {/* 
-                    animation: move 4.5s; */
-                    transform: translateY(100px);/* 
-                    animation-fill-mode: both; 
-
-                    @keyframes move {
-                        0% {
-                            transform: translateY(0px);
-                        }
-                        100% {*/
-                            
-                        /* } */
-                    /* } */
+                img {
+                    transform: translateY(100px);
                 }
             }
-            /* .cardImg {
-                .cardItem {
-                    position: relative;
-                    width: 100px;
-                    height: 80px;
-                    justify-content: center;
-                    top: 35px;
-                    -webkit-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
-                    -moz-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
-                    box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
-                }
-            } */
         }
     }
 }

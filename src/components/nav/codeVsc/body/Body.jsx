@@ -40,8 +40,9 @@ const BodyEN = () => {
         /&gt;
       </div>
 
-      <div id="bodyCode3" >
-        &lt; <p className="redText">title </p> <div className="asd">&gt;My Education & proyects &lt;/</div> 
+      <div id="bodyCode3">
+        &lt; <p className="redText">title </p>{" "}
+        <div className="asd">&gt;My Education & proyects &lt;/</div>
         <p className="redText">title</p>&gt;
       </div>
 
@@ -76,24 +77,26 @@ const BodyEN = () => {
       <div id="bodyCode5">
         &lt; <p className="redText"> li</p>&gt;
         <div id="bodyCode6">
-          Graduated from economic science in my school "Emaus" with an 7.66
-          average in highschool and awarded for "the best friend in the class"
+          Graduated from economic science in my school 'Emaus' with an 7.66
+          average in highschool and awarded for 'the best friend in the class'
         </div>
+        &lt;/ <p className="redText"> li</p>&gt;
       </div>
 
       <div id="bodyCode5">
         &lt; <p className="redText"> li</p>&gt;
         <div id="bodyCode6">
-          Graduated from economic science in my school "Emaus" with an 7.66
-          average in highschool and awarded for "the best friend in the class"
+          Graduated from economic science in my school 'Emaus' with an 7.66
+          average in highschool and awarded for 'the best friend in the class'
         </div>
+        &lt;/ <p className="redText"> li</p>&gt;
       </div>
-      
+
       <div id="bodyCode5">
         &lt; <p className="redText"> li</p>&gt;
         <div id="bodyCode6">
-          Graduated from economic science in my school "Emaus" with an 7.66
-          average in highschool and awarded for "the best friend in the class"
+          Graduated from economic science in my school 'Emaus' with an 7.66
+          average in highschool and awarded for 'the best friend in the class'
         </div>
         &lt;/ <p className="redText"> li</p>&gt;
       </div>

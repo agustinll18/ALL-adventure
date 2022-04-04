@@ -10,7 +10,7 @@ $(document).ready(function () {
 const bg = document.getElementsByClassName("bg");
 const moon = document.getElementsByClassName("moon");
 const mountain = document.getElementsByClassName("mountain");
-const road = document.getElementsByClassName("road");/* 
+const road = document.getElementsByClassName("road"); /* 
 const text = document.getElementsByClassName("text"); */
 window.addEventListener("scroll", function () {
   const value = window.scrollY;
@@ -30,20 +30,25 @@ const Nav = () => {
 
   return (
     <div /* className="dark-theme" */>
-      <main id="mainSection">
-        <h1  className="saludo">Hi!, I am Agustín LLadós</h1>
-        <img src={images[0]} className="bg" alt="background" />
-        <img src={images[1]} className="mountain" alt="moon" />
-        <img src={images[2]} className="road" alt="road" />
-        <img src={images[3]} className="mountain" alt="mountain" />
-        
-        <aside> 
+      <main id="mainSection" /*  class="col-9" */>
+        <div class="col-9">
+          <h1 className="saludo">Hi! I am Agustín LLadós</h1>
+          <img src={images[0]} className="bg" alt="background" />
+          <img src={images[1]} className="mountain" alt="moon" />
+          <img src={images[2]} className="road" alt="road" />
+          <img src={images[3]} className="mountain" alt="mountain" />
+        </div>
+
+        <aside class="col-3">
           <h1 id="navH">Hi! I am Agustín LLadós</h1>
-          <p>
-            I have 20 years, born in 2002, and I am a full-stack developer improving my back-end's knowledge.
-            I like programming in the front-end area, use some libraries and get some challenges.
+          <p id="navP">
+            I have 20 years, born in 2002, and I am a full-stack developer
+            improving my back-end's knowledge. I like programming in the
+            front-end area, use some libraries and get some challenges.
             <br />
-            My hobbies are do sport, I love Tennis and Futbol, go out with my friends and eat with my family on Sunday   {/* I graduated from economic science in my school "Emaus" with an 7.66
+            My hobbies are: do sport, I love Tennis and Futbol, go out with my
+            friends and eat with my family on Sunday.{" "}
+            {/* I graduated from economic science in my school "Emaus" with an 7.66
             average in highschool and awarded for "the best friend in the
             class" , then I started to see what was i would like to dedicate in
             my professional career. First I looked up to be a AI developer but

@@ -29,25 +29,22 @@ body {
 .wave {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
   position: absolute;
-  top: -198px;
+  top: -178px;
   width: 6400px;
-  height: 198px;
+  height: 178px;
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
 
 .wave:nth-of-type(2) {
-  top: -175px;
   animation: wave 7s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
 }
 .wave:nth-of-type(3) {
-  top: -175px;
   animation: wave 4s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.4125s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
 }
 .wave:nth-of-type(4) {
-  top: -175px;
   animation: wave 4s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.2725s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
 }
@@ -91,25 +88,26 @@ body {
   }
   .muelle:nth-child(3) {
     width: 10%;
-    background: linear-gradient(to bottom, rgb(177, 56, 56) 0%, brown 10%, black 100%);
+    background: linear-gradient(to bottom, rgb(138, 55, 55) 0%, brown 10%, black 100%);
     bottom: 330%;
     transform: rotate(90deg);
     left: 2%;
   }
   .fisherman {
     .body {
-      width: 6px;
+      width: 10px;
       height: 160px;
-      background: black;
+      background:linear-gradient(to left, rgb(121, 87, 1) 0%, black 100%);
       position: absolute;
-      left: 11.19%;
+      left: 11.1%;
       bottom: 760%;
       transform: rotate(13deg);
+      
     }
     .arm {
       width: 6px;
       height: 80px;
-      background: black;
+      background:linear-gradient(to left, rgb(121, 87, 1) 0%, black 50%);
       position: absolute;
       left: 12.9%;
       bottom: 860%;
@@ -119,7 +117,7 @@ body {
       .leg1 {
         width: 6px;
         height: 90px;
-        background: black;
+        background:linear-gradient(to left, rgb(121, 87, 1) 0%, black 50%);
         position: absolute;
         left: 11.2%;
         bottom: 600%;
@@ -129,7 +127,7 @@ body {
     .leg2 {
       width: 6px;
       height: 90px;
-      background: black;
+      background:linear-gradient(to left, rgb(121, 87, 1) 0%, black 50%);
       position: absolute;
       left: 9.9%;
       bottom: 600%;
@@ -139,20 +137,20 @@ body {
       height: 70px;
       width: 70px;
       border-radius: 180px;
-      background: black;
+      background:linear-gradient(310deg, rgb(121, 87, 1) 0%, black 50%);
       position: absolute;
-      left: 11.1%;
+      left: 11%;
       bottom: 1050%;
     }
   }
   .stick {
     width: 12px;
     height: 180px;
-    background: black;
+    background:linear-gradient(to left, rgb(136, 97, 0) 0%, rgb(255, 255, 255) 100%);
     position: absolute;
-    left: 15.7%;
+    left: 16.2%;
     bottom: 930%;
-    transform: rotate(27deg);
+    transform: rotate(22deg);
   }
   .caña {
     display: grid;
@@ -162,7 +160,7 @@ body {
       "bola";
     justify-items: center;
     position: absolute;
-    bottom: -512%;
+    top: -559px; 
     left: 16.1%;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -178,7 +176,7 @@ body {
   }
   .cuerda {
     grid-area: cuerda;
-    background: black;
+    background: radial-gradient(ellipse at bottom,black 40%,rgb(136, 97, 0) 50%);
     position: absolute;
     top: 0px;
     width: 2px;
@@ -204,11 +202,10 @@ body {
   }
   @keyframes p1 {
     0% {
-      transform: rotateZ(-45deg);
+      transform: rotateZ(-35deg);
       animation-timing-function: cubic-bezier(0.78, -0.04, 0.42, 1.14);
     }
     50% {
-      transform: scale(1.3);
       animation-timing-function: linear;
       transform: rotateZ(-10deg);
     }
@@ -218,7 +215,45 @@ body {
     }
   }
 }
-
+/* dog */
+.dog{
+  position:relative;
+  bottom: -15%;
+  left:4%;
+  z-index: 9000;
+  background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-german-shepherd-100.png");
+  background-size:100px;
+  stroke:20px solid #fff;
+  height:100px;
+  width:100px;  
+}
+/* birds */
+#codeR .birds{
+  position: fixed ;
+  top: 100px ;
+  right: 100px ;
+  width: 20px;
+  background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-flying-stork-100.png");
+  background-size:20px;
+  background-repeat: no-repeat;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  z-index: 700;
+}
+#codeR .birds:nth-child(2){
+  position: absolute !important;
+  top: 1050px !important;
+  right: 50px !important;
+  background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-flying-stork-100.png");
+  background-size:20px;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  margin: 0;
+  z-index: 700;
+}
 /* EDITOR DE TEXTO */
 .clearfix::after {
   content: "";
@@ -233,8 +268,8 @@ body {
   align-items: center;
   margin-left: 15%;
 }
-.code {
-  width: 45.9%;
+.code {/* 
+  width: 45.9%; */
   height: 830px;
   background-color: $bluePrincipal;
   align-items: center;
@@ -284,13 +319,13 @@ body {
   width: 2%;
   height: 40%;
   border-radius: 80px;
-  border: 1px solid$fondoClaro;
+  border: 1px solid $fondoClaro;
   display: inline-block;
   margin: auto;
   position: relative;
   top: -150%;
   left: -25.5%;
-  box-shadow: 0px 0px 10px$sombraGris;
+  box-shadow: 0px 0px 10px $sombraGris;
 }
 
 #red {
@@ -351,7 +386,7 @@ body {
     height: 25px;
     width: 2px;
     background-color: $fondoClaro;
-    border: 2px solid$fondoClaro;
+    border: 2px solid $fondoClaro;
     z-index: 2;
     display: inline-block;
     position: relative;
@@ -364,7 +399,7 @@ body {
     height: 25px;
     width: 2px;
     background-color: $fondoClaro;
-    border: 2px solid$fondoClaro;
+    border: 2px solid $fondoClaro;
     z-index: 2;
     display: inline-block;
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
@@ -380,7 +415,7 @@ body {
   margin: 0%;
   height: 95.5%;
   width: 8%;
-  border-right: 1px solid$fondoClaro;
+  border-right: 1px solid $fondoClaro;
 
   .itemSelected {
     background-color: $colorGris;
@@ -416,7 +451,7 @@ body {
   -moz-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
   text-align: center;
-  transform: translate(10%, -200%);
+  transform: translate(10%, 0%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -427,7 +462,7 @@ body {
   opacity: 0;
   display: inline;
   position: relative;
-  top: -35px;
+  top: -120px;
   color: $fondoClaro;
 }
 .containerCode {

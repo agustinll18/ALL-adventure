@@ -38,14 +38,62 @@ $fontColor: black;
       width: 100% !important;
       color: #fff;
 
-      #brandN{
+      input[type="checkbox"] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+      }
+
+      label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 100px;
+        height: 40px;
+        background: radial-gradient(ellipse at left, rgb(223, 104, 0) 0%, rgb(225, 169, 0) 40%, rgb(37, 161, 255) 100%);
+        border: 3px solid black;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+        transition: 0.82s ease-in-out;
+      }
+
+      label:after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 2px;
+        width: 32px;
+        height: 32px;
+        background:url(https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/icons8-sun-48.png) center center no-repeat;
+        background-size: 30px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 90px;
+        transition: 0.82s ease-in-out;
+      }
+
+      input:checked + label {
+        background: black;
+      }
+
+      input:checked + label:after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+        background: url(https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/icons8-moon-32.png) center center no-repeat;
+        background-size: 30px;
+        border: 2px solid rgb(120, 120, 120);
+        transition: 0.82s ease-in-out;
+      }
+
+      label:active:after {
+        width: 130px;
+      }
+
+      #brandN {
         color: $fontColor !important;
         margin-right: 50px;
         font-weight: 900;
         font-size: 24px;
       }
-
-      
     }
     ul li a {
       text-decoration: none !important;
@@ -53,4 +101,3 @@ $fontColor: black;
     }
   }
 }
-

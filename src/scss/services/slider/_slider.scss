@@ -24,10 +24,7 @@ $velocidad: 40s;
     height: 100px;
     color: white;
     background: rgba(0, 0, 0, 0.468) !important;
-    border-radius: 12px;/* 
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.364), rgba(255, 255, 255, 0.7), $fondoClaro);
-            -webkit-backdrop-filter: blur(18px);
-            backdrop-filter: blur(18px); */
+    border-radius: 12px;
 
     .slider {
         background: rgba(255, 255, 255, 0.331);
@@ -87,19 +84,13 @@ $velocidad: 40s;
 
     &::after {
         position: absolute;
-        content: "";/* 
-        top: -3px;
-        left: -3px; */
+        content: "";
         z-index: -1;
         width: 970px;
         height: 100px;
         background: linear-gradient(
             20deg,
-            rgb(0, 0, 0),/* 
-            rgb(100, 100, 100),
-            rgb(10, 101, 162),
-            rgb(48, 149, 216),
-            rgb(125, 220, 255), */
+            rgb(0, 0, 0),
             rgb(255, 255, 255)
         );
         background-size: 300% 300%;

@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import $ from "jquery";
 import "./jquery.pagepiling";
@@ -10,7 +9,7 @@ import Code from "./components/nav/codeVsc/Code";
 import Servicios from "./components/nav/Servicios/Servicios";
 import Contact from "./components/contact/Contact";
 import Slider from "./components/nav/Servicios/Slider/Slider";
-import Language from "./components/language/Language"
+import Language from "./components/language/Language";
 class App extends Component {
   /* PAGELPILLING */
   componentDidMount() {
@@ -20,7 +19,12 @@ class App extends Component {
           textColor: "#fff",
           bulletscolor: "#fff",
           position: "right",
-          tooltips: ["About Me", "Education & Projects", "Services", "Contact "],
+          tooltips: [
+            "About Me",
+            "Education & Projects",
+            "Services",
+            "Contact ",
+          ],
         },
       });
     });
@@ -47,10 +51,9 @@ class App extends Component {
   }
 
   render() {
-    
     return (
       <div>
-        <Language/>
+        <Language />
         <header className="App-header">
           <Header />
         </header>
@@ -59,7 +62,7 @@ class App extends Component {
           <div class="section sec1" id="edPr">
             <Nav />
           </div>
-          <div className="section sec2 " id="#codeVsc">
+          <div className="section sec2 row " id="#codeVsc">
             <div className="ocean">
               <div className="pesca">
                 <div className="fisherman">
@@ -91,14 +94,22 @@ class App extends Component {
               <div className="wave"></div>
               <div className="wave"></div>
             </div>
+            <div className="plane"></div>
+            <div className="dog"></div>
+            <div className="birds"></div>
+            <div className="birds"></div>
+            <div className="birds"></div>
+            <div className="birds"></div>
+            <div className="birds"></div>
+            <div className="birds"></div>
           </div>
+
           <div className="section sec3 ServiciosContainer">
             <Servicios />
-            <Slider/>
+            <Slider />
           </div>
           <div className="section sec4">
             <Contact />
-            
           </div>
         </div>
       </div>

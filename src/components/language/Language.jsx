@@ -18,7 +18,6 @@ const StyledMenu = styled((props) => (
   />
 ))(({ theme }) => ({
   "& .MuiPaper-root": {
-    
     margin: 0,
     Width: 0,
     opacity: 0,
@@ -66,7 +65,8 @@ export default function CustomizedMenus() {
   return (
     <div>
       <Button
-        id="demo-customized-button" className="red"
+        id="demo-customized-button"
+        className="textEN"
         aria-controls={open ? "demo-customized-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
@@ -74,29 +74,30 @@ export default function CustomizedMenus() {
         disableElevation
         onClick={handleClick}
         style={{
-          borderRadius: "30px",
-          width: "65px",
+          borderRadius: "35px",
+          width: "66px",
           padding: "0px",
-          height: "65px",
+          height: "66px",
           backgroundColor: "black",
           position: "fixed",
           bottom: "10px",
-          zIndex:400,
+          zIndex: 400,
           right: "27px",
         }}
       >
         <img
           src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png"
           style={{
-            borderRadius: "30px",
-            width: "60px",
+            borderRadius: "35px",
+            width: "61.5px",
             padding: "0px",
-            height: "60px",
+            height: "61.5px",
           }}
         />
-      </Button>
+      </Button> 
       <Button
-        id="demo-customized-button" className="textES"
+        id="demo-customized-button"
+        className="textES"
         aria-controls={open ? "demo-customized-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
@@ -104,14 +105,14 @@ export default function CustomizedMenus() {
         disableElevation
         onClick={handleClick}
         style={{
-          borderRadius: "30px",
-          width: "65px",
+          borderRadius: "35px",
+          width: "66px",
           padding: "0px",
-          height: "65px",
+          height: "66px",
           backgroundColor: "black",
           position: "fixed",
           bottom: "100px",
-          zIndex:400,
+          zIndex: 400,
           right: "27px",
         }}
       >
@@ -119,108 +120,52 @@ export default function CustomizedMenus() {
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/125px-Bandera_de_Espa%C3%B1a.svg.png"
           style={{
             borderRadius: "30px",
-            width: "60px",
+            width: "61.5px",
             padding: "0px",
-            height: "60px",
+            height: "61.5px",
           }}
         />
       </Button>
-      {/* <StyledMenu
-        id="demo-customized-menu"
-        MenuListProps={{
-          "aria-labelledby": "demo-customized-button",
-        }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-      >
-        <MenuItem
-          onClick={handleClose}
-          disableRipple
-          style={{ display: "column" }}
-        >
-          <div id="red">
-            <Button
-              id="demo-customized-button"
-              className="textES"
-              aria-controls={open ? "demo-customized-menu" : undefined}
-              aria-haspopup="true"
-              aria-expanded={open ? "true" : undefined}
-              variant="contained"
-              disableElevation
-              onClick={handleClick}
-              style={{
-                borderRadius: "30px",
-                width: "65px",
-                padding: "0px",
-                height: "65px",
-                backgroundColor: "black",
-                position: "fixed",
-                bottom: "85px",
-                right: "27px",
-                margin: 0,
-              }}
-            >
-              <img
-                id="textES"
-                className="textES"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/125px-Bandera_de_Espa%C3%B1a.svg.png"
-                style={{
-                  borderRadius: "30px",
-                  width: "60px",
-                  padding: "0px",
-                  height: "60px",
-                }}
-              />
-            </Button>
-          </div>
-          <Button className="red"
-            id="demo-customized-button"
-            aria-controls={open ? "demo-customized-menu" : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? "true" : undefined}
-            variant="contained"
-            disableElevation
-            onClick={handleClick}
-            style={{
-              borderRadius: "30px",
-              width: "65px",
-              padding: "0px",
-              height: "65px",
-              backgroundColor: "black",
-              position: "fixed",
-              bottom: "160px",
-              right: "27px",
-              margin: 0,
-            }}
-          >
-            <img
-              id="textEN"
-              className="red"
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png"
-              style={{
-                borderRadius: "30px",
-                width: "60px",
-                padding: "0px",
-                height: "60px",
-              }}
-            />
-          </Button>
-        </MenuItem> */}
-        {/* <MenuItem onClick={handleClose} disableRipple>
-          <FileCopyIcon />
-          Duplicate
-        </MenuItem>
-        <Divider sx={{ my: 0.5 }} />
-        <MenuItem onClick={handleClose} disableRipple>
-          <ArchiveIcon />
-          Archive
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <MoreHorizIcon />
-          More
-        </MenuItem> 
-      </StyledMenu>*/}
+      {/*
+      
+      $(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggleClass("main");
+  });
+});
+</script>
+<style>
+.main {
+  font-size: 120%;
+  color: red !important;
+}
+</style>
+</head>
+<body>
+
+<button style="background:red">Toggle class "main" for p elements</button>
+
+<p style="color:green">This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p><b>Note:</b> Click the button more than once to see the toggle effect.</p>
+
+      
+      
+      
+      <button class='pushme'>PUSH ME</button>
+    <script>
+        $(".pushme").click(function () {
+            $("p").text(function(i, v){
+               return v === 'PUSH ME' ? 'DON"T PUSH ME' : 'PUSH ME'
+            }),
+            $(this).toggleClass("main").text(function(i, v){
+               return v === 'PUSH ME' ? 'DON"T PUSH ME' : 'PUSH ME'
+            })
+        });
+    </script>
+    <p>
+     DON"T PUSH ME
+    </p> */}
     </div>
   );
 }

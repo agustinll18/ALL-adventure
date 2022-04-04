@@ -12,14 +12,15 @@ main {
   padding: 0;
   z-index: 9;
   background: linear-gradient(to top, rgba(0, 145, 255, 0.5), rgb(255, 255, 255, 0.5));
-  -webkit-backdrop-filter: blur(13px);
-  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
   border: 1px solid rgba(255, 255, 255, 0.25);
 
   h1{
     font-weight: 1000;
     font-family: italic;
-    font-size: 40px;
+    font-size: 38px;
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
   }
   &:before {
     content: "";
@@ -55,8 +56,10 @@ main {
     z-index: 2;
     font-family: sans-serif;
     color: #fff;
-    text-transform: uppercase;
-    background: 1inear-gradient(rgb(255, 255, 255) 20%, transparent 80%);
+    text-transform: uppercase; 
+    text-shadow: 5px 5px 10px black;
+    background: linear-gradient(to top, #0091ff, transparent);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0.9);
   }
@@ -76,9 +79,8 @@ main {
 
   aside {
     position: absolute;
-    right: 50px;
+    right: 0px;
     height: 800px;
-    width: 22.31%;
     padding-left: 0px;
     margin-left: 0px;
     font-size: 22px;
