@@ -2,6 +2,7 @@ import * as React from "react";
 import { styled, alpha } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
+import $ from "jquery";
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -46,11 +47,35 @@ const StyledMenu = styled((props) => (
     },
   },
 }));
-/* $(document).ready(function(){
-    $(".textES").click(function(){
-      $("#bodyCode6").text("Hello world!");
-    })
-  }); */
+
+
+/* IDIOMAS */
+$(document).ready(function () {
+  $(".textES").click(function () {
+    $(".saludo").text("Hola! soy Agustín LLadós");
+    $("#navH").text("Hola! soy Agustín LLadós").css("fontSize", "38px");
+    $("#navP").text("Tengo 20 años, nacido en 2002, y soy desarrolador Full-stack mejorando mi conocimiento en el area del Back-end. Me gusta programar en el area del Front-end, usar librerias y hacer frente a los desafios que se presenten. Mis hobbis son : hacer deporte, especialmente me gusta el Tenis y el futbol, salir con amigos y comer con mi familia en los domingos ")
+
+    $("#filesVsc").text("Archivos");
+    $(".asd").text("> Educacion Y Proyectos <");
+    $("#bodyCode6").text("Graduado en ciencias economicas en el Colegio Emaús, con un promedio de 7,66 y premiado como 'Mejor Compañero del Curso'")
+    
+    $(".dialog").text("Por favor presteme la linterna").css("fontSize", "20px");
+  });
+});
+$(document).ready(function () {
+  $(".textEN").click(function () {
+    $(".saludo").text("Hi! I am Agustín LLadós");
+    $("#navH").text("Hi! I am Agustín LLadós").css("fontSize", "38px");/* .css("fontSize", "38px"); */;
+    $("#navP").text("I have 20 years, born in 2002, and I am a full-stack developer improving my back-end's knowledge. I like programming in the front-end area, use some libraries and get some challenges. My hobbies are: do sport, I love Tennis and Futbol, go out with my friends and eat with my family on Sunday. ")
+
+    $("#filesVsc").text("Files");
+    $(".asd").text("> Education & Proyects <");
+    $("#bodyCode6").text("Graduated from economic science in my school 'Emaus' with an 7.66 average in highschool and awarded for 'the best friend in the class'")
+    
+    $(".dialog").text("Please give me the flashlight");
+  });
+});
 
 export default function CustomizedMenus() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -126,46 +151,6 @@ export default function CustomizedMenus() {
           }}
         />
       </Button>
-      {/*
-      
-      $(document).ready(function(){
-  $("button").click(function(){
-    $("p").toggleClass("main");
-  });
-});
-</script>
-<style>
-.main {
-  font-size: 120%;
-  color: red !important;
-}
-</style>
-</head>
-<body>
-
-<button style="background:red">Toggle class "main" for p elements</button>
-
-<p style="color:green">This is a paragraph.</p>
-<p>This is another paragraph.</p>
-<p><b>Note:</b> Click the button more than once to see the toggle effect.</p>
-
-      
-      
-      
-      <button class='pushme'>PUSH ME</button>
-    <script>
-        $(".pushme").click(function () {
-            $("p").text(function(i, v){
-               return v === 'PUSH ME' ? 'DON"T PUSH ME' : 'PUSH ME'
-            }),
-            $(this).toggleClass("main").text(function(i, v){
-               return v === 'PUSH ME' ? 'DON"T PUSH ME' : 'PUSH ME'
-            })
-        });
-    </script>
-    <p>
-     DON"T PUSH ME
-    </p> */}
     </div>
   );
 }

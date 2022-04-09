@@ -21,11 +21,10 @@ window.addEventListener("scroll", function () {
   text.style.bottom = value * 10.51 + "px"; */
 });
 const Nav = () => {
-  var images = [
-    "https://lesser-dawns.000webhostapp.com/multimedia/recursos/bg(1).png",
-    "https://lesser-dawns.000webhostapp.com/multimedia/recursos/mountain-removebg%20(1).png",
-    "https://lesser-dawns.000webhostapp.com/multimedia/recursos/road-removebg%20(1).png",
-    "https://lesser-dawns.000webhostapp.com/multimedia/recursos/moon-removebg%20(1).png",
+  var images = [,
+    "https://agust1n-llad0s.000webhostapp.com/multimedia/recursosWebP/mountain-removebg.webp",
+    "https://agust1n-llad0s.000webhostapp.com/multimedia/recursosWebP/road-removebg.webp",
+    "https://agust1n-llad0s.000webhostapp.com/multimedia/recursosWebP/moon-removebg.webp",
   ];
 
   return (
@@ -33,21 +32,20 @@ const Nav = () => {
       <main id="mainSection" /*  class="col-9" */>
         <div class="col-9">
           <h1 className="saludo">Hi! I am Agustín LLadós</h1>
-          <img src={images[0]} className="bg" alt="background" />
           <img src={images[1]} className="mountain" alt="moon" />
           <img src={images[2]} className="road" alt="road" />
           <img src={images[3]} className="mountain" alt="mountain" />
         </div>
 
         <aside class="col-3">
-          <h1 id="navH">Hi! I am Agustín LLadós</h1>
+          <h2 id="navH">Hi! I am Agustín LLadós</h2>
           <p id="navP">
             I have 20 years, born in 2002, and I am a full-stack developer
             improving my back-end's knowledge. I like programming in the
             front-end area, use some libraries and get some challenges.
             <br />
             My hobbies are: do sport, I love Tennis and Futbol, go out with my
-            friends and eat with my family on Sunday.{" "}
+            friends and eat with my family on Sunday.
             {/* I graduated from economic science in my school "Emaus" with an 7.66
             average in highschool and awarded for "the best friend in the
             class" , then I started to see what was i would like to dedicate in

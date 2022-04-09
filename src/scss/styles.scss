@@ -1,9 +1,10 @@
-@import "_header";
+@import "_header"; 
 @import "_variables";
 @import "./nav/_nav.scss";
 @import "./code/code";
 @import "./services/services.scss";
 @import "./contact/_contact.sass";
+@import "./responsive/responsive";
 * {
   margin: 0;
   padding: 0;
@@ -71,14 +72,12 @@ body {
   background: rgb(255, 255, 255) !important; /*To change the active navigation bullets inner color*/
 }
 .sec1 { 
-  background: url("https://www.necochea.gov.ar/wp-content/uploads/2018/01/foto-clima-2.jpg") top no-repeat; 
+  background: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursosWebP/fotoSol.webp") top no-repeat; 
   background-size: 2160px 1000px;
-  cursor: 100px pointer;
 }
 .sec1Night {
-  background-image: url(https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/bg.jpg) no-repeat !important;
+  background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/bg.jpg") no-repeat !important;
   background-size: 2160px 960px !important;
-  cursor: 100px pointer !important;
 }
 .sec2 {
   position:absolute ;
@@ -97,7 +96,7 @@ body {
 .sec4 {
   background: black;
   background-size: 1945px 920px;
-  cursor: url(https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/Webp.net-resizeimage.png), auto; 
+  cursor: url(https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/Webp.net-resizeimage.png), auto;  
 } /*
 .dark-theme {
     background: #232526; 

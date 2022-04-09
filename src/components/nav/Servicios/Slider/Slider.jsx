@@ -24,7 +24,7 @@ export default function Slider() {
     "https://lesser-dawns.000webhostapp.com/multimedia/recursos/rbg/icons8-webpack-100.png",
   ];
   return (
-    <div class="gradient-border">
+    <div class="gradient-border col-6">
       <div class="slider">
         <div class="slide-track">
           <div class="slide">

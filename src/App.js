@@ -5,11 +5,27 @@ import "./jquery.pagepiling.css";
 import "./App.css";
 import Header from "./components/header/Header.jsx";
 import Nav from "./components/nav/Nav";
-import Code from "./components/nav/codeVsc/Code";
-import Servicios from "./components/nav/Servicios/Servicios";
-import Contact from "./components/contact/Contact";
-import Slider from "./components/nav/Servicios/Slider/Slider";
+import Section2 from "./components/section2/Section2.jsx";
+import Section3 from "./components/section3/Section3.jsx";
+import Section4 from "./components/section4/Section4.jsx";
 import Language from "./components/language/Language";
+document.addEventListener("mousemove", parallax);
+function parallax(e) {
+  this.querySelectorAll(".birds").forEach((birds) => {
+    const speed = birds.getAttribute("data-speed");
+
+    const x = (window.innerWidth - e.pageX * speed) / 100;
+    const y = (window.innerHeight - e.pageY * speed) / 100;
+
+    birds.style.transform = `translateX(${x}px) translateY(${y}px) `;
+    birds.style.transform = `-o-translateX(${x}px) -o-translateY(${y}px)  `;
+  });
+};
+
+/* Passive scrolling */
+window.addEventListener('touchmove', event =>{ 
+    console.log(event);
+}, {passive: true});
 class App extends Component {
   /* PAGELPILLING */
   componentDidMount() {
@@ -62,59 +78,13 @@ class App extends Component {
           <div class="section sec1" id="edPr">
             <Nav />
           </div>
-          <div className="section sec2 row " id="#codeVsc">
-            <div className="ocean">
-              <div className="pesca">
-                <div className="fisherman">
-                  <div className="body"></div>
-                  <div className="arm"></div>
-                  <div className="legs">
-                    <div className="leg1">
-                      <div className="legLow_1"></div>
-                    </div>
-                    <div className="leg2">
-                      <div className="legLow_2"></div>
-                    </div>
-                  </div>
-                  <div className="headF"></div>
-                  <div className="stick"></div>
-                  <div className="caña p1 " id="myP">
-                    <div className="cuerda c1"></div>
-                    <div className="bola b1"></div>
-                  </div>
-                </div>
-
-                <div className="muelle"></div>
-                <div className="muelle"></div>
-                <div className="muelle"></div>
-              </div>
-              <Code />
-              <div className="wave"></div>
-              <div className="wave"></div>
-              <div className="wave"></div>
-              <div className="wave"></div>
-            </div>
-            <div className="plane"></div>
-            <div className="dog"></div>
-            <div className="birds"></div>
-            <div className="birds"></div>
-            <div className="birds"></div>
-            <div className="birds"></div>
-            <div className="birds"></div>
-            <div className="birds"></div>
-          </div>
-
-          <div className="section sec3 ServiciosContainer">
-            <Servicios />
-            <Slider />
-          </div>
-          <div className="section sec4">
-            <Contact />
-          </div>
+          <Section2 />
+          <Section3 />
+          <Section4 />
+          
         </div>
       </div>
     );
   }
 }
 export default App;
-/*  */

@@ -218,7 +218,7 @@ body {
 /* dog */
 .dog{
   position:relative;
-  bottom: -15%;
+  bottom: -140px;
   left:4%;
   z-index: 9000;
   background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-german-shepherd-100.png");
@@ -227,33 +227,7 @@ body {
   height:100px;
   width:100px;  
 }
-/* birds */
-#codeR .birds{
-  position: fixed ;
-  top: 100px ;
-  right: 100px ;
-  width: 20px;
-  background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-flying-stork-100.png");
-  background-size:20px;
-  background-repeat: no-repeat;
-  height: 20px;
-  padding: 0;
-  margin: 0;
-  z-index: 700;
-}
-#codeR .birds:nth-child(2){
-  position: absolute !important;
-  top: 1050px !important;
-  right: 50px !important;
-  background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-flying-stork-100.png");
-  background-size:20px;
-  background-repeat: no-repeat;
-  height: 20px;
-  width: 20px;
-  padding: 0;
-  margin: 0;
-  z-index: 700;
-}
+@import "birds.scss";
 /* EDITOR DE TEXTO */
 .clearfix::after {
   content: "";
@@ -268,8 +242,7 @@ body {
   align-items: center;
   margin-left: 15%;
 }
-.code {/* 
-  width: 45.9%; */
+.code {
   height: 830px;
   background-color: $bluePrincipal;
   align-items: center;
