@@ -53,7 +53,7 @@ const StyledMenu = styled((props) => (
 $(document).ready(function () {
   $(".textES").click(function () {
     $(".saludo").text("Hola! soy Agustín LLadós");
-    $("#navH").text("Hola! soy Agustín LLadós").css("fontSize", "38px");
+    $("#navH").text("Soy Front-end developer").css("fontSize", "38px");
     $("#navP").text("Tengo 20 años, nacido en 2002, y soy desarrolador Full-stack mejorando mi conocimiento en el area del Back-end. Me gusta programar en el area del Front-end, usar librerias y hacer frente a los desafios que se presenten. Mis hobbis son : hacer deporte, especialmente me gusta el Tenis y el futbol, salir con amigos y comer con mi familia en los domingos ")
 
     $("#filesVsc").text("Archivos");
@@ -66,8 +66,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".textEN").click(function () {
     $(".saludo").text("Hi! I am Agustín LLadós");
-    $("#navH").text("Hi! I am Agustín LLadós").css("fontSize", "38px");/* .css("fontSize", "38px"); */;
-    $("#navP").text("I have 20 years, born in 2002, and I am a full-stack developer improving my back-end's knowledge. I like programming in the front-end area, use some libraries and get some challenges. My hobbies are: do sport, I love Tennis and Futbol, go out with my friends and eat with my family on Sunday. ")
+    $("#navH").text("I am an Front end developer")/* .css("fontSize", "38px"); *//* .css("fontSize", "38px"); */;
+    $("#navP").text(`I have 20 years, born in 2002, and I am a full-stack developer improving my back-end's knowledge. I like programming in the front-end area, use some libraries and get some challenges.  My hobbies are: do sport, I love Tennis and Futbol, go out with my friends and eat with my family on Sunday. `)
 
     $("#filesVsc").text("Files");
     $(".asd").text("> Education & Proyects <");
@@ -105,9 +105,9 @@ export default function CustomizedMenus() {
           height: "66px",
           backgroundColor: "black",
           position: "fixed",
-          bottom: "10px",
+          bottom: "1%",
           zIndex: 400,
-          right: "27px",
+          right: "1%",
         }}
       >
         <img
@@ -136,9 +136,9 @@ export default function CustomizedMenus() {
           height: "66px",
           backgroundColor: "black",
           position: "fixed",
-          bottom: "100px",
+          bottom: "10%",
           zIndex: 400,
-          right: "27px",
+          right: "1%",
         }}
       >
         <img

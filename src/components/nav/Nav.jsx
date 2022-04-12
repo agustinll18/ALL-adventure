@@ -1,25 +1,4 @@
 import React from "react";
-import $ from "jquery";
-//ICONS
-/* 
-import angular from "../../ICONS/icons8-angularjs-56.png"; */
-$(document).ready(function () {
-  $(".carousel").carousel();
-});
-
-const bg = document.getElementsByClassName("bg");
-const moon = document.getElementsByClassName("moon");
-const mountain = document.getElementsByClassName("mountain");
-const road = document.getElementsByClassName("road"); /* 
-const text = document.getElementsByClassName("text"); */
-window.addEventListener("scroll", function () {
-  const value = window.scrollY;
-  bg.style.top = value * 0.89 + "px";
-  moon.style.left = -value * 0.75 + "px";
-  mountain.style.top = -value * 0.25 + "px";
-  road.style.top = value * 0.05 + "px"; /* 
-  text.style.bottom = value * 10.51 + "px"; */
-});
 const Nav = () => {
   var images = [,
     "https://agust1n-llad0s.000webhostapp.com/multimedia/recursosWebP/mountain-removebg.webp",
@@ -38,12 +17,11 @@ const Nav = () => {
         </div>
 
         <aside class="col-3">
-          <h2 id="navH">Hi! I am Agustín LLadós</h2>
+          <h2 id="navH">I am an Front end developer</h2>
           <p id="navP">
             I have 20 years, born in 2002, and I am a full-stack developer
             improving my back-end's knowledge. I like programming in the
             front-end area, use some libraries and get some challenges.
-            <br />
             My hobbies are: do sport, I love Tennis and Futbol, go out with my
             friends and eat with my family on Sunday.
             {/* I graduated from economic science in my school "Emaus" with an 7.66

@@ -3,7 +3,7 @@ import Contact from "../contact/Contact.jsx";
 
 const Section4 = () => {
   return (
-    <div className="section sec4">
+    <div className="section sec4" id="section4">
       <Contact />
     </div>
   );

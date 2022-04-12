@@ -35,26 +35,7 @@ export default function NavigationBar() {
       }
     });
   };
-
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-
-  window.addEventListener("scroll", reveal);
-
-  reveal();
+  
   /* DARK MODE */
   /* $(document).ready(function(){
     $("label").click(function(){
@@ -62,10 +43,11 @@ export default function NavigationBar() {
     });
   }); */
 
-  function myFunction() {
+  /*  function myFunction() {
     var element = document.getElementsById("edPr");
     element.classList.toggle("sec1Night");
- }
+  } */
+
   return (
     <div className={`navbar ${stickyClass}`} id="navbarContainer">
       <Navbar collapseOnSelect expand="lg" bg="lg" variant="lg" id="navbar">
@@ -73,8 +55,10 @@ export default function NavigationBar() {
           <Navbar.Brand href="#home" id="brandN">
             ALL
           </Navbar.Brand>
-          <input type="checkbox" id="switch" />
-          <label for="switch" onClick="myFunction()"></label>
+          <div id="switchContainer">
+            <input class="checkbox" id="checkbox" type="checkbox" />
+            <label class="switch" for="checkbox"></label>
+          </div>
         </Container>
       </Navbar>
     </div>
