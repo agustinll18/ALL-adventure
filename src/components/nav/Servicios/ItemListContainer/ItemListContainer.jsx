@@ -5,25 +5,23 @@ export default function ItemListContainer() {
   const [items, setItems] = useState();
   var producto = [
     {
-      modelo: " BASIC",
-      marca: "Gigabyte",
-      precio: "hola",
+      modelo: " FRONT END",
+      descripcion: "Gigabyte",
+      porcentaje: "hola",
       id: 1,
       pic: "https://lesser-dawns.000webhostapp.com/multimedia/recursos/_RXYZIXH-removebg-preview.png",
     },
     {
-      modelo: "MEDIUM",
-      marca: "Western Digital Green",
-      precio: "chau",
+      modelo: "UX / UI ",
+      descripcion: "Western Digital Green",
+      porcentaje: "chau",
       id: 2,
       pic: "https://lesser-dawns.000webhostapp.com/multimedia/recursos/PIRAMIDE_-_copia-removebg-preview.png",
     },
     {
-      modelo:"COMPLETE",
-      marca: "Amd",
-      precio: "Front-end \
-      API\
-      Back-end",
+      modelo:"BACK END",
+      descripcion: "Amd",
+      porcentaje: "Front-end  API Back-end",
       id: 3,
       pic: "https://lesser-dawns.000webhostapp.com/multimedia/recursos/PIRAMIDE-removebg-preview%20(1).png"
     }

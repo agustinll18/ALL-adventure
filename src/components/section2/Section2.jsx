@@ -4,7 +4,7 @@ const Code = lazy(() => import("../nav/codeVsc/Code"));
 const Section2 = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <div className="section sec2 row " id="#codeVsc">
+      <div className="section sec2Night row " id="#codeVsc">
         <div className="ocean">
           <div className="pesca">
             <div className="fisherman" data-speed="3">

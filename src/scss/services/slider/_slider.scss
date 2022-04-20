@@ -65,7 +65,6 @@ $velocidad: 40s;
             display: flex;
             width: calc(250px * 14);
             justify-content: center;
-
         }
 
         .slide {
@@ -88,21 +87,103 @@ $velocidad: 40s;
         z-index: -1;
         width: 100%;
         height: 100px;
-        background: linear-gradient(
-            20deg,
-            rgb(0, 0, 0),
-            rgb(255, 255, 255)
-        );
+        background: linear-gradient(20deg, rgb(0, 0, 0), rgb(255, 255, 255));
         background-size: 300% 300%;
         background-position: 0 50%;
         border-radius: 6px;
         animation: gradiente 4s alternate infinite;
-
     }
 }
 
 @keyframes gradiente {
     50% {
         background-position: 100% 50%;
+    }
+}
+
+@mixin gradientNight {
+    background: linear-gradient(to right, rgba(84, 84, 84, 0.359) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.sec3Night {
+    .gradient-border {
+        margin: auto;
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 970px;
+        height: 100px;
+        background: rgba(0, 0, 0, 0.468) !important;
+        border-radius: 12px;
+
+        .slider {
+            background: rgba(78, 77, 77, 0.331);
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+            height: 100px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            top: 0px;
+            right: 0px;
+            width: 1000px;
+            justify-content: center;
+            border-radius: 12px;
+
+            &::before,
+            &::after {
+                @include gradientNight;
+                content: "";
+                height: 100px;
+                position: absolute;
+                width: 200px;
+                z-index: 2;
+            }
+
+            &::after {
+                right: 0;
+                top: 0;
+                transform: rotateZ(180deg);
+            }
+
+            &::before {
+                left: 0;
+                top: 0;
+            }
+
+            .slide-track {
+                animation: scroll $velocidad linear infinite;
+                display: flex;
+                width: calc(250px * 14);
+                justify-content: center;
+                filter:brightness(65%) ;
+            }
+
+            .slide {
+                margin: auto;
+                height: 100px;
+                width: 250px;
+                position: relative;
+                bottom: 20px;
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            z-index: -1;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(20deg, rgb(0, 0, 0), rgba(5, 0, 99, 0.677));
+            background-size: 300% 300%;
+            background-position: 0 50%;
+            border-radius: 6px;
+            animation: gradiente 4s alternate infinite;
+        }
     }
 }

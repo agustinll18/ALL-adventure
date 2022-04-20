@@ -4,17 +4,15 @@ $celesteClaro: #6dd5fa;
 $fondoClaro: #ffffff;
 $sombraGris: #6464646e;
 $fontColor: black;
+$main-color : #fff;
+$primary-color: gray;
+$secondary-color: gray;
 
-.stickyClass {
-  border-bottom: 2px solid black;
-  height: 0;
-}
 #navbarContainer {
   margin: 0;
   padding: 0;
   height: 43px;
   width: 100%;
-  color: #fff;
   #navbar {
     border-bottom: 3px solid rgba(0, 0, 0, 0.824);
     padding: 0;
@@ -103,7 +101,7 @@ $fontColor: black;
           width: 130px;
         } */
 
-        .checkbox {
+        /* .checkbox {
           display: none;
           &:checked ~ .switch {
             background: linear-gradient(to right, #a8ff78, #fff);
@@ -133,7 +131,87 @@ $fontColor: black;
             border-radius: 20px;
             transition: all 0.3s ease;
           }
+        } */
+        .switch {
+          position: relative;
+          display: inline-block;
+          top: 10px;
+          border: 1px solid #000;
+          width: 80px;
+          height: 28px;
+          -webkit-transition: 2.5s;
+          transition: all 2.5s;
+          border-radius: 34px;
         }
+        
+        
+        .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+          -webkit-transition: 2.5s;
+          transition: all 2.5s;
+        }
+        
+        
+        .slider{
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;background: radial-gradient(
+            ellipse at left,
+            rgb(223, 104, 0) 0%,
+            rgb(225, 169, 0) 40%,
+            rgb(37, 161, 255) 100%
+          );                    
+          -webkit-transition: 2.5s;
+          transition: all 2.5s;
+        }
+        
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 20px;
+          width: 20px;
+          left: 5px;
+          bottom: 4px;
+          background: url(https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/icons8-sun-48.png) center center
+            no-repeat;
+          background-size: 25px;
+          -webkit-transition: 2.5s;
+          transition: 2.5s;
+        }
+        
+        input:checked + .slider {
+          background: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/bg.jpg") top no-repeat; 
+          background-size: 216px 100px;
+          -webkit-transition: 2.5s;
+          transition: 2.5s;
+        }
+        
+        input:focus + .slider {
+          box-shadow: 0 0 1px #2196F3;
+        }
+        
+        input:checked + .slider:before {
+          -webkit-transform: translateX(46px);
+          -ms-transform: translateX(46px);
+          transform: translateX(46px);
+          
+          background: url(https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/icons8-moon-32.png) center center
+            no-repeat;
+        }
+        
+        .slider.round {
+          border-radius: 34px;
+        }
+        
+        .slider.round:before {
+          border-radius: 50%;
+        }
+        
       }
 
       #brandN {

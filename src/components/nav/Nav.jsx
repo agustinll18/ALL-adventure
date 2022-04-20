@@ -8,12 +8,12 @@ const Nav = () => {
 
   return (
     <div /* className="dark-theme" */>
-      <main id="mainSection" /*  class="col-9" */>
+      <main className="mainSection" /*  class="col-9" */>
         <div class="col-9">
           <h1 className="saludo">Hi! I am Agustín LLadós</h1>
-          <img src={images[1]} className="mountain" alt="moon" />
-          <img src={images[2]} className="road" alt="road" />
-          <img src={images[3]} className="mountain" alt="mountain" />
+          <img src={images[1]} className="moon" alt="moon" data-speed="1"/>
+          <img src={images[2]} className="road" alt="road" data-speed="1"/>
+          <img src={images[3]} className="mountain" alt="mountain" data-speed="1"/>
         </div>
 
         <aside class="col-3">

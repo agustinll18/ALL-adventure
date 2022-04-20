@@ -27,10 +27,10 @@ body {
 }
 
 .wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) no-repeat;
   position: absolute;
   top: -178px;
-  width: 6400px;
+  width: 50%;
   height: 178px;
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
@@ -71,6 +71,7 @@ body {
 }
 /*FISHER MEN*/
 .pesca {
+  text-decoration: none;
   .muelle {
     height: 80%;
     width: 13%;
@@ -97,17 +98,16 @@ body {
     .body {
       width: 10px;
       height: 160px;
-      background:linear-gradient(to left, rgb(121, 87, 1) 0%, black 100%);
+      background: linear-gradient(to left, rgb(121, 87, 1) 0%, black 100%);
       position: absolute;
       left: 11.1%;
       bottom: 760%;
       transform: rotate(13deg);
-      
     }
     .arm {
       width: 6px;
       height: 80px;
-      background:linear-gradient(to left, rgb(121, 87, 1) 0%, black 50%);
+      background: linear-gradient(to left, rgb(121, 87, 1) 0%, black 50%);
       position: absolute;
       left: 12.9%;
       bottom: 860%;
@@ -117,7 +117,7 @@ body {
       .leg1 {
         width: 6px;
         height: 90px;
-        background:linear-gradient(to left, rgb(121, 87, 1) 0%, black 50%);
+        background: linear-gradient(to left, rgb(121, 87, 1) 0%, black 50%);
         position: absolute;
         left: 11.2%;
         bottom: 600%;
@@ -127,7 +127,7 @@ body {
     .leg2 {
       width: 6px;
       height: 90px;
-      background:linear-gradient(to left, rgb(121, 87, 1) 0%, black 50%);
+      background: linear-gradient(to left, rgb(121, 87, 1) 0%, black 50%);
       position: absolute;
       left: 9.9%;
       bottom: 600%;
@@ -137,7 +137,7 @@ body {
       height: 70px;
       width: 70px;
       border-radius: 180px;
-      background:linear-gradient(310deg, rgb(121, 87, 1) 0%, black 50%);
+      background: linear-gradient(310deg, rgb(121, 87, 1) 0%, black 50%);
       position: absolute;
       left: 11%;
       bottom: 1050%;
@@ -146,7 +146,7 @@ body {
   .stick {
     width: 12px;
     height: 180px;
-    background:linear-gradient(to left, rgb(136, 97, 0) 0%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(to left, rgb(136, 97, 0) 0%, rgb(255, 255, 255) 100%);
     position: absolute;
     left: 16.2%;
     bottom: 930%;
@@ -160,7 +160,7 @@ body {
       "bola";
     justify-items: center;
     position: absolute;
-    top: -559px; 
+    top: -559px;
     left: 16.1%;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -176,7 +176,7 @@ body {
   }
   .cuerda {
     grid-area: cuerda;
-    background: radial-gradient(ellipse at bottom,black 40%,rgb(136, 97, 0) 50%);
+    background: radial-gradient(ellipse at bottom, black 40%, rgb(136, 97, 0) 50%);
     position: absolute;
     top: 0px;
     width: 2px;
@@ -184,7 +184,7 @@ body {
     display: flex;
     align-items: center;
   }
-
+  /*  */
   .bola {
     grid-area: bola;
     background-image: url("https://lesser-dawns.000webhostapp.com/multimedia/recursos/icons8-bait-67.png");
@@ -216,16 +216,16 @@ body {
   }
 }
 /* dog */
-.dog{
-  position:relative;
+.dog {
+  position: relative;
   bottom: -140px;
-  left:4%;
+  left: 0%;
   z-index: 9000;
   background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-german-shepherd-100.png");
-  background-size:100px;
-  stroke:20px solid #fff;
-  height:100px;
-  width:100px;  
+  background-size: 100px;
+  stroke: 20px solid #fff;
+  height: 100px;
+  width: 100px;
 }
 @import "birds.scss";
 /* EDITOR DE TEXTO */
@@ -267,7 +267,14 @@ body {
   overflow: hidden;
   align-content: center;
   position: relative;
+  box-sizing: border-box;
   top: -5.5%;
+  .row {
+    height: 40px;
+    .col-4 {
+      height: 100%;
+    }
+  }
   .nameFile {
     text-align: center;
     display: inline-block;
@@ -289,95 +296,39 @@ body {
 }
 
 .circulos {
-  width: 2%;
-  height: 40%;
+  width: 6%;
+  height: 45%;
   border-radius: 80px;
   border: 1px solid $fondoClaro;
   display: inline-block;
   margin: auto;
+  margin: 1px;
   position: relative;
-  top: -150%;
-  left: -25.5%;
+  top: -140%;
+  left: 5.5%;
   box-shadow: 0px 0px 10px $sombraGris;
-}
 
-#red {
-  background-color: red;
-}
-
-#yellow {
-  background-color: yellow;
-}
-
-#green {
-  background-color: green;
+  &:nth-child(2) {
+    background-color: red;
+  }
+  &:nth-child(3) {
+    background-color: yellow;
+  }
+  &:nth-child(4) {
+    background-color: green;
+  }
 }
 
 .nameFile {
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
   display: inline-block;
   margin: auto;
   padding: 0;
-  font-size: 18px;
-  top: -160%;
-  left: -5.5%;
-}
-
-.minimizar {
-  transform: rotateZ(90deg);
-  height: 25px;
-  width: 2px;
-  background-color: white;
-  border: 2px solid white;
-  z-index: 2;
-  display: inline-block;
-  position: relative;
-  left: 22.5%;
-  top: -145%;
-  box-shadow: 0px 0px 10px $sombraGris;
-}
-
-.closers {
-  display: inline-block;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 3.6%;
-  height: 100%;
-  left: 27.2%;
-  top: -145%;
-  cursor: pointer;
-
-  &:hover {
-    background-color: red;
-  }
-
-  .close {
-    transform: rotateZ(45deg);
-    height: 25px;
-    width: 2px;
-    background-color: $fondoClaro;
-    border: 2px solid $fondoClaro;
-    z-index: 2;
-    display: inline-block;
-    position: relative;
-    left: 7.9%;
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);
-  }
-
-  .close2 {
-    transform: rotateZ(135deg);
-    height: 25px;
-    width: 2px;
-    background-color: $fondoClaro;
-    border: 2px solid $fondoClaro;
-    z-index: 2;
-    display: inline-block;
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);
-    left: -15%;
-  }
+  font-size: 24px;
+  top: -150%;
+  left: 0%;
 }
 
 .sidebarVsc {
@@ -527,5 +478,504 @@ body {
     padding: 0;
     margin: 0;
     font-weight: 700;
+  }
+}
+/* DARK */
+
+.sec2Night .ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: -178px;
+  width: 6400px;
+  height: 178px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  animation: wave 7s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+.wave:nth-of-type(3) {
+  animation: wave 4s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.4125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+.wave:nth-of-type(4) {
+  animation: wave 4s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.2725s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 50px, 0);
+    position: absolute;
+    bottom: -20px;
+  }
+}
+/*FISHER MEN*/
+.sec2Night {
+  .pesca {
+    .muelle {
+      height: 80%;
+      width: 13%;
+      background: linear-gradient(to bottom, black 0%, rgb(118, 118, 118) 10%, black 100%);
+      position: absolute;
+      bottom: 530%;
+      border: 2.5px solid black;
+    }
+    .muelle:nth-child(2) {
+      width: 10%;
+      background: linear-gradient(to bottom, rgb(118, 118, 118) 0%, black 100%);
+      bottom: 330%;
+      transform: rotate(90deg);
+      left: 6.9%;
+    }
+    .muelle:nth-child(3) {
+      width: 10%;
+      background: linear-gradient(to bottom, rgb(118, 118, 118) 0%, black 100%);
+      bottom: 330%;
+      transform: rotate(90deg);
+      left: 2%;
+    }
+    .fisherman {
+      .body {
+        width: 10px;
+        height: 160px;
+        background: linear-gradient(to left, rgb(118, 118, 118) 0%, black 50%);
+        position: absolute;
+        left: 11.1%;
+        bottom: 760%;
+        transform: rotate(13deg);
+      }
+      .arm {
+        width: 6px;
+        height: 80px;
+        background: linear-gradient(to left, rgb(118, 118, 118) 0%, black 50%);
+        position: absolute;
+        left: 12.9%;
+        bottom: 860%;
+        transform: rotate(69deg);
+      }
+      .legs {
+        .leg1 {
+          width: 6px;
+          height: 90px;
+          background: linear-gradient(to left, rgb(118, 118, 118) 0%, black 50%);
+          position: absolute;
+          left: 11.2%;
+          bottom: 600%;
+          transform: rotate(-20deg);
+        }
+      }
+      .leg2 {
+        width: 6px;
+        height: 90px;
+        background: linear-gradient(to left, rgb(118, 118, 118) 0%, black 50%);
+        position: absolute;
+        left: 9.9%;
+        bottom: 600%;
+        transform: rotate(10deg);
+      }
+      .headF {
+        height: 70px;
+        width: 70px;
+        border-radius: 180px;
+        background: linear-gradient(310deg, rgb(118, 118, 118) 0%, black 50%);
+        position: absolute;
+        left: 11%;
+        bottom: 1050%;
+      }
+    }
+    .stick {
+      width: 12px;
+      height: 180px;
+      background: linear-gradient(to left, rgb(89, 89, 89) 0%, rgb(255, 255, 255) 100%);
+      position: absolute;
+      left: 16.2%;
+      bottom: 930%;
+      transform: rotate(22deg);
+    }
+    .caña {
+      display: grid;
+      grid-template: 24fr 2fr/ 1fr;
+      grid-template-areas:
+        "cuerda"
+        "bola";
+      justify-items: center;
+      position: absolute;
+      top: -559px;
+      left: 16.1%;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      transform-origin: 50% 0%;
+      animation-timing-function: cubic-bezier(0.78, -0.04, 0.42, 1.14);
+      will-change: transform;
+    }
+
+    .p1 {
+      grid-area: p1;
+      animation-name: p1;
+    }
+    .cuerda {
+      grid-area: cuerda;
+      background: radial-gradient(ellipse at bottom, black 40%, rgb(80, 80, 80) 50%);
+      position: absolute;
+      top: 0px;
+      width: 2px;
+      height: 100%;
+      filter:brightness(80%) blur(1.72px);
+      display: flex;
+      align-items: center;
+    }
+
+    .bola {
+      grid-area: bola;
+      background-image: url("https://lesser-dawns.000webhostapp.com/multimedia/recursos/icons8-bait-67.png");
+      position: relative;
+      left: 10px;
+      top: -10px;
+      width: 80px;
+      height: 65px;
+      border-radius: 50%;
+      filter:brightness(80%) blur(1.2px);
+      stroke: 2px solid black;
+    }
+
+    .b1 {
+      animation-name: bola;
+    }
+    @keyframes p1 {
+      0% {
+        transform: rotateZ(-35deg);
+        animation-timing-function: cubic-bezier(0.78, -0.04, 0.42, 1.14);
+      }
+      50% {
+        animation-timing-function: linear;
+        transform: rotateZ(-10deg);
+      }
+      100% {
+        transform: rotateZ(6deg);
+        animation-timing-function: cubic-bezier(0.78, -0.04, 0.42, 1.14);
+      }
+    }
+  }
+  /* dog */
+  .dog {
+    position: relative;
+    bottom: -140px;
+    left: 0%;
+    z-index: 9000;
+    filter: invert(40%);
+    background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-german-shepherd-100.png");
+    background-size: 100px;
+    stroke: 20px solid #fff;
+    height: 100px;
+    width: 100px;
+  }
+  /* birds */
+.birds{
+  position: absolute ;
+  top: 110px ;
+  right: 175px ;
+  width: 20px;
+  filter: invert(0%);
+  background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-flying-stork-100.png");
+  background-size:20px;
+  background-repeat: no-repeat;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  z-index: 700;
+}
+.birds:nth-child(4){
+  position: absolute !important; 
+  top: 200px !important;
+  right: 105px !important;
+}
+.birds:nth-child(5){
+  position: absolute !important;
+  top: 230px !important;
+  right: 155px !important;
+}
+.birds:nth-child(6){
+  position: absolute !important;
+  top: 170px !important;
+  right: 175px !important;
+}
+  @import "birds.scss";
+  /* EDITOR DE TEXTO */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    color: $fondoClaro;
+  }
+  #codeVsc {
+    background-color: $fondoClaro;
+    height: 5px;
+    width: 70%;
+    align-items: center;
+    margin-left: 15%;
+  }
+  .code {
+    height: 830px;
+    background-color: black;
+    align-items: center;
+    margin: auto;
+    margin-top: 2.15%;
+    margin-bottom: 1%;
+    border: 5px solid rgb(112, 112, 112);
+    z-index: 300;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 3%;
+    position: relative;
+    top: -1950%;
+  }
+
+  #navCode {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.761);
+    display: inline-block;
+    border-bottom: 1px solid $sombraGris;
+    overflow: hidden;
+    align-content: center;
+    position: relative;
+    box-sizing: border-box;
+    top: -5.5%;
+    .row {
+      height: 40px;
+      .col-4{
+        height: 100%;
+      }
+    }
+    .nameFile {
+      text-align: center;
+      display: inline-block;
+    }
+  }
+  
+  .logo {
+    font-family: italic;
+    font-weight: 900;
+    font-size: 26px;
+    position: relative;
+    display: inline-block;
+    padding: 1px; 
+    left: -30.5%;
+    top: -150%;
+    width: 6%;
+    margin: auto;
+    color: $fondoClaro;
+  }
+  
+  .circulos {
+    width: 6%;
+    height: 45%;
+    border-radius: 80px;
+    border: 1px solid $fondoClaro;
+    display: inline-block;
+    margin: auto;
+    margin: 1px;
+    position: relative;
+    top: -140%;
+    left: 5.5%;
+    box-shadow: 0px 0px 10px $sombraGris;
+  
+    &:nth-child(2){
+      background-color: red;
+    }
+    &:nth-child(3){
+      background-color: yellow;
+    }
+    &:nth-child(4){
+      background-color: green;
+    }
+  }
+  
+  
+  .nameFile {
+    color: white;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    padding: 0;
+    font-size: 24px;
+    top: -150%;
+    left: 0%;
+  }
+
+  .sidebarVsc {
+    position: relative;
+    top: -10.1%;
+    left: 0%;
+    background-color: rgba(67, 67, 67, 0.755);
+    margin: 0%;
+    height: 95.5%;
+    width: 8%;
+    border-right: 1px solid $fondoClaro;
+
+    .itemSelected {
+      background-color: $colorGris;
+      width: 100%;
+      height: 6.55%;
+      transition: width 2s, height 2s;
+      box-sizing: border-box;
+      border: 2px solid $fontColor;
+      cursor: pointer;
+    }
+    svg {
+      position: relative;
+      top: -50px;
+      stroke: white;
+      -webkit-transition: transform 2s ease-in-out;
+      -moz-transition: transform 2s ease-in-out;
+      transition: transform 2s ease-in-out;
+    }
+  }
+  .itemSelected:hover {
+    width: 200%;
+    height: 6.55%;
+    position: absolute;
+    z-index: 1;
+  }
+  .itemSelected:hover svg {
+    transform: translateX(-140%);
+    transition: transform 2s;
+  }
+  .itemSelected:hover .texto {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    transform: translate(10%, 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .texto {
+    font-weight: 800;
+    font-size: 29px;
+    opacity: 0;
+    display: inline;
+    position: relative;
+    top: -120px;
+    color: $fondoClaro;
+  }
+  .containerCode {
+    width: 92%;
+    height: 95.2%;
+    position: relative;
+    top: -105.3%;
+    left: 8%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.782);
+    overflow: hidden;
+
+    #bodyCode1 {
+      color: aliceblue;
+      font-weight: 900;
+      font-size: 18px;
+      float: left;
+      left: 0;
+      width: 92%;
+      text-align: left;
+      display: flex;
+    }
+    #bodyCode2 {
+      color: aliceblue;
+      font-weight: 900;
+      font-size: 18px;
+      float: left;
+      text-align: left;
+      margin-left: 12.5px;
+      width: 92%;
+      display: flex;
+    }
+    #bodyCode3 {
+      color: aliceblue;
+      font-weight: 900;
+      font-size: 18px;
+      float: left;
+      text-align: left;
+      margin-left: 25px;
+      width: 92%;
+      display: flex;
+    }
+    #bodyCode4 {
+      color: aliceblue;
+      font-weight: 900;
+      font-size: 18px;
+      float: left;
+      text-align: left;
+      margin-left: 37.5px;
+      width: 92%;
+      display: flex;
+    }
+    #bodyCode5 {
+      color: aliceblue;
+      font-weight: 900;
+      font-size: 18px;
+      float: left;
+      text-align: left;
+      margin-left: 50px;
+      width: 92%;
+      display: flex;
+    }
+    #bodyCode6 {
+      color: aliceblue;
+      position: relative;
+      top: 5px;
+      font-weight: 500;
+      font-size: 14px;
+      float: left;
+      text-align: left;
+      margin-left: 12.5px;
+      width: 92%;
+      display: flex;
+    }
+    .redText {
+      color: rgb(223, 0, 0);
+      padding: 0;
+      margin: 0;
+      font-weight: 700;
+    }
+    .greenText {
+      color: rgb(17, 209, 0);
+      padding: 0;
+      margin: 0;
+      font-weight: 700;
+    }
+    .yellowText {
+      color: rgb(206, 192, 0);
+      padding: 0;
+      margin: 0;
+      font-weight: 700;
+    }
   }
 }

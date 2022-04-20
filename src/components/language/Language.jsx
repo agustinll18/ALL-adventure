@@ -52,6 +52,8 @@ const StyledMenu = styled((props) => (
 /* IDIOMAS */
 $(document).ready(function () {
   $(".textES").click(function () {
+    $(this).css({"opacity": 0 , "display" : "none" })
+    $(".textEN").css({"opacity": 1 , "display" : "list-item" })
     $(".saludo").text("Hola! soy Agustín LLadós");
     $("#navH").text("Soy Front-end developer").css("fontSize", "38px");
     $("#navP").text("Tengo 20 años, nacido en 2002, y soy desarrolador Full-stack mejorando mi conocimiento en el area del Back-end. Me gusta programar en el area del Front-end, usar librerias y hacer frente a los desafios que se presenten. Mis hobbis son : hacer deporte, especialmente me gusta el Tenis y el futbol, salir con amigos y comer con mi familia en los domingos ")
@@ -61,10 +63,15 @@ $(document).ready(function () {
     $("#bodyCode6").text("Graduado en ciencias economicas en el Colegio Emaús, con un promedio de 7,66 y premiado como 'Mejor Compañero del Curso'")
     
     $(".dialog").text("Por favor presteme la linterna").css("fontSize", "20px");
+    $(".email").text("Correo Electronico :")
+    $(".mensaje").text("Mensaje :")
+    $(".subButton").text("Enviar")
   });
 });
 $(document).ready(function () {
   $(".textEN").click(function () {
+    $(this).css({"opacity": 0 , "display" : "none" })
+    $(".textES").css({"opacity": 1 , "display" : "list-item" })
     $(".saludo").text("Hi! I am Agustín LLadós");
     $("#navH").text("I am an Front end developer")/* .css("fontSize", "38px"); *//* .css("fontSize", "38px"); */;
     $("#navP").text(`I have 20 years, born in 2002, and I am a full-stack developer improving my back-end's knowledge. I like programming in the front-end area, use some libraries and get some challenges.  My hobbies are: do sport, I love Tennis and Futbol, go out with my friends and eat with my family on Sunday. `)
@@ -74,6 +81,9 @@ $(document).ready(function () {
     $("#bodyCode6").text("Graduated from economic science in my school 'Emaus' with an 7.66 average in highschool and awarded for 'the best friend in the class'")
     
     $(".dialog").text("Please give me the flashlight");
+    $(".email").text("Email :")
+    $(".mensaje").text("Message :")
+    $(".subButton").text("Submit")
   });
 });
 
@@ -91,7 +101,7 @@ export default function CustomizedMenus() {
     <div>
       <Button
         id="demo-customized-button"
-        className="textEN"
+        className="textEN "
         aria-controls={open ? "demo-customized-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
@@ -105,7 +115,8 @@ export default function CustomizedMenus() {
           height: "66px",
           backgroundColor: "black",
           position: "fixed",
-          bottom: "1%",
+          bottom: "10%",
+          opacity: 0,
           zIndex: 400,
           right: "1%",
         }}
@@ -118,6 +129,7 @@ export default function CustomizedMenus() {
             padding: "0px",
             height: "61.5px",
           }}
+          alt="Flag of the United States"
         />
       </Button> 
       <Button
@@ -149,6 +161,7 @@ export default function CustomizedMenus() {
             padding: "0px",
             height: "61.5px",
           }}
+          alt="Bandera de España"
         />
       </Button>
     </div>

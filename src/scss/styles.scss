@@ -73,18 +73,31 @@ body {
 }
 .sec1 { 
   background: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursosWebP/fotoSol.webp") top no-repeat; 
-  background-size: 2160px 1000px;
+  background-size: 2160px 910px;
+  transition: all 2.5s cubic-bezier(0.550, 0.085, 0.000, 0.990);
 }
 .sec1Night {
-  background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/bg.jpg") no-repeat !important;
-  background-size: 2160px 960px !important;
+  background: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/bg.jpg") repeat  !important ;/* 
+  background-size: 100% !important; */
+  transition: all 2.5s cubic-bezier(0.550, 0.085, 0.000, 0.990);
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .sec2 {
   position:absolute ;
   left: 10px;
   background: radial-gradient(ellipse at bottom, rgb(223, 104, 0) 0%, rgb(225, 169, 0) 1%, rgb(37, 161, 255) 100%);
-  background-size: 1945px 980px;
+  background-size: 1960px 930px;
   background-repeat: no-repeat;
+  transition: all 2.5s cubic-bezier(0.550, 0.085, 0.000, 0.990);
+}
+.sec2Night {
+  position:absolute ;
+  left: 10px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/3/39/Sky_Full_Of_Stars_%28157838139%29.jpeg") no-repeat !important;/* 
+  background-size: 1960px 930px !important; */
+  background-repeat: no-repeat;
+  transition: all 2.5s cubic-bezier(0.550, 0.085, 0.000, 0.990);
 }
 
 .sec3 {
@@ -92,19 +105,17 @@ body {
   background-size: 1945px 980px;
   display: table-cell;
   vertical-align: middle;
+  transition: all 2.5s cubic-bezier(0.550, 0.085, 0.000, 0.990);
+}
+.sec3Night {
+  background: linear-gradient(to bottom, rgb(1, 88, 113) 0%,  rgba(0, 15, 77) 40%, rgb(0, 0, 0)) /* !important */;
+  background-size: 1945px 980px;
+  display: table-cell;
+  vertical-align: middle;
+  transition: all 2.5s cubic-bezier(0.550, 0.085, 0.000, 0.990);
 }
 .sec4 {
   background: black;
   background-size: 1945px 920px;
   cursor: url(https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/Webp.net-resizeimage.png), auto;  
-} /*
-.dark-theme {
-    background: #232526; 
-    background: -webkit-linear-gradient(to top, #232526, #414345);
-    background: linear-gradient(
-        to top,
-        #232526,
-        #414345
-    ); 
-}
- */
+} 

@@ -25,7 +25,15 @@ export default function Item(productos) {
                     fontSize: "12px",
                   }}
                 >
-                  <h1 style={{ fontSize: "22px", fontWeight: "bolder",margin:"25px" }}>{productos.modelo}</h1>
+                  <h3
+                    style={{
+                      fontSize: "22px",
+                      fontWeight: "900",
+                      margin: "25px",
+                    }}
+                  >
+                    {productos.modelo}
+                  </h3>
                 </div>
                 <div
                   style={{
@@ -34,12 +42,24 @@ export default function Item(productos) {
                     top: "35px",
                   }}
                 >
-                  <h2 /* style={{width: "120px"}} */>{productos.precio}</h2>
+                  {" "}
+                  <p
+                    style={{
+                      fontSize: "20px",
+                      fontWeight: "500",
+                      margin: "5px",
+                    }}
+                  >
+                    {productos.marca}
+                  </p>
                 </div>
               </div>
 
               <div class="overlay">
-                <img src="https://lesser-dawns.000webhostapp.com/multimedia/recursos/rbg/icons8-ship-50-removebg-preview.png" alt="" />
+                <img
+                  src="https://lesser-dawns.000webhostapp.com/multimedia/recursos/rbg/icons8-ship-50-removebg-preview.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>

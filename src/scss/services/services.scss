@@ -1,42 +1,88 @@
 @import "./cardContainer/cardContainer";
 @import "./slider/slider";
 
-.fish{
-    position: absolute ;
-    top: 300px ;
-    left: 175px ;
+.fish {
+    position: absolute;
+    top: 300px;
+    left: 175px;
     width: 50px;
     background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-fish-50-removebg-preview.png");
-    background-size:50px;
+    background-size: 50px;
     background-repeat: no-repeat;
     height: 50px;
     padding: 0;
     margin: 0;
     z-index: 700;
-    transform:rotateY(180deg) rotateZ(45deg)
-  }
-.fish:nth-child(3){
-    background: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-fish-50-3-removebg-preview.png");
-    position: absolute ;
-    top: 370px ;
-    left: 175px ;
-    background-size:50px;
+    transform: rotateY(180deg) rotateZ(45deg);
 }
-.fish:nth-child(4){
+.fish:nth-child(3) {
     background: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-fish-50-3-removebg-preview.png");
-    position: absolute ;
-    top: 200px ;
-    left: 75px ;
-    background-size:50px;
-    transform:rotateY(180deg) rotateZ(45deg)
+    position: absolute;
+    top: 370px;
+    left: 175px;
+    background-size: 50px;
 }
-.fish:nth-child(5){
+.fish:nth-child(4) {
+    background: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-fish-50-3-removebg-preview.png");
+    position: absolute;
+    top: 200px;
+    left: 75px;
+    background-size: 50px;
+    transform: rotateY(180deg) rotateZ(45deg);
+}
+.fish:nth-child(5) {
     background: url("https://img.icons8.com/external-flat-satawat-anukul/344/external-ocean-ocean-flat-flat-satawat-anukul-17.png");
-    position: absolute ;
-    top: 280px ;
-    left: 5px ;
+    position: absolute;
+    top: 280px;
+    left: 5px;
     height: 80px;
     width: 80px;
-    background-size:80px;
-    transform:rotateY(180deg) rotateZ(45deg)
+    background-size: 80px;
+    transform: rotateY(180deg) rotateZ(45deg);
+}
+
+.sec3Night {
+    .fish {
+        position: absolute;
+        top: 300px;
+        left: 175px;
+        width: 50px;
+        filter:brightness(30%) blur(1.72px);
+        background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-fish-50-removebg-preview.png");
+        background-size: 50px;
+        background-repeat: no-repeat;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        z-index: 700;
+        transform: rotateY(180deg) rotateZ(45deg);
+    }
+    .fish:nth-child(3) {
+        background: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-fish-50-3-removebg-preview.png");
+        position: absolute;
+        top: 370px;
+        left: 175px;
+        filter:brightness(30%) blur(1.72px);
+        background-size: 50px;
+    }
+    .fish:nth-child(4) {
+        background: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-fish-50-3-removebg-preview.png");
+        position: absolute;
+        top: 200px;
+        left: 75px;
+        filter:brightness(30%) blur(1.72px);
+        background-size: 50px;
+        transform: rotateY(180deg) rotateZ(45deg);
+    }
+    .fish:nth-child(5) {
+        background: url("https://img.icons8.com/external-flat-satawat-anukul/344/external-ocean-ocean-flat-flat-satawat-anukul-17.png");
+        position: absolute;
+        top: 280px;
+        left: 5px;
+        height: 80px;
+        width: 80px;
+        filter:brightness(30%) blur(1.72px);
+        background-size: 80px;
+        transform: rotateY(180deg) rotateZ(45deg);
+    }
 }

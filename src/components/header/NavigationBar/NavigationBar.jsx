@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
+import $ from "jquery";
 
 export default function NavigationBar() {
   const [stickyClass, setStickyClass] = useState("");
@@ -35,7 +36,7 @@ export default function NavigationBar() {
       }
     });
   };
-  
+
   /* DARK MODE */
   /* $(document).ready(function(){
     $("label").click(function(){
@@ -47,17 +48,26 @@ export default function NavigationBar() {
     var element = document.getElementsById("edPr");
     element.classList.toggle("sec1Night");
   } */
-
+  $(document).ready(function(){
+    $(".slider").on("click", function(){
+      $("div.sec1").toggleClass("sec1Night");
+      $(".mainSection").toggleClass("mainSectionDark");
+      $("div.sec2").toggleClass("sec2Night");
+      $("div.sec3").toggleClass("sec3Night");
+    });
+  });
   return (
     <div className={`navbar ${stickyClass}`} id="navbarContainer">
       <Navbar collapseOnSelect expand="lg" bg="lg" variant="lg" id="navbar">
         <Container class="container-fluid" id="containerUl">
-          <Navbar.Brand href="#home" id="brandN">
+          <Navbar.Brand href="#" id="brandN">
             ALL
           </Navbar.Brand>
           <div id="switchContainer">
-            <input class="checkbox" id="checkbox" type="checkbox" />
-            <label class="switch" for="checkbox"></label>
+            <label class="switch" id="switch-dark-mode">
+              <input type="checkbox"></input>
+              <span class="slider round" id="switch-dark-mode"></span>
+            </label>
           </div>
         </Container>
       </Navbar>
