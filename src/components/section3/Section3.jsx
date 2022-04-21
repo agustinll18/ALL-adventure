@@ -4,7 +4,7 @@ import Servicios from "../nav/Servicios/Servicios.jsx";
 
 const Section3 = () => {
   return (
-    <div className="section sec3Night ServiciosContainer">
+    <div className="section sec3 ServiciosContainer">
       <Servicios />
       <Slider />
       <div className="fish" data-speed="2.5"></div>
