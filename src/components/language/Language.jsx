@@ -61,6 +61,10 @@ $(document).ready(function () {
     $("#filesVsc").text("Archivos");
     $(".asd").text("> Educacion Y Proyectos <");
     $("#bodyCode6").text("Graduado en ciencias economicas en el Colegio Emaús, con un promedio de 7,66 y premiado como 'Mejor Compañero del Curso'")
+    $(".lEng").text("Nivel de Ingles: B2, todavia mejorando para hablar como un americano nativo")
+    $(".lEsp").text("Nivel de Español: Nativo")
+    $(".fe").text("Titulo de Front End :")
+    $(".js").text("Titulo de JavaScript :")
     
     $(".dialog").text("Por favor presteme la linterna").css("fontSize", "20px");
     $(".email").text("Correo Electronico :")
@@ -79,6 +83,10 @@ $(document).ready(function () {
     $("#filesVsc").text("Files");
     $(".asd").text("> Education & Proyects <");
     $("#bodyCode6").text("Graduated from economic science in my school 'Emaus' with an 7.66 average in highschool and awarded for 'the best friend in the class'")
+    $(".lEng").text("English Level: B2, still improving to speak like a native American")
+    $(".lEsp").text("Level of Spanish: Native")
+    $(".fe").text("Front-end degree:")
+    $(".js").text("JavaScript degree:")
     
     $(".dialog").text("Please give me the flashlight");
     $(".email").text("Email :")

@@ -30,7 +30,7 @@ function parallax(e) {
     picoDialogMove.style.transform = `translateX(${x}px) translateY(${y}px) rotateZ(45deg) `;
     picoDialogMove.style.transform = `-o-translateX(${x}px) -o-translateY(${y}px) rotateZ(45deg) `;
   });
-};
+}
 
 const Contact = () => {
   $(document).ready(function () {
@@ -70,38 +70,43 @@ const Contact = () => {
         <div className="contactContainer">
           <div className="glass">
             <h2>Contact</h2>
-            <div class="mb-2">
-              <label for="exampleFormControlInput1" class="form-label"></label>
-              <h4 className="email">Email :</h4>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
-            </div>
-            <div class="mb-2">
-              <label
-                for="exampleFormControlTextarea1"
-                class="form-label"
-              ></label>
-              <h4 className="mensaje">Message :</h4>
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-                placeholder="Message"
-              ></textarea>
-            </div>
-            <button className="subButton" type="submit" onClick="">
-              Submit
-            </button>
+            <form action="https://formsubmit.co/57a12b49d9713081d4ea2d232a6f7dba" method="POST">{/* El metodo post es para enviar los datos al server */}
+              <div class="mb-2">
+                <label for="exampleFormControlInput1" class="form-label">
+                  <h4 className="email">Email :</h4>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1 email"
+                    placeholder="name@example.com"
+                    required
+                    name="email"
+                  />
+                </label>
+              </div>
+              <div class="mb-2">
+                <label for="exampleFormControlTextarea1" class="form-label">
+                  <h4 className="mensaje">Message :</h4>
+                  <input
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    required
+                    placeholder="Message"
+                    name="message"
+                  />
+                </label>
+              </div>
+              <button className="subButton" type="submit" >
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       </div>
       <div class="subSec">
         <div class="dialogContainer  dialogMove" data-speed="8">
-          <p className="dialog" >Please give me the flashlight</p>
+          <p className="dialog">Please give me the flashlight</p>
         </div>
         <div className="picoDialog picoDialogMove" data-speed="8"></div>
 

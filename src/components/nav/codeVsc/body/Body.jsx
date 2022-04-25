@@ -85,18 +85,41 @@ const BodyEN = () => {
 
       <div id="bodyCode5">
         &lt; <p className="redText"> li</p>&gt;
-        <div id="bodyCode6">
-          Graduated from economic science in my school 'Emaus' with an 7.66
-          average in highschool and awarded for 'the best friend in the class'
+        <div id="bodyCode6" className="lEng">
+          English Level: B2, still improving to speak like a native American
         </div>
         &lt;/ <p className="redText"> li</p>&gt;
       </div>
 
       <div id="bodyCode5">
         &lt; <p className="redText"> li</p>&gt;
+        <div id="bodyCode6" className="lEsp">
+          Level of Spanish: Native
+        </div>
+        &lt;/ <p className="redText"> li</p>&gt;
+      </div>
+      <div id="bodyCode5">
+        &lt; <p className="redText"> li</p>&gt;
+        <div id="bodyCode6" >
+        <div className="fe">Front-end degree: &nbsp;</div>
+          <div>
+          <a href="https://www.udemy.com/certificate/UC-be793d36-1120-40d7-a0b6-8fe432a57664/" target={"_blank"}>
+            &nbsp;
+            &nbsp;https://www.udemy.com/certificate/UC-be793d36-1120-40d7-a0b6-8fe432a57664/
+          </a></div>
+        </div>
+        &lt;/ <p className="redText"> li</p>&gt;
+      </div>
+      <div id="bodyCode5">
+        &lt; <p className="redText"> li</p>&gt;
         <div id="bodyCode6">
-          Graduated from economic science in my school 'Emaus' with an 7.66
-          average in highschool and awarded for 'the best friend in the class'
+          <div className="js">JavaScript degree: &nbsp;</div>{" "}
+          <div>
+            <a href="https://www.coderhouse.com/certificados/614a3b430ee76210ff1eaf1c" target={"_blank"}>
+              &nbsp;
+              &nbsp;https://www.coderhouse.com/certificados/614a3b430ee76210ff1eaf1c
+            </a>
+          </div>
         </div>
         &lt;/ <p className="redText"> li</p>&gt;
       </div>

@@ -1,24 +1,572 @@
 /* MOVIL S */
-@media screen and (min-device-width: 280px) and (max-device-width: 840px) and (orientation: portrait) {
+@media screen and (max-width: 767px) and (min-width: 280px) and (orientation: portrait) /* OPTIMIZADO PARA QUE SE VEA EN DIPOSITIVOS CON 125% EN LA IMAGEN */{
     html {
-        height: 760px;
+        height: 661px;
     }
     body {
-        height: 760px;
+        height: 661px;
     }
     label {
         margin-right: 25px;
     }
     .sec1 {
         width: 100%;
-        height: 903px;
-        background-size: 100% 890px !important;
+        background-size: 100% 661px !important;
+        height: 661px;
 
         .mainSection {
             position: relative;
             width: 100%;
             top: 0px;
-            height: 905px;
+            height: 661px;
+
+            .col-9 {
+                width: 100%;
+                height: 41%;
+                top: 0px;
+                transform: translate(0%, -70%);
+                h2 {
+                    font-weight: 1000;
+                    font-family: italic;
+                    font-size: 38px;
+                    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    z-index: 2;
+                    height: 75%;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+                    mix-blend-mode: color;
+                }
+                .saludo {
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    font-size: 0.31em;
+                    font-weight: bolder;
+                }
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    pointer-events: none;
+                    margin: 0;
+                }
+            }
+
+            aside {
+                position: absolute;
+                right: 0px;
+                height: 400px;
+                transform: translate(0%, 30%);
+                padding-left: 0px;
+                margin: 0px 12.5%;
+                font-weight: bolder;
+                width: 75%;
+            }
+            #navH {
+                font-size: 32px !important;
+                color: rgb(0, 0, 0);
+                align-content: center;
+                height: 20%;
+                margin-bottom: 8%;
+            }
+            p {
+                font-size: 14px !important;
+            }
+        }
+    }
+    .sec2 {
+        width: 100%;
+        background-size: 100% 661px !important;
+        height: 661px;
+        overflow: hidden;
+
+        .dog {
+            display: none;
+        }
+        .pesca {
+            display: none;
+        }
+        .birds {
+            display: none;
+        }
+        #codeR {
+            width: 80%;
+            margin: 15% 7%;
+            height: 580px;
+            #navCode {
+                height: 50px;
+                position: relative;
+                top: -40px;
+                .nameFile {
+                    font-size: 16px;
+                    position: absolute;
+                    top: 10px;
+                    right: 0px;
+                    margin: auto;
+                }
+                .logo {
+                    display: none;
+                }
+                .circulos {
+                    display: none;
+                }
+                .closers {
+                    display: none;
+                }
+            }
+
+            .sidebarVsc {
+                display: none;
+            }
+
+            .containerCode {
+                top: -74px;
+                width: 100%;
+                left: 0;
+
+                #bodyCode1 {
+                    font-size: 12px;
+                }
+                #bodyCode2 {
+                    font-size: 12px;
+                }
+                #bodyCode3 {
+                    font-size: 12px;
+                }
+                #bodyCode3:nth-child(5) {
+                    font-size: 10px;
+                }
+                #bodyCode3:nth-child(6) {
+                    font-size: 8px;
+                }
+                #bodyCode4 {
+                    font-size: 12px;
+                }
+                #bodyCode5 {
+                    font-size: 12px;
+                }
+                #bodyCode6 {
+                    font-size: 10px;
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .sec3 {
+        width: 100%;
+        background-size: 100% 661px !important;
+        height: 661px;
+        overflow: hidden;
+
+        .fish {
+            display: none;
+        }
+        #cardContainer {
+            transform: scale(0.85, 0.8) translate(0%, -20%);
+            width: 100%;
+            height: 460px;
+            flex-direction: column;
+            margin: 0 auto;
+            justify-content: space-around;
+            #cardService {
+                margin: 0px auto;
+                transform: scale(0.85, 0.5) translate(0%, 0%);
+                width: 100%;
+                height: 260px;
+                .cardImg {
+                    transform: scale(0.85, 1.15) translate(-32%, -35%);
+                    img {
+                        transform: scale(0.85, 1.15);
+                    }
+                }
+                .cardSection {
+                    height: 50px;
+                    .herramientas {
+                        display: none;
+                    }
+                    .productosModelo {
+                        font-size: 22px;
+                        font-weight: 900;
+                        margin: 25px;
+                        transform: scale(1, 1.15) translate(-32.5%, -40%);
+                    }
+                    .progressResponsiveMobile {
+                        opacity: 1;
+                        height: 50px;
+                        width: 150px;
+                        transform: translate(45%, -310%);
+                    }
+                    .porcentajeResponsive {
+                        opacity: 1;
+                        font-size: 22px;
+                        position: relative;
+                        left: 20%;
+                        font-weight: 900;
+                        top: -520%;
+                    }
+                }
+                .overlay {
+                    display: none;
+                }
+            }
+        }
+        .gradient-border {
+            margin: 0;
+            width: 80%;
+            transform: translate(10%, -50%);
+            .slider {
+                height: 100px;
+                width: 100%;
+                margin: 0;
+                left: 0%;
+                position: absolute;
+            }
+            &::after {
+                width: 100%;
+                left: 0%;
+                position: absolute;
+            }
+        }
+    }
+    .sec4 {
+        width: 100%;
+        background-size: 100% 661px !important;
+        height: 661px;
+        overflow: hidden;
+
+        .contact {
+            width: 80%;
+            height: 500px;
+            margin: 2.5% auto;
+            transform: translate(0px, -5%);
+            .contactContainer {
+                width: 100%;
+                opacity: 1 !important;
+                transform: scaleY(0.83) !important;
+                .glass form {
+                    margin: auto;
+                    float: both;
+                    width: 100%;
+                    height: 500px;
+                    padding: 5%;
+                    .mb-2 {
+                        margin: 50px 5%;
+                        width: 100%;
+
+                        h4 {
+                            align-content: center;
+                        }
+                        label.form-control {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .subButton {
+                    position: relative;
+                    right: 5%;
+                }
+            }
+        }
+        .subSec {
+            display: none;
+        }
+    }
+    /* DARK */
+    .sec1Night {
+        width: 100%;
+        background-size: 100% 661px !important;
+        height: 661px;
+
+        .mainSectionDark {
+            position: relative;
+            width: 100%;
+            top: 0px;
+            height: 661px;
+
+            .col-9 {
+                width: 100%;
+                height: 41%;
+                top: 0px;
+                transform: translate(0%, -70%);
+                h2 {
+                    font-weight: 1000;
+                    font-family: italic;
+                    font-size: 38px;
+                    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    z-index: 2;
+                    height: 75%;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+                    mix-blend-mode: color;
+                }
+                .saludo {
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    font-size: 0.31em;
+                    font-weight: bolder;
+                }
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    pointer-events: none;
+                    margin: 0;
+                }
+            }
+
+            aside {
+                position: absolute;
+                right: 0px;
+                height: 400px;
+                transform: translate(0%, 30%);
+                padding-left: 0px;
+                margin: 0px 12.5%;
+                font-weight: bolder;
+                width: 75%;
+            }
+            #navH {
+                font-size: 32px !important;
+                color: rgb(255, 255, 255) !important;
+                align-content: center;
+                height: 20%;
+                margin-bottom: 8%;
+            }
+            p {
+                font-size: 14px !important;
+            }
+        }
+    }
+    .sec2Night {
+        width: 100%;
+        height: 883px;
+        background-size: 100% 880px !important;
+        overflow: hidden;
+
+        .dog {
+            display: none;
+        }
+        .pesca {
+            display: none;
+        }
+        .birds {
+            display: none;
+        }
+        #codeR {
+            width: 80%;
+            margin: 20% 7%;
+            height: 640px;
+            #navCode {
+                height: 50px;
+                position: relative;
+                top: -40px;
+                .nameFile {
+                    font-size: 16px;
+                    position: absolute;
+                    top: 10px;
+                    right: 0px;
+                    margin: auto;
+                }
+                .logo {
+                    display: none;
+                }
+                .circulos {
+                    display: none;
+                }
+                .closers {
+                    display: none;
+                }
+            }
+
+            .sidebarVsc {
+                display: none;
+            }
+
+            .containerCode {
+                top: -74px;
+                width: 100%;
+                left: 0;
+
+                #bodyCode1 {
+                    font-size: 12px;
+                }
+                #bodyCode2 {
+                    font-size: 12px;
+                }
+                #bodyCode3 {
+                    font-size: 12px;
+                }
+                #bodyCode3:nth-child(5) {
+                    font-size: 10px;
+                }
+                #bodyCode3:nth-child(6) {
+                    font-size: 8px;
+                }
+                #bodyCode4 {
+                    font-size: 12px;
+                }
+                #bodyCode5 {
+                    font-size: 12px;
+                }
+                #bodyCode6 {
+                    font-size: 10px;
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .sec3Night {
+        width: 100%;
+        background-size: 100% 661px !important;
+        height: 661px;
+        overflow: hidden;
+
+        .fish {
+            display: none;
+        }
+        #cardContainer {
+            flex-direction: column;
+            height: 460px;
+            justify-content: space-around;
+            margin: 0 auto;
+            -webkit-transform: scale(0.85, 0.8) translateY(-30%);
+            transform: scale(0.85, 0.8) translateY(-20%);
+            width: 100%;
+            #cardService {
+                margin: 0px auto !important;
+                transform: scale(0.85, 0.5) translate(0%, 0%);
+                width: 100% !important;
+                height: 260px !important;
+                .cardImg {
+                    transform: scale(0.85, 1.15) translate(-32%, -35%);
+                    img {
+                        transform: scale(0.85, 1.15);
+                    }
+                }
+                .cardSection {
+                    height: 50px;
+                    .herramientas {
+                        display: none;
+                    }
+                    .productosModelo {
+                        font-size: 22px;
+                        font-weight: 900;
+                        margin: 25px;
+                        transform: scale(1, 1.15) translate(-32.5%, -40%);
+                    }
+                    .progressResponsiveMobile {
+                        opacity: 1;
+                        height: 50px;
+                        width: 150px;
+                        transform: translate(45%, -310%);
+                    }
+                    .porcentajeResponsive {
+                        opacity: 1;
+                        font-size: 22px;
+                        position: relative;
+                        left: 20%;
+                        font-weight: 900;
+                        top: -520%;
+                    }
+                }
+                .overlay {
+                    display: none;
+                }
+            }
+        }
+        .gradient-border {
+            margin: 0;
+            width: 80%;
+            transform: translate(10%, -50%);
+            .slider {
+                height: 100px;
+                width: 100%;
+                margin: 0;
+                left: 0%;
+                position: absolute;
+            }
+            &::after {
+                width: 100%;
+                left: 0%;
+                position: absolute;
+            }
+        }
+    }
+    #demo-customized-button {
+        transform: scale(0.6);
+        right: -3.5% !important;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    html {
+        height: 840px;
+    }
+    body {
+        height: 840px;
+    }
+    label {
+        margin-right: 25px;
+    }
+    .pp-tableCell {
+        height: 760px !important;
+        padding-right: 0px !important;
+    }
+    .sec1 {
+        width: 100%;
+        height: 883px;
+        background-size: 100% 880px !important;
+
+        .mainSection {
+            position: relative;
+            width: 100%;
+            top: 0px;
+            height: 885px;
             overflow: hidden;
             display: flex;
             justify-content: center;
@@ -67,7 +615,7 @@
                 .saludo {
                     position: absolute;
                     transform: translate(-50%, -50%);
-                    font-size: 0.31em;
+                    font-size: 0.61em;
                     font-weight: bolder;
                 }
 
@@ -89,22 +637,29 @@
                 position: absolute;
                 right: 0px;
                 height: 400px;
-                transform: translate(0%, 35%);
+                transform: translate(0%, 25%);
                 padding-left: 0px;
                 margin: 0px 12.5%;
                 font-weight: bolder;
                 width: 75%;
                 text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.387);
             }
+            #navH {
+                font-size: 44px;
+                text-shadow: 5px 5px 10px #cfcece;
+                color: rgb(0, 0, 0);
+                align-content: center;
+                height: 20%;
+            }
             p {
-                font-size: 16px !important;
+                font-size: 26px !important;
             }
         }
     }
     .sec2 {
-        width: 100.6%;
-        height: 890px;
-        background-size: 100% 890px !important;
+        width: 100%;
+        height: 883px;
+        background-size: 100% 880px !important;
         overflow: hidden;
 
         .dog {
@@ -118,29 +673,25 @@
         }
         #codeR {
             width: 80%;
-            margin: 15% 7%;
-            height: 640px;
+            margin: 10% 7%;
+            height: 690px;
             #navCode {
                 height: 50px;
                 position: relative;
                 top: -40px;
                 .nameFile {
-                    font-size: 16px;
+                    font-size: 20px;
                     position: absolute;
                     top: 10px;
-                    right: -80px;
+                    right: 0px;
                     margin: auto;
                 }
                 .logo {
-                    top: -55px;
-                    left: -100px;
                     position: relative;
+                    top: 10px;
                 }
                 .circulos {
-                    display: none;
-                }
-                .closers {
-                    display: none;
+                    top: 10px;
                 }
             }
 
@@ -154,64 +705,84 @@
                 left: 0;
 
                 #bodyCode1 {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
                 #bodyCode2 {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
                 #bodyCode3 {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
                 #bodyCode3:nth-child(5) {
-                    font-size: 10px;
+                    font-size: 16px;
                 }
                 #bodyCode3:nth-child(6) {
-                    font-size: 8px;
+                    font-size: 16px;
                 }
                 #bodyCode4 {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
                 #bodyCode5 {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
                 #bodyCode6 {
-                    font-size: 10px;
+                    font-size: 16px;
+                    a {
+                        font-size: 14px;
+                    }
                 }
             }
         }
     }
     .sec3 {
         width: 100%;
-        height: 890px;
-        background-size: 100% 890px !important;
+        height: 883px;
+        background-size: 100% 880px !important;
         overflow: hidden;
 
         .fish {
             display: none;
         }
         #cardContainer {
-            display: none;
+            position: absolute;
+            width: 95%;
+            transform: translate(-50%, -60%) scale(1,0.8);
+            .herramientas{
+                margin: 0;
+                transform: translate(10%,0px);
+                position: relative;
+                left: 15px;
+                .liTools{
+                    font-size: 20px;
+                    width: 80% !important;
+                    padding: 0 !important;
+                    margin: 0  !important;
+                    transform: translate(0%, -10px)
+                }
+            }
         }
         .gradient-border {
             margin: 0;
+            width: 80%;
+            transform: translate(10%, 180%);
             .slider {
                 height: 100px;
-                width: 280px;
+                width: 100%;
                 margin: 0;
-                left: 4%;
+                left: 0%;
                 position: absolute;
             }
             &::after {
-                width: 290px;
-                left: 3%;
+                width: 100%;
+                left: 0%;
                 position: absolute;
             }
         }
     }
     .sec4 {
         width: 100%;
-        height: 791px;
-        background-size: 100% 791px !important;
+        height: 883px;
+        background-size: 100% 880px !important;
         overflow: hidden;
 
         .contact {
@@ -221,16 +792,25 @@
                 width: 78.5%;
                 opacity: 1 !important;
                 background-size: 100% 600px;
-                .mb-2 {
-                    width: 74%;
-
-                    h4 {
-                        align-content: center;
-                    }
-                    .form-control {
+                .glass form {
+                    margin: auto;
+                    float: both;
+                    width: 100%;
+                    height: 500px;
+                    padding: 5%;
+                    .mb-2 {
+                        margin: 50px 5%;
                         width: 100%;
+
+                        h4 {
+                            align-content: center;
+                        }
+                        label.form-control {
+                            width: 100%;
+                        }
                     }
                 }
+
                 .subButton {
                     position: relative;
                     right: 5%;
@@ -244,14 +824,14 @@
     /* DARK */
     .sec1Night {
         width: 100%;
-        height: 903px;
-        background-size: 100% 890px !important;
+        height: 883px;
+        background-size: 100% 880px !important;
 
         .mainSectionDark {
             position: relative;
             width: 100%;
             top: 0px;
-            height: 905px;
+            height: 885px;
             overflow: hidden;
             display: flex;
             justify-content: center;
@@ -349,9 +929,9 @@
         }
     }
     .sec2Night {
-        width: 100.6%;
-        height: 900px;
-        background-size: 100% 890px !important;
+        width: 100%;
+        height: 883px;
+        background-size: 100% 880px !important;
         overflow: hidden;
 
         .dog {
@@ -365,29 +945,25 @@
         }
         #codeR {
             width: 80%;
-            margin: 15% 7%;
-            height: 640px;
+            margin: 10% 7%;
+            height: 690px;
             #navCode {
                 height: 50px;
                 position: relative;
                 top: -40px;
                 .nameFile {
-                    font-size: 16px;
+                    font-size: 20px;
                     position: absolute;
                     top: 10px;
-                    right: -80px;
+                    right: 0px;
                     margin: auto;
                 }
                 .logo {
-                    top: -55px;
-                    left: -100px;
                     position: relative;
+                    top: 10px;
                 }
                 .circulos {
-                    display: none;
-                }
-                .closers {
-                    display: none;
+                    top: 10px;
                 }
             }
 
@@ -401,36 +977,39 @@
                 left: 0;
 
                 #bodyCode1 {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
                 #bodyCode2 {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
                 #bodyCode3 {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
                 #bodyCode3:nth-child(5) {
-                    font-size: 10px;
+                    font-size: 16px;
                 }
                 #bodyCode3:nth-child(6) {
-                    font-size: 8px;
+                    font-size: 16px;
                 }
                 #bodyCode4 {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
                 #bodyCode5 {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
                 #bodyCode6 {
-                    font-size: 10px;
+                    font-size: 16px;
+                    a {
+                        font-size: 14px;
+                    }
                 }
             }
         }
     }
     .sec3Night {
         width: 100%;
-        height: 890px;
-        background-size: 100% 890px !important;
+        height: 883px;
+        background-size: 100% 880px !important;
         overflow: hidden;
 
         .fish {
@@ -441,861 +1020,59 @@
         }
         .gradient-border {
             margin: 0;
-            width: 95%;
+            width: 80%;
+            transform: translate(10%, 180%);
             .slider {
                 height: 100px;
-                width: 280px;
-                margin: 0;
-                left: 4%;
-                position: absolute;
-            }
-            &::after {
-                width: 290px;
-                left: 3%;
-                position: absolute;
-            }
-        }
-    }
-}
-
-@media only screen and (width: 912px) {
-    .sec1 {
-        width: 100%;
-        height: 900px;
-        background-size: 100% 790px !important;
-
-        main {
-            position: relative;
-            width: 100%;
-            top: -120px;
-            height: 915px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-            z-index: 9;
-            background: linear-gradient(to top, rgba(0, 145, 255, 0.5), rgb(255, 255, 255, 0.5));
-            -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-
-            .col-9 {
-                width: 75%;
-
-                &:before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    z-index: 2;
-                    height: 40%;
-                    background: linear-gradient(to bottom, $fondoClaro, transparent);
-                }
-
-                &:after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 40%;
-                    z-index: 2;
-                    background: linear-gradient(to top, #0091ff, transparent);
-                    mix-blend-mode: color;
-                }
-                .saludo {
-                    position: absolute;
-                    transform: translate(-50%, -320%);
-                    margin: 0;
-                    padding: 0;
-                    font-size: 0.41em;
-                    font-weight: bold;
-                    z-index: 2;
-                    font-family: sans-serif;
-                    color: #fff;
-                    text-transform: uppercase;
-                    text-shadow: 5px 5px 10px black;
-                    background: linear-gradient(to top, #232b32, transparent);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: rgba(255, 255, 255, 0.9);
-                }
-
-                img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
-                    width: 100%;
-                    height: 40%;
-                    object-fit: cover;
-                    pointer-events: none;
-                    margin: 0;
-                }
-            }
-
-            aside {
-                position: absolute;
-                right: 0px;
-                height: 400px;
-                transform: translate(0%, 45%);
-                padding-left: 0px;
-                margin: 0px 12.5%;
-                font-size: 18px;
-                font-weight: bolder;
-                width: 75%;
-                text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.387);
-            }
-            p {
-                font-size: 18px;
-                color: black;
-                font-family: $font;
-            }
-        }
-    }
-    .sec2 {
-        width: 100%;
-        height: 900px;
-        background-size: 100% 790px !important;
-        overflow: hidden;
-
-        .dog {
-            display: none;
-        }
-        .pesca {
-            display: none;
-        }
-        .birds {
-            display: none;
-        }
-        #codeR {
-            width: 80%;
-            margin-top: 15%;
-            height: 750px;
-            #navCode {
-                height: 50px;
-                position: relative;
-                top: -40px;
-                .nameFile {
-                    font-size: 16px;
-                    position: absolute;
-                    top: 10px;
-                    right: -80px;
-                    margin: auto;
-                }
-                .logo {
-                    top: -55px;
-                    left: -100px;
-                    position: relative;
-                }
-                .circulos {
-                    display: none;
-                }
-                .closers {
-                    display: none;
-                }
-            }
-
-            .sidebarVsc {
-                display: none;
-            }
-
-            .containerCode {
-                top: -74px;
                 width: 100%;
-                left: 0;
-
-                #bodyCode1 {
-                    font-size: 12px;
-                }
-                #bodyCode2 {
-                    font-size: 12px;
-                }
-                #bodyCode3 {
-                    font-size: 12px;
-                }
-                #bodyCode3:nth-child(5) {
-                    font-size: 10px;
-                }
-                #bodyCode3:nth-child(6) {
-                    font-size: 8px;
-                }
-                #bodyCode4 {
-                    font-size: 12px;
-                }
-                #bodyCode5 {
-                    font-size: 12px;
-                }
-                #bodyCode6 {
-                    font-size: 10px;
-                }
-            }
-        }
-    }
-    .sec3 {
-        width: 100%;
-        height: 900px;
-        background-size: 320px 790px !important;
-        overflow: hidden;
-
-        .fish {
-            display: none;
-        }
-        #cardContainer {
-            display: none;
-        }
-        .gradient-border {
-            margin: 0;
-            .slider {
-                height: 100px;
-                width: 280px;
                 margin: 0;
-                left: 4%;
+                left: 0%;
                 position: absolute;
             }
             &::after {
-                width: 290px;
-                left: 3%;
+                width: 100%;
+                left: 0%;
                 position: absolute;
             }
         }
     }
-    .sec4 {
-        width: 100%;
-        height: 900px;
-        background-size: 320px 790px !important;
-        overflow: hidden;
-
-        .contact {
-            width: 80%;
-
-            .contactContainer {
-                width: 78%;
-                opacity: 1;
-
-                .mb-2 {
-                    width: 74%;
-
-                    h4 {
-                        align-content: center;
-                    }
-                    .form-control {
-                        width: 100%;
-                    }
-                }
-                .subButton {
-                    position: relative;
-                    right: 5%;
-                }
-            }
-        }
-        .subSec {
-            display: none;
-        }
-    }
-    #demo-customized-button {
-        right: 7px !important;
-        top: 750px;
-        transform: scale(0.75);
-    }
-    #demo-customized-button:nth-child(2) {
-        right: 7px !important;
-        top: 680px;
-        transform: scale(0.75);
-    }
 }
-@media only screen and (width: 1024px) {
+@media only screen/*, screen */ and (max-width: 1279px) and (min-width: 1024px) {
     .sec1 {
         width: 100%;
-        height: 1110px;
-        background-size: 100% 1068px !important;
+        height: 950px;
+        background-size: 100% 938px !important;
 
         main {
-            position: relative;
-            width: 100%;
-            top: -20px;
-            height: 1075px;
-        }
-    }
-    .sec2 {
-        width: 100%;
-        height: 1110px;
-        background-size: 100% 1068px !important;
-        overflow: hidden;
-
-        .dog {
-            display: none;
-        }
-        .pesca {
-            display: none;
-        }
-        .birds {
-            filter: invert(100%);
-        }
-        #codeR {
-            width: 70%;
-            margin-top: 15%;
-            height: 840px;
-            #navCode {
-                height: 50px;
-                position: relative;
-                top: -40px;
-            }
-
-            .containerCode {
-                width: 92%;
-                left: 8%;
-
-                #bodyCode1 {
-                    font-size: 16px;
-                }
-                #bodyCode2 {
-                    font-size: 16px;
-                }
-                #bodyCode3 {
-                    font-size: 16px;
-                }
-                #bodyCode3:nth-child(5) {
-                    font-size: 14px;
-                }
-                #bodyCode3:nth-child(6) {
-                    font-size: 12px;
-                }
-                #bodyCode4 {
-                    font-size: 16px;
-                }
-                #bodyCode5 {
-                    font-size: 16px;
-                }
-                #bodyCode6 {
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-    .sec3 {
-        width: 100%;
-        height: 1110px;
-        background-size: 100% 1110px !important;
-        overflow: hidden;
-
-        #cardContainer {
-            transform: scale(0.75);
-        }
-    }
-    .sec4 {
-        width: 100%;
-        height: 1110px;
-        background-size: 100% 1110px !important;
-        overflow: hidden;
-
-        .contact {
-            width: 50%;
-
-            .contactContainer {
-                width: 49.5%;
-                background-size: 100% 600px;
-                .mb-2 {
-                    width: 74%;
-
-                    h4 {
-                        align-content: center;
-                    }
-                    .form-control {
-                        width: 100%;
-                    }
-                }
-                .subButton {
-                    position: relative;
-                    right: 5%;
-                }
-            }
-        }
-        .subSec {
-            transform: translate(-50%, 0%);
-        }
-    }
-    /* DARK */
-    .sec1Night {
-        width: 100%;
-        height: 1063px;
-        background-size: 100% 1048px !important;
-
-        .mainSectionDark {
             position: relative;
             width: 100%;
             top: 0px;
-            height: 1075px;
-        }
-    }
-    .sec2Night {
-        width: 100%;
-        height: 1110px;
-        background-size: 100% 1068px !important;
-        overflow: hidden;
-
-        .dog {
-            display: none;
-        }
-        .pesca {
-            display: none;
-        }
-        .birds {
-            filter: invert(100%);
-        }
-        #codeR {
-            width: 70%;
-            margin-top: 15%;
-            height: 840px;
-            #navCode {
-                height: 50px;
-                position: relative;
-                top: -40px;
-            }
-
-            .containerCode {
-                width: 92%;
-                left: 8%;
-
-                #bodyCode1 {
-                    font-size: 16px;
-                }
-                #bodyCode2 {
-                    font-size: 16px;
-                }
-                #bodyCode3 {
-                    font-size: 16px;
-                }
-                #bodyCode3:nth-child(5) {
-                    font-size: 14px;
-                }
-                #bodyCode3:nth-child(6) {
-                    font-size: 12px;
-                }
-                #bodyCode4 {
-                    font-size: 16px;
-                }
-                #bodyCode5 {
-                    font-size: 16px;
-                }
-                #bodyCode6 {
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-    .sec3Night {
-        width: 100%;
-        height: 1110px;
-        background-size: 100% 1110px !important;
-        overflow: hidden;
-
-        #cardContainer {
-            transform: scale(0.75);
-        }
-    }
-}
-@media only screen and (width: 1280px) {
-    .sec1 {
-        width: 100%;
-        height: 1200px;
-        background-size: 100% 1200px !important;
-
-        main {
-            position: relative;
-            width: 100%;
-            top: -120px;
-            height: 915px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-            z-index: 9;
-            background: linear-gradient(to top, rgba(0, 145, 255, 0.5), rgb(255, 255, 255, 0.5));
-            -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-
-            .col-9 {
-                width: 75%;
-
-                &:before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    z-index: 2;
-                    height: 40%;
-                    background: linear-gradient(to bottom, $fondoClaro, transparent);
-                }
-
-                &:after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 40%;
-                    z-index: 2;
-                    background: linear-gradient(to top, #0091ff, transparent);
-                    mix-blend-mode: color;
-                }
-                .saludo {
-                    position: absolute;
-                    transform: translate(-50%, -320%);
-                    margin: 0;
-                    padding: 0;
-                    font-size: 0.41em;
-                    font-weight: bold;
-                    z-index: 2;
-                    font-family: sans-serif;
-                    color: #fff;
-                    text-transform: uppercase;
-                    text-shadow: 5px 5px 10px black;
-                    background: linear-gradient(to top, #232b32, transparent);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: rgba(255, 255, 255, 0.9);
-                }
-
-                img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
-                    width: 100%;
-                    height: 40%;
-                    object-fit: cover;
-                    pointer-events: none;
-                    margin: 0;
-                }
-            }
-
-            aside {
-                position: absolute;
-                right: 0px;
-                height: 400px;
-                transform: translate(0%, 45%);
-                padding-left: 0px;
-                margin: 0px 12.5%;
-                font-size: 18px;
-                font-weight: bolder;
-                width: 75%;
-                text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.387);
-            }
-            p {
-                font-size: 18px;
-                color: black;
-                font-family: $font;
-            }
+            height: 940px;
         }
     }
     .sec2 {
         width: 100%;
-        height: 1200px;
-        background-size: 100% 1200px !important;
+        height: 950px;
+        background-size: 100% 938px !important;
         overflow: hidden;
 
         .dog {
             display: none;
-        }
-        .pesca {
-            display: none;
-        }
-        .birds {
-            display: none;
-        }
-        #codeR {
-            width: 80%;
-            margin-top: 15%;
-            height: 750px;
-            #navCode {
-                height: 50px;
-                position: relative;
-                top: -40px;
-                .nameFile {
-                    font-size: 16px;
-                    position: absolute;
-                    top: 10px;
-                    right: -80px;
-                    margin: auto;
-                }
-                .logo {
-                    top: -55px;
-                    left: -100px;
-                    position: relative;
-                }
-                .circulos {
-                    display: none;
-                }
-                .closers {
-                    display: none;
-                }
-            }
-
-            .sidebarVsc {
-                display: none;
-            }
-
-            .containerCode {
-                top: -74px;
-                width: 100%;
-                left: 0;
-
-                #bodyCode1 {
-                    font-size: 12px;
-                }
-                #bodyCode2 {
-                    font-size: 12px;
-                }
-                #bodyCode3 {
-                    font-size: 12px;
-                }
-                #bodyCode3:nth-child(5) {
-                    font-size: 10px;
-                }
-                #bodyCode3:nth-child(6) {
-                    font-size: 8px;
-                }
-                #bodyCode4 {
-                    font-size: 12px;
-                }
-                #bodyCode5 {
-                    font-size: 12px;
-                }
-                #bodyCode6 {
-                    font-size: 10px;
-                }
-            }
-        }
-    }
-    .sec3 {
-        width: 100%;
-        height: 1200px;
-        background-size: 320px 1200px !important;
-        overflow: hidden;
-
-        .fish {
-            display: none;
-        }
-        #cardContainer {
-            display: none;
-        }
-        .gradient-border {
-            margin: 0;
-            .slider {
-                height: 100px;
-                width: 280px;
-                margin: 0;
-                left: 4%;
-                position: absolute;
-            }
-            &::after {
-                width: 290px;
-                left: 3%;
-                position: absolute;
-            }
-        }
-    }
-    .sec4 {
-        width: 100%;
-        height: 1200px;
-        background-size: 320px 1200px !important;
-        overflow: hidden;
-
-        .contact {
-            width: 80%;
-
-            .contactContainer {
-                width: 78%;
-                opacity: 1;
-
-                .mb-2 {
-                    width: 74%;
-
-                    h4 {
-                        align-content: center;
-                    }
-                    .form-control {
-                        width: 100%;
-                    }
-                }
-                .subButton {
-                    position: relative;
-                    right: 5%;
-                }
-            }
-        }
-        .subSec {
-            display: none;
-        }
-    }
-    #demo-customized-button {
-        right: 7px !important;
-        top: 1020px;
-        transform: scale(0.95);
-    }
-    #demo-customized-button:nth-child(2) {
-        right: 7px !important;
-        top: 940px;
-        transform: scale(0.95);
-    }
-}
-@media only screen and (width: 1440px) {
-    .sec1 {
-        width: 100%;
-        height: 863px;
-        background-size: 100% 848px !important;
-
-        main {
-            position: relative;
-            width: 100%;
-            top: -20px;
-            height: 1075px;
-        }
-    }
-    .sec2 {
-        width: 100%;
-        height: 863px;
-        background-size: 100% 848px !important;
-        overflow: hidden;
-
-        .dog {
-            display: none;
-        }
-        .pesca {
-            display: none;
-        }
-        .birds {
-            filter: invert(100%);
-        }
-        #codeR {
-            width: 70%;
-            margin-top: 15%;
-            height: 840px;
-            #navCode {
-                height: 50px;
-                position: relative;
-                top: -40px;
-            }
-
-            .containerCode {
-                width: 92%;
-                left: 8%;
-
-                #bodyCode1 {
-                    font-size: 16px;
-                }
-                #bodyCode2 {
-                    font-size: 16px;
-                }
-                #bodyCode3 {
-                    font-size: 16px;
-                }
-                #bodyCode3:nth-child(5) {
-                    font-size: 14px;
-                }
-                #bodyCode3:nth-child(6) {
-                    font-size: 12px;
-                }
-                #bodyCode4 {
-                    font-size: 16px;
-                }
-                #bodyCode5 {
-                    font-size: 16px;
-                }
-                #bodyCode6 {
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-    .sec3 {
-        width: 100%;
-        height: 863px;
-        background-size: 100% 848px !important;
-        overflow: hidden;
-
-        #cardContainer {
-            transform: scale(0.75);
-        }
-    }
-    .sec4 {
-        width: 100%;
-        height: 863px;
-        background-size: 100% 848px !important;
-        overflow: hidden;
-
-        .contact {
-            width: 50%;
-
-            .contactContainer {
-                width: 49.5%;
-                background-size: 100% 600px;
-                .mb-2 {
-                    width: 74%;
-
-                    h4 {
-                        align-content: center;
-                    }
-                    .form-control {
-                        width: 100%;
-                    }
-                }
-                .subButton {
-                    position: relative;
-                    right: 5%;
-                }
-            }
-        }
-        .subSec {
-            transform: translate(-50%, 0%);
-        }
-    }
-    /* DARK */
-    .sec1Night {
-        width: 100%;
-        height: 863px;
-        background-size: 100% 848px !important;
-
-        .mainSectionDark {
-            position: relative;
-            width: 100%;
-            top: 0px;
-            height: 1245px;
-        }
-    }
-    .sec2Night {
-        width: 100%;
-        height: 863px;
-        background-size: 100% 848px !important;
-        overflow: hidden;
-
-        .dog {
-            transform: translate(0%, -10%);
         }
         .pesca {
             .muelle:nth-child(2) {
-                width: 14%;
-                left: 4.5%;
+                width: 16%;
+                left: 3.75%;
             }
             .muelle:nth-child(3) {
-                width: 14%;
-                left: -5%;
+                width: 16%;
+                left: -7%;
             }
             .fisherman {
                 .body {
-                    height: 160px;
-                    left: 11.1%;
-                    bottom: 710%;
+                    height: 100px;
+                    left: 10.51%;
+                    bottom: 760%;
                 }
                 .arm {
                     height: 50px;
@@ -1304,19 +1081,23 @@
                 }
 
                 .headF {
-                    left: 10%;
+                    left: 9%;
                     bottom: 950%;
+                    transform: scale(0.75);
+                }
+                .leg2 {
+                    left: 9%;
                 }
             }
             .stick {
                 height: 150px;
-                left: 15.2%;
+                left: 15.85%;
                 bottom: 920%;
                 transform: rotate(12deg);
             }
             .caña {
-                top: -489px;
-                left: 14%;
+                top: -529px;
+                left: 13.7%;
             }
         }
         .birds {
@@ -1324,7 +1105,163 @@
         }
         #codeR {
             width: 60%;
-            margin-top: 5%;
+            margin-top: 8%;
+            height: 700px;
+            #navCode {
+                height: 55px;
+                position: relative;
+                top: -30px;
+            }
+
+            .containerCode {
+                width: 92%;
+                left: 8%;
+
+                #bodyCode1 {
+                    font-size: 16px;
+                }
+                #bodyCode2 {
+                    font-size: 16px;
+                }
+                #bodyCode3 {
+                    font-size: 16px;
+                }
+                #bodyCode3:nth-child(5) {
+                    font-size: 14px;
+                }
+                #bodyCode3:nth-child(6) {
+                    font-size: 12px;
+                }
+                #bodyCode4 {
+                    font-size: 16px;
+                }
+                #bodyCode5 {
+                    font-size: 16px;
+                }
+                #bodyCode6 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .sec3 {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+        overflow: hidden;
+
+        #cardContainer {
+            transform: translate(0%, -20%) scale(85%);
+        }
+        .gradient-border {
+            margin: auto;
+            transform: translate(0%, -100%) scale(85%);
+            width: 96%;
+        }
+    }
+    .sec4 {
+        width: 100%;
+        height: 1110px;
+        background-size: 100% 1110px !important;
+        overflow: hidden;
+
+        .contact {
+            width: 50%;
+            position: relative;
+            bottom: 125px;
+
+            .contactContainer {
+                width: 99.5%;
+                background-size: 100% 600px;
+                .mb-2 {
+                    width: 74%;
+
+                    h4 {
+                        align-content: center;
+                    }
+                    .form-control {
+                        width: 100%;
+                    }
+                }
+                .subButton {
+                    position: relative;
+                    right: 5%;
+                }
+            }
+        }
+        .subSec {
+            transform: translate(-50%, 0%);
+        }
+    }
+    /* DARK */
+    .sec1Night {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+
+        .mainSectionDark {
+            position: relative;
+            width: 100%;
+            top: 0px;
+            height: 940px;
+        }
+    }
+    .sec2Night {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+        overflow: hidden;
+
+        .dog {
+            display: none;
+        }
+        .pesca {
+            .muelle:nth-child(2) {
+                width: 16%;
+                left: 3.75%;
+            }
+            .muelle:nth-child(3) {
+                width: 16%;
+                left: -7%;
+            }
+            .fisherman {
+                .body {
+                    height: 100px;
+                    left: 10.51%;
+                    bottom: 760%;
+                }
+                .arm {
+                    height: 50px;
+                    left: 12.9%;
+                    bottom: 860%;
+                }
+
+                .headF {
+                    left: 9%;
+                    bottom: 950%;
+                    transform: scale(0.75);
+                }
+                .leg2 {
+                    left: 9%;
+                }
+            }
+            .stick {
+                height: 150px;
+                left: 15.85%;
+                bottom: 920%;
+                transform: rotate(12deg);
+            }
+            .caña {
+                top: -529px;
+                left: 13.7%;
+            }
+        }
+        .birds {
+            filter: invert(100%);
+        }
+        #codeR {
+            width: 60%;
+            margin-top: 8%;
             height: 700px;
             #navCode {
                 height: 50px;
@@ -1335,13 +1272,609 @@
             .containerCode {
                 width: 92%;
                 left: 8%;
+
+                #bodyCode1 {
+                    font-size: 16px;
+                }
+                #bodyCode2 {
+                    font-size: 16px;
+                }
+                #bodyCode3 {
+                    font-size: 16px;
+                }
+                #bodyCode3:nth-child(5) {
+                    font-size: 14px;
+                }
+                #bodyCode3:nth-child(6) {
+                    font-size: 12px;
+                }
+                #bodyCode4 {
+                    font-size: 16px;
+                }
+                #bodyCode5 {
+                    font-size: 16px;
+                }
+                #bodyCode6 {
+                    font-size: 14px;
+                }
             }
         }
     }
     .sec3Night {
         width: 100%;
-        height: 863px;
-        background-size: 100% 848px !important;
+        height: 950px;
+        background-size: 100% 938px !important;
         overflow: hidden;
+        #cardContainer {
+            transform: translate(0%, -10%) scale(85%);
+            .liTools {
+                color: #fff !important;
+            }
+        }
+        .gradient-border {
+            margin: auto;
+            transform: translate(0%, -100%) scale(85%);
+        }
+    }
+}
+@media only screen/*, screen */ and (max-width: 1439px) and (min-width: 1280px) {
+    .sec1 {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+
+        main {
+            position: relative;
+            width: 100%;
+            top: 0px;
+            height: 940px;
+        }
+    }
+    .sec2 {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+        overflow: hidden;
+
+        .dog {
+            display: none;
+        }
+        .pesca {
+            .muelle:nth-child(2) {
+                width: 16%;
+                left: 3.75%;
+            }
+            .muelle:nth-child(3) {
+                width: 16%;
+                left: -7%;
+            }
+            .fisherman {
+                .body {
+                    height: 100px;
+                    left: 10.41%;
+                    bottom: 780%;
+                }
+                .arm {
+                    height: 50px;
+                    left: 12.689%;
+                    bottom: 860%;
+                }
+
+                .headF {
+                    left: 9%;
+                    bottom: 950%;
+                    transform: scale(0.75);
+                }
+                .leg2 {
+                    left: 9%;
+                }
+            }
+            .stick {
+                height: 150px;
+                left: 15.85%;
+                bottom: 920%;
+                transform: rotate(12deg);
+            }
+            .caña {
+                top: -529px;
+                left: 14.197%;
+            }
+        }
+        .birds {
+            filter: invert(100%);
+        }
+        #codeR {
+            width: 60%;
+            margin-top: 8%;
+            height: 740px;
+            #navCode {
+                height: 50px;
+                position: relative;
+                top: -35px;
+            }
+
+            .containerCode {
+                width: 92%;
+                left: 8%;
+
+                #bodyCode1 {
+                    font-size: 16px;
+                }
+                #bodyCode2 {
+                    font-size: 16px;
+                }
+                #bodyCode3 {
+                    font-size: 16px;
+                }
+                #bodyCode3:nth-child(5) {
+                    font-size: 14px;
+                }
+                #bodyCode3:nth-child(6) {
+                    font-size: 12px;
+                }
+                #bodyCode4 {
+                    font-size: 16px;
+                }
+                #bodyCode5 {
+                    font-size: 16px;
+                }
+                #bodyCode6 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .sec3 {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+        overflow: hidden;
+
+        #cardContainer {
+            transform: translate(0%, -20%) scale(0.75);
+        }
+        .gradient-border {
+            margin: auto;
+            transform: translate(0%, -100%) scale(85%);
+        }
+    }
+    .sec4 {
+        width: 100%;
+        height: 1110px;
+        background-size: 100% 1110px !important;
+        overflow: hidden;
+
+        .contact {
+            width: 50%;
+            position: relative;
+            bottom: 125px;
+
+            .contactContainer {
+                width: 99.5%;
+                background-size: 100% 600px;
+                .mb-2 {
+                    width: 74%;
+
+                    h4 {
+                        align-content: center;
+                    }
+                    .form-control {
+                        width: 100%;
+                    }
+                }
+                .subButton {
+                    position: relative;
+                    right: 5%;
+                }
+            }
+        }
+        .subSec {
+            transform: translate(-50%, 0%);
+        }
+    }
+    /* DARK */
+    .sec1Night {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+
+        .mainSectionDark {
+            position: relative;
+            width: 100%;
+            top: 0px;
+            height: 940px;
+        }
+    }
+    .sec2Night {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+        overflow: hidden;
+
+        .dog {
+            display: none;
+        }
+        .pesca {
+            .muelle:nth-child(2) {
+                width: 16%;
+                left: 3.75%;
+            }
+            .muelle:nth-child(3) {
+                width: 16%;
+                left: -7%;
+            }
+            .fisherman {
+                .body {
+                    height: 100px;
+                    left: 10.51%;
+                    bottom: 760%;
+                }
+                .arm {
+                    height: 50px;
+                    left: 12.9%;
+                    bottom: 860%;
+                }
+
+                .headF {
+                    left: 9%;
+                    bottom: 950%;
+                    transform: scale(0.75);
+                }
+                .leg2 {
+                    left: 9%;
+                }
+            }
+            .stick {
+                height: 150px;
+                left: 15.85%;
+                bottom: 920%;
+                transform: rotate(12deg);
+            }
+            .caña {
+                top: -529px;
+                left: 13.7%;
+            }
+        }
+        .birds {
+            filter: invert(100%);
+        }
+        #codeR {
+            width: 70%;
+            margin-top: 8%;
+            height: 740px;
+            #navCode {
+                height: 50px;
+                position: relative;
+                top: -40px;
+            }
+
+            .containerCode {
+                width: 92%;
+                left: 8%;
+
+                #bodyCode1 {
+                    font-size: 16px;
+                }
+                #bodyCode2 {
+                    font-size: 16px;
+                }
+                #bodyCode3 {
+                    font-size: 16px;
+                }
+                #bodyCode3:nth-child(5) {
+                    font-size: 14px;
+                }
+                #bodyCode3:nth-child(6) {
+                    font-size: 12px;
+                }
+                #bodyCode4 {
+                    font-size: 16px;
+                }
+                #bodyCode5 {
+                    font-size: 16px;
+                }
+                #bodyCode6 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .sec3Night {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+        overflow: hidden;
+        #cardContainer {
+            transform: translate(0%, -10%) scale(85%);
+            .liTools {
+                color: #fff !important;
+            }
+        }
+        .gradient-border {
+            margin: auto;
+            transform: translate(0%, -100%) scale(85%);
+        }
+    }
+}
+@media only screen /*, screen */ and (max-width: 1720px) and (min-width: 1440px) {
+    .sec1 {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+
+        main {
+            position: relative;
+            width: 100%;
+            top: 0px;
+            height: 940px;
+        }
+    }
+    .sec2 {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+        overflow: hidden;
+
+        .dog {
+            display: none;
+        }
+        .pesca {
+            .muelle:nth-child(2) {
+                width: 16%;
+                left: 3.75%;
+            }
+            .muelle:nth-child(3) {
+                width: 16%;
+                left: -7%;
+            }
+            .fisherman {
+                .body {
+                    height: 100px;
+                    left: 10.51%;
+                    bottom: 760%;
+                }
+                .arm {
+                    height: 50px;
+                    left: 12.9%;
+                    bottom: 860%;
+                }
+
+                .headF {
+                    left: 9%;
+                    bottom: 950%;
+                    transform: scale(0.75);
+                }
+                .leg2 {
+                    left: 9%;
+                }
+            }
+            .stick {
+                height: 150px;
+                left: 15.85%;
+                bottom: 920%;
+                transform: rotate(12deg);
+            }
+            .caña {
+                top: -529px;
+                left: 14.4%;
+            }
+        }
+        .birds {
+            filter: invert(100%);
+        }
+        #codeR {
+            width: 60%;
+            margin-top: 8%;
+            height: 670px;
+            #navCode {
+                height: 50px;
+                position: relative;
+                top: -35px;
+            }
+
+            .containerCode {
+                width: 92%;
+                left: 8%;
+
+                #bodyCode1 {
+                    font-size: 16px;
+                }
+                #bodyCode2 {
+                    font-size: 16px;
+                }
+                #bodyCode3 {
+                    font-size: 16px;
+                }
+                #bodyCode3:nth-child(5) {
+                    font-size: 14px;
+                }
+                #bodyCode3:nth-child(6) {
+                    font-size: 12px;
+                }
+                #bodyCode4 {
+                    font-size: 16px;
+                }
+                #bodyCode5 {
+                    font-size: 16px;
+                }
+                #bodyCode6 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .sec3 {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+        overflow: hidden;
+        #cardContainer {
+            transform: translate(0%, -10%) scale(85%);
+            /* .liTools {
+                color: #fff !important;
+            } */
+        }
+        .gradient-border {
+            margin: auto;
+            transform: translate(0%, -100%) scale(85%);
+            width: 68%;
+        }
+    }
+    .sec4 {
+        width: 100%;
+        height: 1110px;
+        background-size: 100% 1110px !important;
+        overflow: hidden;
+
+        .contact {
+            width: 50%;
+            position: relative;
+            bottom: 125px;
+
+            .contactContainer {
+                width: 99.5%;
+                background-size: 100% 600px;
+                .mb-2 {
+                    width: 74%;
+
+                    h4 {
+                        align-content: center;
+                    }
+                    .form-control {
+                        width: 100%;
+                    }
+                }
+                .subButton {
+                    position: relative;
+                    right: 5%;
+                }
+            }
+        }
+        .subSec {
+            transform: translate(-50%, 0%);
+        }
+    }
+    /* DARK */
+    .sec1Night {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+
+        .mainSectionDark {
+            position: relative;
+            width: 100%;
+            top: 0px;
+            height: 940px;
+        }
+    }
+    .sec2Night {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+        overflow: hidden;
+
+        .dog {
+            display: none;
+        }
+        .pesca {
+            .muelle:nth-child(2) {
+                width: 16%;
+                left: 3.75%;
+            }
+            .muelle:nth-child(3) {
+                width: 16%;
+                left: -7%;
+            }
+            .fisherman {
+                .body {
+                    height: 100px;
+                    left: 10.51%;
+                    bottom: 760%;
+                }
+                .arm {
+                    height: 50px;
+                    left: 12.9%;
+                    bottom: 860%;
+                }
+
+                .headF {
+                    left: 9%;
+                    bottom: 950%;
+                    transform: scale(0.75);
+                }
+                .leg2 {
+                    left: 9%;
+                }
+            }
+            .stick {
+                height: 150px;
+                left: 15.85%;
+                bottom: 920%;
+                transform: rotate(12deg);
+            }
+            .caña {
+                top: -529px;
+                left: 14.4%;
+            }
+        }
+        .birds {
+            filter: invert(100%);
+        }
+        #codeR {
+            width: 60%;
+            margin-top: 8%;
+            height: 670px;
+            #navCode {
+                height: 50px;
+                position: relative;
+                top: -40px;
+            }
+
+            .containerCode {
+                width: 92%;
+                left: 8%;
+
+                #bodyCode1 {
+                    font-size: 16px;
+                }
+                #bodyCode2 {
+                    font-size: 16px;
+                }
+                #bodyCode3 {
+                    font-size: 16px;
+                }
+                #bodyCode3:nth-child(5) {
+                    font-size: 14px;
+                }
+                #bodyCode3:nth-child(6) {
+                    font-size: 12px;
+                }
+                #bodyCode4 {
+                    font-size: 16px;
+                }
+                #bodyCode5 {
+                    font-size: 16px;
+                }
+                #bodyCode6 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .sec3Night {
+        width: 100%;
+        height: 950px;
+        background-size: 100% 938px !important;
+        overflow: hidden;
+        #cardContainer {
+            transform: translate(0%, -10%) scale(85%);
+            .liTools {
+                color: #fff !important;
+            }
+        }
+        .gradient-border {
+            margin: auto;
+            transform: translate(0%, -100%) scale(85%);
+        }
     }
 }

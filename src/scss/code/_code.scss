@@ -460,6 +460,12 @@ body {
     margin-left: 12.5px;
     width: 92%;
     display: flex;
+    a{
+      text-decoration: none;
+      color:$fondoClaro;
+      font-size: 14px;
+      font-weight: 900;
+    }
   }
   .redText {
     color: rgb(223, 0, 0);
@@ -958,6 +964,12 @@ body {
       margin-left: 12.5px;
       width: 92%;
       display: flex;
+      a{
+        text-decoration: none;
+        color:$fondoClaro;
+        font-size: 14px;
+        font-weight: 900;
+      }
     }
     .redText {
       color: rgb(223, 0, 0);

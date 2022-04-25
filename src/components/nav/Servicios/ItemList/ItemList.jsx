@@ -3,7 +3,7 @@ import Item from "../Item/Item";
 
 export default function ItemList({ items }) {
   return (
-    <div /*  className="reveal"  */id="itemList">
+    <div id="itemList">
       {items.map((item) => (
         <Item
           modelo={item.modelo}
@@ -12,6 +12,10 @@ export default function ItemList({ items }) {
           id={item.id}
           pic={item.pic}
           stock={item.stock}
+          herramienta1={item.herramienta1}
+          herramienta2={item.herramienta2}
+          herramienta3={item.herramienta3}
+          porcentaje={item.porcentaje}  
         />
       ))}
     </div>
