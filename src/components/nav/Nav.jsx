@@ -1,4 +1,25 @@
 import React from "react";
+document.addEventListener("mousemove", parallax);
+function parallax(e) {
+  this.querySelectorAll("#moon").forEach((moon) => {
+    const speed = moon.getAttribute("data-speed");
+
+    const x = (window.innerWidth - e.pageX * speed) / 100;
+    const y = (window.innerHeight - e.pageY * speed) / 100;
+
+    moon.style.transform = `translateX(${x}px) translateY(${y}px) `;
+    moon.style.transform = `-o-translateX(${x}px) -o-translateY(${y}px)  `;
+  });
+  this.querySelectorAll(".saludo").forEach((saludo) => {
+    const speed = saludo.getAttribute("data-speed");
+
+    const x = (window.innerWidth - e.pageX * speed) / 100;
+    const y = (window.innerHeight - e.pageY * speed) / 100;
+
+    saludo.style.transform = `translateX(${x}px) translateY(${y}px) `;
+    saludo.style.transform = `-o-translateX(${x}px) -o-translateY(${y}px)  `;
+  });
+};
 const Nav = () => {
   var images = [,
     "https://agust1n-llad0s.000webhostapp.com/multimedia/recursosWebP/mountain-removebg.webp",
@@ -10,10 +31,10 @@ const Nav = () => {
     <div /* className="dark-theme" */>
       <main className="mainSection" /*  class="col-9" */>
         <div class="col-9">
-          <h1 className="saludo">Hi! I am Agustín LLadós</h1>
-          <img src={images[1]} className="moon" alt="moon" data-speed="1"/>
-          <img src={images[2]} className="road" alt="road" data-speed="1"/>
-          <img src={images[3]} className="mountain" alt="mountain" data-speed="1"/>
+          <h1 className="saludo" data-speed="0.7">Hi! I am Agustín LLadós</h1>
+          <img src={images[1]} className="mountain" alt="mountain" />
+          <img src={images[2]} className="road" alt="road" />
+          <img src={images[3]} className="moon" id="moon" alt="moon" data-speed="10"/>
         </div>
 
         <aside class="col-3">
