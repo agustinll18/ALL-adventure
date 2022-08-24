@@ -1,34 +1,20 @@
 /* MOVIL S */
-@media screen and (max-width: 767px) and (min-width: 280px) and (orientation: portrait) /* OPTIMIZADO PARA QUE SE VEA EN DIPOSITIVOS CON 125% EN LA IMAGEN */{
-    html {
-        height: 661px;
-    }
-    body {
-        height: 661px;
-    }
-    label {
-        margin-right: 25px;
-    }
+@media screen and (max-width: 767px) and (min-width: 200px) and (orientation: portrait) /* OPTIMIZADO PARA QUE SE VEA EN DIPOSITIVOS CON 125% EN LA IMAGEN */ {
     .sec1 {
         width: 100%;
-        background-size: 100% 661px !important;
-        height: 661px;
 
         .mainSection {
             position: relative;
             width: 100%;
-            top: 0px;
-            height: 661px;
+            top: -20px;
 
             .col-9 {
                 width: 100%;
                 height: 41%;
-                top: 0px;
                 transform: translate(0%, -70%);
                 h2 {
                     font-weight: 1000;
                     font-family: italic;
-                    font-size: 38px;
                     text-shadow: 2px 2px 8px rgb(255, 255, 255);
                 }
                 &:before {
@@ -54,8 +40,8 @@
                 .saludo {
                     position: absolute;
                     transform: translate(-50%, -50%);
-                    font-size: 0.31em;
                     font-weight: bolder;
+                    font-size: 4.95vw;
                 }
 
                 img {
@@ -75,7 +61,7 @@
             aside {
                 position: absolute;
                 right: 0px;
-                height: 400px;
+                height: 40vh;
                 transform: translate(0%, 30%);
                 padding-left: 0px;
                 margin: 0px 12.5%;
@@ -83,21 +69,15 @@
                 width: 75%;
             }
             #navH {
-                font-size: 32px !important;
-                color: rgb(0, 0, 0);
-                align-content: center;
-                height: 20%;
-                margin-bottom: 8%;
+                font-size: 5vw;
             }
-            p {
-                font-size: 14px !important;
+            #navP {
+                font-size: min(max(2.5vw, 2.78vw));
             }
         }
     }
     .sec2 {
         width: 100%;
-        background-size: 100% 661px !important;
-        height: 661px;
         overflow: hidden;
 
         .dog {
@@ -110,18 +90,20 @@
             display: none;
         }
         #codeR {
-            width: 80%;
-            margin: 15% 7%;
-            height: 580px;
+            width: 85%;
+            margin: 7% 4%;
+            height: 90vh;
+            top: -100vh;
             #navCode {
-                height: 50px;
+                height: 8vh;
                 position: relative;
-                top: -40px;
+                top: -7.15vh;
                 .nameFile {
                     font-size: 16px;
                     position: absolute;
                     top: 10px;
                     right: 0px;
+                    height: 15vh;
                     margin: auto;
                 }
                 .logo {
@@ -176,66 +158,37 @@
     }
     .sec3 {
         width: 100%;
-        background-size: 100% 661px !important;
-        height: 661px;
         overflow: hidden;
 
         .fish {
             display: none;
         }
-        #cardContainer {
-            transform: scale(0.85, 0.8) translate(0%, -20%);
-            width: 100%;
-            height: 460px;
-            flex-direction: column;
-            margin: 0 auto;
-            justify-content: space-around;
-            #cardService {
-                margin: 0px auto;
-                transform: scale(0.85, 0.5) translate(0%, 0%);
-                width: 100%;
-                height: 260px;
-                .cardImg {
-                    transform: scale(0.85, 1.15) translate(-32%, -35%);
-                    img {
-                        transform: scale(0.85, 1.15);
+
+        .cards {
+            transform: translate(-4%, -10%);
+            .row {
+                flex-flow: row;
+                .col {
+                    padding: 0;
+                    width: 35vh;
+                    margin: clamp(0.2vw, 1.2vw, 2.7vw);
+                    .wrapper {
+                        width: 39vw;
                     }
-                }
-                .cardSection {
-                    height: 50px;
-                    .herramientas {
-                        display: none;
-                    }
-                    .productosModelo {
-                        font-size: 22px;
-                        font-weight: 900;
-                        margin: 25px;
-                        transform: scale(1, 1.15) translate(-32.5%, -40%);
-                    }
-                    .progressResponsiveMobile {
-                        opacity: 1;
-                        height: 50px;
-                        width: 150px;
-                        transform: translate(45%, -310%);
-                    }
-                    .porcentajeResponsive {
-                        opacity: 1;
-                        font-size: 22px;
-                        position: relative;
-                        left: 20%;
-                        font-weight: 900;
-                        top: -520%;
-                    }
-                }
-                .overlay {
-                    display: none;
                 }
             }
         }
+        th {
+            font-size: 4vw !important;
+        }
+        td {
+            font-size: 2.5vw !important;
+        }
+
         .gradient-border {
             margin: 0;
-            width: 80%;
-            transform: translate(10%, -50%);
+            width: 80vw;
+            transform: translate(10%, 0%);
             .slider {
                 height: 100px;
                 width: 100%;
@@ -252,27 +205,24 @@
     }
     .sec4 {
         width: 100%;
-        background-size: 100% 661px !important;
-        height: 661px;
         overflow: hidden;
 
         .contact {
             width: 80%;
-            height: 500px;
-            margin: 2.5% auto;
+            height: 85vh;
+            margin: 0px auto;
             transform: translate(0px, -5%);
             .contactContainer {
                 width: 100%;
+                height: 105vh;
                 opacity: 1 !important;
                 transform: scaleY(0.83) !important;
                 .glass form {
                     margin: auto;
-                    float: both;
                     width: 100%;
-                    height: 500px;
-                    padding: 5%;
+                    padding: 0%;
                     .mb-2 {
-                        margin: 50px 5%;
+                        margin: 5vh auto;
                         width: 100%;
 
                         h4 {
@@ -297,24 +247,20 @@
     /* DARK */
     .sec1Night {
         width: 100%;
-        background-size: 100% 661px !important;
-        height: 661px;
 
         .mainSectionDark {
             position: relative;
             width: 100%;
-            top: 0px;
-            height: 661px;
+            top: 0vh;
+            height: 104vh;
 
             .col-9 {
                 width: 100%;
                 height: 41%;
-                top: 0px;
                 transform: translate(0%, -70%);
                 h2 {
                     font-weight: 1000;
                     font-family: italic;
-                    font-size: 38px;
                     text-shadow: 2px 2px 8px rgb(255, 255, 255);
                 }
                 &:before {
@@ -340,8 +286,8 @@
                 .saludo {
                     position: absolute;
                     transform: translate(-50%, -50%);
-                    font-size: 0.31em;
                     font-weight: bolder;
+                    font-size: 5.5vw;
                 }
 
                 img {
@@ -361,7 +307,7 @@
             aside {
                 position: absolute;
                 right: 0px;
-                height: 400px;
+                height: 40vh;
                 transform: translate(0%, 30%);
                 padding-left: 0px;
                 margin: 0px 12.5%;
@@ -369,21 +315,15 @@
                 width: 75%;
             }
             #navH {
-                font-size: 32px !important;
-                color: rgb(255, 255, 255) !important;
-                align-content: center;
-                height: 20%;
-                margin-bottom: 8%;
+                font-size: 5vw;
             }
-            p {
-                font-size: 14px !important;
+            #navP {
+                font-size: 3vh;
             }
         }
     }
     .sec2Night {
         width: 100%;
-        height: 883px;
-        background-size: 100% 880px !important;
         overflow: hidden;
 
         .dog {
@@ -396,18 +336,20 @@
             display: none;
         }
         #codeR {
-            width: 80%;
-            margin: 20% 7%;
-            height: 640px;
+            width: 85%;
+            margin: 7% 4%;
+            height: 90vh;
+            top: -100vh;
             #navCode {
-                height: 50px;
+                height: 8vh;
                 position: relative;
-                top: -40px;
+                top: -7.15vh;
                 .nameFile {
                     font-size: 16px;
                     position: absolute;
                     top: 10px;
                     right: 0px;
+                    height: 15vh;
                     margin: auto;
                 }
                 .logo {
@@ -462,67 +404,37 @@
     }
     .sec3Night {
         width: 100%;
-        background-size: 100% 661px !important;
-        height: 661px;
         overflow: hidden;
 
         .fish {
             display: none;
         }
-        #cardContainer {
-            flex-direction: column;
-            height: 460px;
-            justify-content: space-around;
-            margin: 0 auto;
-            -webkit-transform: scale(0.85, 0.8) translateY(-30%);
-            transform: scale(0.85, 0.8) translateY(-20%);
-            width: 100%;
-            #cardService {
-                margin: 0px auto !important;
-                transform: scale(0.85, 0.5) translate(0%, 0%);
-                width: 100% !important;
-                height: 260px !important;
-                .cardImg {
-                    transform: scale(0.85, 1.15) translate(-32%, -35%);
-                    img {
-                        transform: scale(0.85, 1.15);
+
+        .cards {
+            transform: translate(-4%, -10%);
+            .row {
+                flex-flow: row;
+                .col {
+                    padding: 0;
+                    width: 35vh;
+                    margin: clamp(0.2vw, 1.2vw, 2.7vw);
+                    .wrapper {
+                        width: 39vw;
                     }
-                }
-                .cardSection {
-                    height: 50px;
-                    .herramientas {
-                        display: none;
-                    }
-                    .productosModelo {
-                        font-size: 22px;
-                        font-weight: 900;
-                        margin: 25px;
-                        transform: scale(1, 1.15) translate(-32.5%, -40%);
-                    }
-                    .progressResponsiveMobile {
-                        opacity: 1;
-                        height: 50px;
-                        width: 150px;
-                        transform: translate(45%, -310%);
-                    }
-                    .porcentajeResponsive {
-                        opacity: 1;
-                        font-size: 22px;
-                        position: relative;
-                        left: 20%;
-                        font-weight: 900;
-                        top: -520%;
-                    }
-                }
-                .overlay {
-                    display: none;
                 }
             }
         }
+        th {
+            font-size: 4vw !important;
+        }
+        td {
+            font-size: 2.5vw !important;
+        }
+
         .gradient-border {
             margin: 0;
-            width: 80%;
-            transform: translate(10%, -50%);
+            width: 80vw;
+            transform: translate(10%, 0%);
             .slider {
                 height: 100px;
                 width: 100%;
@@ -538,56 +450,27 @@
         }
     }
     #demo-customized-button {
-        transform: scale(0.6);
-        right: -3.5% !important;
+        transform: scale(0.8);
+        right: -0.5% !important;
     }
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-    html {
-        height: 840px;
-    }
-    body {
-        height: 840px;
-    }
-    label {
-        margin-right: 25px;
-    }
-    .pp-tableCell {
-        height: 760px !important;
-        padding-right: 0px !important;
-    }
+@media screen and (max-width: 1025px) and (min-width: 768px) and (orientation: portrait) {
     .sec1 {
         width: 100%;
-        height: 883px;
-        background-size: 100% 880px !important;
 
         .mainSection {
             position: relative;
             width: 100%;
-            top: 0px;
-            height: 885px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-            z-index: 9;
-            background: linear-gradient(to top, rgba(0, 145, 255, 0.5), rgb(255, 255, 255, 0.5));
-            -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
-            border: 1px solid rgba(255, 255, 255, 0.25);
+            top: -20px;
 
             .col-9 {
                 width: 100%;
                 height: 41%;
-                top: 0px;
                 transform: translate(0%, -70%);
                 h2 {
                     font-weight: 1000;
                     font-family: italic;
-                    font-size: 38px;
                     text-shadow: 2px 2px 8px rgb(255, 255, 255);
                 }
                 &:before {
@@ -598,7 +481,6 @@
                     width: 100%;
                     z-index: 2;
                     height: 75%;
-                    background: linear-gradient(to bottom, $fondoClaro, transparent);
                 }
 
                 &:after {
@@ -609,14 +491,13 @@
                     width: 100%;
                     height: 100%;
                     z-index: 2;
-                    background: linear-gradient(to top, #0091ff, transparent);
                     mix-blend-mode: color;
                 }
                 .saludo {
                     position: absolute;
                     transform: translate(-50%, -50%);
-                    font-size: 0.61em;
                     font-weight: bolder;
+                    font-size: 4.95vw;
                 }
 
                 img {
@@ -636,30 +517,23 @@
             aside {
                 position: absolute;
                 right: 0px;
-                height: 400px;
-                transform: translate(0%, 25%);
+                height: 40vh;
+                transform: translate(0%, 30%);
                 padding-left: 0px;
                 margin: 0px 12.5%;
                 font-weight: bolder;
                 width: 75%;
-                text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.387);
             }
             #navH {
-                font-size: 44px;
-                text-shadow: 5px 5px 10px #cfcece;
-                color: rgb(0, 0, 0);
-                align-content: center;
-                height: 20%;
+                font-size: 5vw;
             }
-            p {
-                font-size: 26px !important;
+            #navP {
+                font-size: min(max(2.5vw, 2.78vw));
             }
         }
     }
     .sec2 {
         width: 100%;
-        height: 883px;
-        background-size: 100% 880px !important;
         overflow: hidden;
 
         .dog {
@@ -672,26 +546,30 @@
             display: none;
         }
         #codeR {
-            width: 80%;
-            margin: 10% 7%;
-            height: 690px;
+            width: 85%;
+            margin: 7% 4%;
+            height: 90vh;
+            top: -100vh;
             #navCode {
-                height: 50px;
+                height: 5vh;
                 position: relative;
-                top: -40px;
+                top: -3.75vh;
                 .nameFile {
-                    font-size: 20px;
+                    font-size: 3vw;
                     position: absolute;
-                    top: 10px;
+                    top: 0vw;
                     right: 0px;
+                    height: 3vh;
                     margin: auto;
                 }
                 .logo {
-                    position: relative;
-                    top: 10px;
+                    display: none;
                 }
                 .circulos {
-                    top: 10px;
+                    display: none;
+                }
+                .closers {
+                    display: none;
                 }
             }
 
@@ -705,66 +583,67 @@
                 left: 0;
 
                 #bodyCode1 {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                 }
                 #bodyCode2 {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                 }
                 #bodyCode3 {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                 }
                 #bodyCode3:nth-child(5) {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                 }
                 #bodyCode3:nth-child(6) {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                 }
                 #bodyCode4 {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                 }
                 #bodyCode5 {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                 }
                 #bodyCode6 {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                     a {
-                        font-size: 14px;
+                        font-size: 2.5vw;
                     }
                 }
             }
-        }
-    }
+        }}
     .sec3 {
         width: 100%;
-        height: 883px;
-        background-size: 100% 880px !important;
         overflow: hidden;
 
         .fish {
             display: none;
         }
-        #cardContainer {
-            position: absolute;
-            width: 95%;
-            transform: translate(-50%, -60%) scale(1,0.8);
-            .herramientas{
-                margin: 0;
-                transform: translate(10%,0px);
-                position: relative;
-                left: 15px;
-                .liTools{
-                    font-size: 20px;
-                    width: 80% !important;
-                    padding: 0 !important;
-                    margin: 0  !important;
-                    transform: translate(0%, -10px)
+
+        .cards {
+            transform: translate(-4%, -10%);
+            .row {
+                flex-flow: row;
+                .col {
+                    padding: 0;
+                    width: 35vh;
+                    margin: clamp(0.5vw, 1.5vw, 2.7vw);
+                    .wrapper {
+                        width: 39vw;
+                    }
                 }
             }
         }
+        th {
+            font-size: 4vw !important;
+        }
+        td {
+            font-size: 2.5vw !important;
+        }
+
         .gradient-border {
             margin: 0;
-            width: 80%;
-            transform: translate(10%, 180%);
+            width: 80vw;
+            transform: translate(10%, 0%);
             .slider {
                 height: 100px;
                 width: 100%;
@@ -781,32 +660,40 @@
     }
     .sec4 {
         width: 100%;
-        height: 883px;
-        background-size: 100% 880px !important;
         overflow: hidden;
 
         .contact {
             width: 80%;
-
+            height: 85vh; 
+            margin: 0px auto;
+            transform: translate(0px, -5%);
             .contactContainer {
-                width: 78.5%;
+                width: 100%;
+                height: 105vh;
                 opacity: 1 !important;
-                background-size: 100% 600px;
+                transform: scaleY(0.83) !important;
                 .glass form {
                     margin: auto;
-                    float: both;
                     width: 100%;
-                    height: 500px;
-                    padding: 5%;
+                    padding: 0%;
+                    height: 50vh;
                     .mb-2 {
-                        margin: 50px 5%;
+                        margin: 15vh auto;
                         width: 100%;
+                        height: 15vh;
 
                         h4 {
                             align-content: center;
+                            font-size: 4vw;
                         }
                         label.form-control {
                             width: 100%;
+                            height:22vh
+                        }
+
+                        #exampleFormControlTextarea1 {
+                            height: 10vh;
+                            max-height: 13vh;
                         }
                     }
                 }
@@ -824,35 +711,20 @@
     /* DARK */
     .sec1Night {
         width: 100%;
-        height: 883px;
-        background-size: 100% 880px !important;
 
         .mainSectionDark {
             position: relative;
             width: 100%;
-            top: 0px;
-            height: 885px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-            z-index: 9;
-            background: linear-gradient(to top, rgba(0, 15, 77, 0.885), rgb(6, 1, 35));
-            -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
-            border: 1px solid rgba(255, 255, 255, 0.25);
+            top: 0vh;
+            height: 104vh;
 
             .col-9 {
                 width: 100%;
                 height: 41%;
-                top: 0px;
                 transform: translate(0%, -70%);
                 h2 {
                     font-weight: 1000;
                     font-family: italic;
-                    font-size: 38px;
                     text-shadow: 2px 2px 8px rgb(255, 255, 255);
                 }
                 &:before {
@@ -863,7 +735,6 @@
                     width: 100%;
                     z-index: 2;
                     height: 75%;
-                    background: none;
                 }
 
                 &:after {
@@ -874,21 +745,13 @@
                     width: 100%;
                     height: 100%;
                     z-index: 2;
-                    background: linear-gradient(to top, rgb(6, 1, 35), rgb(0, 0, 0));
                     mix-blend-mode: color;
                 }
                 .saludo {
                     position: absolute;
                     transform: translate(-50%, -50%);
-                    font-size: 0.31em;
                     font-weight: bolder;
-                    color: #fff;
-                    text-transform: uppercase;
-                    text-shadow: 5px 5px 10px black;
-                    background: linear-gradient(to top, #232b32, transparent);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: rgba(255, 255, 255, 0.9);
+                    font-size: 4.95vw;
                 }
 
                 img {
@@ -908,30 +771,23 @@
             aside {
                 position: absolute;
                 right: 0px;
-                height: 400px;
-                transform: translate(0%, 35%);
+                height: 40vh;
+                transform: translate(0%, 30%);
                 padding-left: 0px;
                 margin: 0px 12.5%;
                 font-weight: bolder;
                 width: 75%;
-                text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.387);
             }
             #navH {
-                font-size: 30px;
-                text-shadow: 5px 5px 10px #cfcece;
-                color: white;
-                align-content: center;
-                height: 20%;
+                font-size: 5vw;
             }
-            p {
-                font-size: 16px !important;
+            #navP {
+                font-size: min(max(2.5vw, 2.78vw));
             }
         }
     }
     .sec2Night {
         width: 100%;
-        height: 883px;
-        background-size: 100% 880px !important;
         overflow: hidden;
 
         .dog {
@@ -944,26 +800,30 @@
             display: none;
         }
         #codeR {
-            width: 80%;
-            margin: 10% 7%;
-            height: 690px;
+            width: 85%;
+            margin: 7% 4%;
+            height: 90vh;
+            top: -100vh;
             #navCode {
-                height: 50px;
+                height: 3vh;
                 position: relative;
-                top: -40px;
+                top: -4.15vh;
                 .nameFile {
-                    font-size: 20px;
+                    font-size: 3vw;
                     position: absolute;
-                    top: 10px;
+                    top: -1vw;
                     right: 0px;
+                    height: 5vh;
                     margin: auto;
                 }
                 .logo {
-                    position: relative;
-                    top: 10px;
+                    display: none;
                 }
                 .circulos {
-                    top: 10px;
+                    display: none;
+                }
+                .closers {
+                    display: none;
                 }
             }
 
@@ -977,30 +837,30 @@
                 left: 0;
 
                 #bodyCode1 {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                 }
                 #bodyCode2 {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                 }
                 #bodyCode3 {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                 }
                 #bodyCode3:nth-child(5) {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                 }
                 #bodyCode3:nth-child(6) {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                 }
                 #bodyCode4 {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                 }
                 #bodyCode5 {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                 }
                 #bodyCode6 {
-                    font-size: 16px;
+                    font-size: 2.5vw;
                     a {
-                        font-size: 14px;
+                        font-size: 2.5vw;
                     }
                 }
             }
@@ -1008,20 +868,37 @@
     }
     .sec3Night {
         width: 100%;
-        height: 883px;
-        background-size: 100% 880px !important;
         overflow: hidden;
 
         .fish {
             display: none;
         }
-        #cardContainer {
-            display: none !important;
+
+        .cards {
+            transform: translate(-4%, -10%);
+            .row {
+                flex-flow: row;
+                .col {
+                    padding: 0;
+                    width: 35vh;
+                    margin: clamp(0.5vw, 1.5vw, 2.7vw);
+                    .wrapper {
+                        width: 39vw;
+                    }
+                }
+            }
         }
+        th {
+            font-size: 4vw !important;
+        }
+        td {
+            font-size: 2.5vw !important;
+        }
+
         .gradient-border {
             margin: 0;
-            width: 80%;
-            transform: translate(10%, 180%);
+            width: 80vw;
+            transform: translate(10%, 0%);
             .slider {
                 height: 100px;
                 width: 100%;
@@ -1036,8 +913,13 @@
             }
         }
     }
+    #demo-customized-button {
+        transform: scale(0.8);
+        right: -0.5% !important;
+    }
 }
-@media only screen/*, screen */ and (max-width: 1279px) and (min-width: 1024px) {
+
+@media only screen and (max-width: 1279px) and (min-width: 1026px) and (orientation: landscape) {
     .sec1 {
         width: 100%;
         height: 950px;
@@ -1317,23 +1199,12 @@
         }
     }
 }
-@media only screen/*, screen */ and (max-width: 1439px) and (min-width: 1280px) {
+@media only screen and (max-width: 1439px) and (min-width: 1280px) {
     .sec1 {
         width: 100%;
-        height: 950px;
-        background-size: 100% 938px !important;
-
-        main {
-            position: relative;
-            width: 100%;
-            top: 0px;
-            height: 940px;
-        }
     }
     .sec2 {
         width: 100%;
-        height: 950px;
-        background-size: 100% 938px !important;
         overflow: hidden;
 
         .dog {
@@ -1384,9 +1255,9 @@
             filter: invert(100%);
         }
         #codeR {
-            width: 60%;
+            width: 60%;/* 
             margin-top: 8%;
-            height: 740px;
+            height: 740px; */
             #navCode {
                 height: 50px;
                 position: relative;
@@ -1596,7 +1467,7 @@
         }
     }
 }
-@media only screen /*, screen */ and (max-width: 1720px) and (min-width: 1440px) {
+@media only screen and (max-width: 1720px) and (min-width: 1440px) {
     .sec1 {
         width: 100%;
         height: 950px;
@@ -1710,9 +1581,7 @@
         overflow: hidden;
         #cardContainer {
             transform: translate(0%, -10%) scale(85%);
-            /* .liTools {
-                color: #fff !important;
-            } */
+            
         }
         .gradient-border {
             margin: auto;

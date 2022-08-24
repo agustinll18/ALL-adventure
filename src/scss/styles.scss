@@ -11,6 +11,9 @@
   font-family: $font;
   box-sizing: border-box;
 }
+.disclaimer{
+  display: none !important;
+}
 /* COL */
 .row {  
   display: flex;
@@ -73,12 +76,12 @@ body {
 }
 .sec1 { 
   background: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursosWebP/fotoSol.webp") top no-repeat; 
-  background-size: 2160px 910px;
+  background-size: $widthB $heightB;
   transition: all 2.5s cubic-bezier(0.550, 0.085, 0.000, 0.990);
 }
 .sec1Night {
-  background: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/bg.jpg") repeat  !important ;/* 
-  background-size: 100% !important; */
+  background: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/bg.jpg") top no-repeat !important ;
+  background-size: 30vh 30vw ;
   transition: all 2.5s cubic-bezier(0.550, 0.085, 0.000, 0.990);
   overflow: hidden;
   box-sizing: border-box;
@@ -87,7 +90,7 @@ body {
   position:absolute ;
   left: 10px;
   background: radial-gradient(ellipse at bottom, rgb(223, 104, 0) 0%, rgb(225, 169, 0) 1%, rgb(37, 161, 255) 100%);
-  background-size: 1960px 930px;
+  background-size: $widthB $heightB;
   background-repeat: no-repeat;
   transition: all 2.5s cubic-bezier(0.550, 0.085, 0.000, 0.990);
 }
@@ -102,20 +105,20 @@ body {
 
 .sec3 {
   background: linear-gradient(to bottom, rgb(1, 88, 113) 0%, #015871 30%, #00485c 60%, rgb(19, 19, 19)) /* !important */;
-  background-size: 1945px 980px;
+  background-size: $widthB $heightB + 4vh;
   display: table-cell;
   vertical-align: middle;
   transition: all 2.5s cubic-bezier(0.550, 0.085, 0.000, 0.990);
 }
 .sec3Night {
   background: linear-gradient(to bottom, rgb(1, 88, 113) 0%,  rgba(0, 15, 77) 40%, rgb(0, 0, 0)) /* !important */;
-  background-size: 1945px 980px;
+  background-size: $widthB $heightB + 4vh;
   display: table-cell;
   vertical-align: middle;
   transition: all 2.5s cubic-bezier(0.550, 0.085, 0.000, 0.990);
 }
 .sec4 {
   background: black;
-  background-size: 1945px 920px;
+  background-size: $widthB $heightB;
   cursor: url(https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/Webp.net-resizeimage.png), auto;  
 } 

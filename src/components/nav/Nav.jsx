@@ -10,15 +10,6 @@ function parallax(e) {
     moon.style.transform = `translateX(${x}px) translateY(${y}px) `;
     moon.style.transform = `-o-translateX(${x}px) -o-translateY(${y}px)  `;
   });
-  this.querySelectorAll(".saludo").forEach((saludo) => {
-    const speed = saludo.getAttribute("data-speed");
-
-    const x = (window.innerWidth - e.pageX * speed) / 100;
-    const y = (window.innerHeight - e.pageY * speed) / 100;
-
-    saludo.style.transform = `translateX(${x}px) translateY(${y}px) `;
-    saludo.style.transform = `-o-translateX(${x}px) -o-translateY(${y}px)  `;
-  });
 };
 const Nav = () => {
   var images = [,
@@ -31,7 +22,7 @@ const Nav = () => {
     <div /* className="dark-theme" */>
       <main className="mainSection" /*  class="col-9" */>
         <div class="col-9">
-          <h1 className="saludo" data-speed="0.7">Hi! I am Agustín LLadós</h1>
+          <h1 className="saludo" >Hi! I am Agustín LLadós</h1>
           <img src={images[1]} className="mountain" alt="mountain" />
           <img src={images[2]} className="road" alt="road" />
           <img src={images[3]} className="moon" id="moon" alt="moon" data-speed="10"/>
@@ -45,19 +36,7 @@ const Nav = () => {
             front-end area, use some libraries and get some challenges.
             My hobbies are: do sport, I love Tennis and Futbol, go out with my
             friends and eat with my family on Sunday.
-            {/* I graduated from economic science in my school "Emaus" with an 7.66
-            average in highschool and awarded for "the best friend in the
-            class" , then I started to see what was i would like to dedicate in
-            my professional career. First I looked up to be a AI developer but
-            after I do a basic AI course based in the principles of AI , I wasnt
-            completely sure. After do my research and see videos from people who
-            work and they mastered in their area I decided that I want to became
-            a fullstack developer. (hahah I didnt realized the AMOUNT OF HARD
-            WORK I WILL HAVE TO DO). Meanwhile I was working in one company to
-            get money and doing a course in Python and Front-end developer in
-            Udemy ,I was looking a place to study and instruct me in the
-            fullstack area afterwards I found CoderHouse that gives me all i was
-            searching SO I STARTED MY STUDIES*/}
+            
           </p>
         </aside>
       </main>

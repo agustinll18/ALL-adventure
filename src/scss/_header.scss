@@ -166,7 +166,7 @@ $secondary-color: gray;
             rgb(225, 169, 0) 40%,
             rgb(37, 161, 255) 100%
           );                    
-          -webkit-transition: 2.5s;
+          -webkit-transition: 2.5s; 
           transition: all 2.5s;
         }
         
@@ -185,7 +185,7 @@ $secondary-color: gray;
         }
         
         input:checked + .slider {
-          background: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/bg.jpg") top no-repeat; 
+          background: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/icons8-sun-48.png") top no-repeat; 
           background-size: 216px 100px;
           -webkit-transition: 2.5s;
           transition: 2.5s;

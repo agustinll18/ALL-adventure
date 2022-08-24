@@ -30,7 +30,6 @@ const Section2 = () => {
             <div className="muelle"></div>
             <div className="muelle"></div>
           </div>
-
           <Code />
           <div className="wave"></div>
           <div className="wave"></div>

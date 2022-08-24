@@ -87,9 +87,11 @@ const Contact = () => {
               <div class="mb-2">
                 <label for="exampleFormControlTextarea1" class="form-label">
                   <h4 className="mensaje">Message :</h4>
-                  <input
+                  <textarea 
+                    contentEditable={"true"}
                     class="form-control"
                     id="exampleFormControlTextarea1"
+                    maxLength={164}
                     rows="3"
                     required
                     placeholder="Message"

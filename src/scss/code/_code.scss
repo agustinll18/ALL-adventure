@@ -1,74 +1,16 @@
 @import "../variables";
-$fondoClaro: #ffffff; /*TEMA DE PALETA DE COLOR  */
-$darkBlue: #0a65a2;
-$bluePrincipal: #2980b9;
-$celesteClaro: #6dd5fa;
-$fondoClaro: #ffffff;
-$sombraGris: #6464646e;
-$fontColor: black;
-$colorGris: #646464;
-/* OLAS */
-html,
-body {
-  height: 100%;
-}
-body {
-  /* ñ */
-  overflow: hidden;
-}
+
+$fisherManColorLight:linear-gradient(to left, rgb(121, 87, 1) 0%, black 50%);
 
 .ocean {
   height: 5%;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -0vh;
   left: 0;
-  background: #016885;
+  background: #000000;
 }
 
-.wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) no-repeat;
-  position: absolute;
-  top: -178px;
-  width: 50%;
-  height: 178px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
-}
-
-.wave:nth-of-type(2) {
-  animation: wave 7s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
-}
-.wave:nth-of-type(3) {
-  animation: wave 4s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.4125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
-}
-.wave:nth-of-type(4) {
-  animation: wave 4s cubic-bezier(0.76, 0.45, 0.63, 0.53) -0.2725s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
-}
-
-@keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
-}
-
-@keyframes swell {
-  0%,
-  100% {
-    transform: translate3d(0, -25px, 0);
-  }
-  50% {
-    transform: translate3d(0, 50px, 0);
-    position: absolute;
-    bottom: -20px;
-  }
-}
 /*FISHER MEN*/
 .pesca {
   text-decoration: none;
@@ -77,79 +19,79 @@ body {
     width: 13%;
     background: linear-gradient(to bottom, black 0%, brown 10%, black 100%);
     position: absolute;
-    bottom: 530%;
+    bottom: 26.5vh;
     border: 2.5px solid black;
   }
   .muelle:nth-child(2) {
     width: 10%;
     background: linear-gradient(to bottom, rgb(177, 56, 56) 0%, brown 10%, black 100%);
-    bottom: 330%;
+    bottom: 18vh;
     transform: rotate(90deg);
     left: 6.9%;
   }
   .muelle:nth-child(3) {
     width: 10%;
-    background: linear-gradient(to bottom, rgb(138, 55, 55) 0%, brown 10%, black 100%);
-    bottom: 330%;
+    background: linear-gradient(to bottom, rgb(177, 56, 56) 0%, brown 10%, black 100%);
+    bottom: 18vh;
     transform: rotate(90deg);
     left: 2%;
   }
   .fisherman {
     .body {
-      width: 10px;
-      height: 160px;
+      width: 0.5vw;
+      height: 14vh;
       background: linear-gradient(to left, rgb(121, 87, 1) 0%, black 100%);
       position: absolute;
       left: 11.1%;
-      bottom: 760%;
+      bottom: 37vh;
       transform: rotate(13deg);
     }
     .arm {
-      width: 6px;
-      height: 80px;
-      background: linear-gradient(to left, rgb(121, 87, 1) 0%, black 50%);
+      width: .5vw;
+      height: 7vh;
+      background: $fisherManColorLight;
       position: absolute;
       left: 12.9%;
-      bottom: 860%;
+      bottom: 43vh;
       transform: rotate(69deg);
     }
     .legs {
-      .leg1 {
-        width: 6px;
-        height: 90px;
-        background: linear-gradient(to left, rgb(121, 87, 1) 0%, black 50%);
+      .leg1 { 
+        width: 0.5vw;
+        height: 7.5vh;
+        background: $fisherManColorLight;
         position: absolute;
         left: 11.2%;
-        bottom: 600%;
+        bottom: 30vh;
         transform: rotate(-20deg);
       }
     }
     .leg2 {
-      width: 6px;
-      height: 90px;
-      background: linear-gradient(to left, rgb(121, 87, 1) 0%, black 50%);
+      width: 0.5vw;
+      height: 7.5vh;
+      background: $fisherManColorLight;
       position: absolute;
       left: 9.9%;
-      bottom: 600%;
+      bottom: 30vh;
       transform: rotate(10deg);
     }
     .headF {
-      height: 70px;
-      width: 70px;
-      border-radius: 180px;
-      background: linear-gradient(310deg, rgb(121, 87, 1) 0%, black 50%);
+      height: 7vh;
+      width: 3.75vw;
+      border-radius: 50%;
+      background: $fisherManColorLight;
       position: absolute;
       left: 11%;
-      bottom: 1050%;
+      bottom: 50vh;
     }
   }
   .stick {
-    width: 12px;
-    height: 180px;
+    width: 0.75vw;
+    height: 17.5vh;
     background: linear-gradient(to left, rgb(136, 97, 0) 0%, rgb(255, 255, 255) 100%);
     position: absolute;
     left: 16.2%;
-    bottom: 930%;
+    bottom: 46.5vh;
     transform: rotate(22deg);
   }
   .caña {
@@ -160,7 +102,7 @@ body {
       "bola";
     justify-items: center;
     position: absolute;
-    top: -559px;
+    top: -58vh;
     left: 16.1%;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -179,7 +121,7 @@ body {
     background: radial-gradient(ellipse at bottom, black 40%, rgb(136, 97, 0) 50%);
     position: absolute;
     top: 0px;
-    width: 2px;
+    width: .1vw;
     height: 100%;
     display: flex;
     align-items: center;
@@ -189,10 +131,10 @@ body {
     grid-area: bola;
     background-image: url("https://lesser-dawns.000webhostapp.com/multimedia/recursos/icons8-bait-67.png");
     position: relative;
-    left: 10px;
-    top: -10px;
-    width: 80px;
-    height: 65px;
+    left: 0.55vw;
+    top: -0.75vh;
+    width: 4vw;
+    height: 6.5vh;
     border-radius: 50%;
     stroke: 2px solid black;
   }
@@ -218,14 +160,14 @@ body {
 /* dog */
 .dog {
   position: relative;
-  bottom: -140px;
+  bottom: -15vh;
   left: 0%;
   z-index: 9000;
   background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-german-shepherd-100.png");
   background-size: 100px;
   stroke: 20px solid #fff;
-  height: 100px;
-  width: 100px;
+  height: 10vh;
+  width: 5.5vw;
 }
 @import "birds.scss";
 /* EDITOR DE TEXTO */
@@ -235,42 +177,36 @@ body {
   display: table;
   color: $fondoClaro;
 }
-#codeVsc {
-  background-color: $fondoClaro;
-  height: 5px;
-  width: 70%;
-  align-items: center;
-  margin-left: 15%;
-}
 .code {
-  height: 830px;
+  height: 85vh;
   background-color: $bluePrincipal;
   align-items: center;
-  margin: auto;
+  margin: auto;/* 
   margin-top: 2.15%;
-  margin-bottom: 1%;
+  margin-bottom: 1%; */
   border: 5px solid black;
   z-index: 300;
   padding: 0;
   overflow: hidden;
   margin-bottom: 3%;
   position: relative;
-  top: -1950%;
+  top: -90vh;
 }
 
 #navCode {
   width: 100%;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.761);
+  height: 5vh;
+  background-color: rgb(0, 0, 0);
   display: inline-block;
   border-bottom: 1px solid $sombraGris;
   overflow: hidden;
   align-content: center;
   position: relative;
   box-sizing: border-box;
-  top: -5.5%;
+  top:-3.7vh;
+  z-index: 2;
   .row {
-    height: 40px;
+    height: 5.1vh;
     .col-4 {
       height: 100%;
     }
@@ -289,22 +225,22 @@ body {
   display: inline-block;
   padding: 1px;
   left: -30.5%;
-  top: -150%;
+  top: -105%;
   width: 6%;
   margin: auto;
   color: $fondoClaro;
 }
 
 .circulos {
-  width: 6%;
-  height: 45%;
-  border-radius: 80px;
+  width: 2vh;
+  height: 2vh;
+  border-radius: 50%;
   border: 1px solid $fondoClaro;
   display: inline-block;
   margin: auto;
   margin: 1px;
   position: relative;
-  top: -140%;
+  top: -100%;
   left: 5.5%;
   box-shadow: 0px 0px 10px $sombraGris;
 
@@ -327,13 +263,13 @@ body {
   margin: auto;
   padding: 0;
   font-size: 24px;
-  top: -150%;
+  top: -105%;
   left: 0%;
 }
 
 .sidebarVsc {
   position: relative;
-  top: -10.1%;
+  top: -9%;
   left: 0%;
   background-color: rgba(67, 67, 67, 0.755);
   margin: 0%;
@@ -382,7 +318,7 @@ body {
 }
 .texto {
   font-weight: 800;
-  font-size: 29px;
+  font-size: 1.7vw;
   opacity: 0;
   display: inline;
   position: relative;
@@ -393,7 +329,7 @@ body {
   width: 92%;
   height: 95.2%;
   position: relative;
-  top: -105.3%;
+  top: -104%;
   left: 8%;
   display: block;
   background-color: rgba(0, 0, 0, 0.782);
@@ -401,8 +337,8 @@ body {
 
   #bodyCode1 {
     color: aliceblue;
-    font-weight: 900;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 1vw;
     float: left;
     left: 0;
     width: 92%;
@@ -411,76 +347,75 @@ body {
   }
   #bodyCode2 {
     color: aliceblue;
-    font-weight: 900;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 1vw;
     float: left;
     text-align: left;
-    margin-left: 12.5px;
+    margin-left: 0.5vw;
     width: 92%;
     display: flex;
   }
   #bodyCode3 {
     color: aliceblue;
-    font-weight: 900;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 1vw;
     float: left;
     text-align: left;
-    margin-left: 25px;
+    margin-left: 1vw;
     width: 92%;
     display: flex;
   }
   #bodyCode4 {
     color: aliceblue;
-    font-weight: 900;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 1vw;
     float: left;
     text-align: left;
-    margin-left: 37.5px;
+    margin-left: 1.5vw;
     width: 92%;
     display: flex;
+    a{
+      text-decoration: none;
+      color:$fondoClaro;
+      font-size:1vw ;
+      font-weight: 600;
+    }
   }
   #bodyCode5 {
     color: aliceblue;
-    font-weight: 900;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 1vw;
     float: left;
-    text-align: left;
-    margin-left: 50px;
+    text-align: left;/* 
+    margin-left: 2vw; */
     width: 92%;
     display: flex;
+    a{
+      text-decoration: none;
+      color:$fondoClaro;
+      font-size: 1vw;
+      font-weight: 600;
+    }
   }
   #bodyCode6 {
     color: aliceblue;
     position: relative;
     top: 5px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1vw;
     float: left;
     text-align: left;
-    margin-left: 12.5px;
     width: 92%;
     display: flex;
     a{
       text-decoration: none;
       color:$fondoClaro;
-      font-size: 14px;
-      font-weight: 900;
+      font-size: 1vw;
+      font-weight: 600;
     }
   }
   .redText {
     color: rgb(223, 0, 0);
-    padding: 0;
-    margin: 0;
-    font-weight: 700;
-  }
-  .greenText {
-    color: rgb(17, 209, 0);
-    padding: 0;
-    margin: 0;
-    font-weight: 700;
-  }
-  .yellowText {
-    color: rgb(206, 192, 0);
     padding: 0;
     margin: 0;
     font-weight: 700;
@@ -497,11 +432,11 @@ body {
 }
 
 .wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg") repeat-x;
   position: absolute;
-  top: -178px;
-  width: 6400px;
-  height: 178px;
+  top: -17vh;
+  width: 300vw;
+  height: 25vh;
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
@@ -692,9 +627,9 @@ body {
     position: relative;
     bottom: -140px;
     left: 0%;
-    z-index: 9000;
+    z-index: 5000;
     filter: invert(40%);
-    background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-german-shepherd-100.png");
+    background-image: url("https://recursosportfolioall.000webhostapp.com/multimedia/recursos/rbg/icons8-german-shepherd-100.png");
     background-size: 100px;
     stroke: 20px solid #fff;
     height: 100px;
@@ -707,7 +642,7 @@ body {
   right: 175px ;
   width: 20px;
   filter: invert(0%);
-  background-image: url("https://agust1n-llad0s.000webhostapp.com/multimedia/recursos/rbg/icons8-flying-stork-100.png");
+  background-image: url("https://recursosportfolioall.000webhostapp.com/multimedia/recursos/rbg/icons8-flying-stork-100.png");
   background-size:20px;
   background-repeat: no-repeat;
   height: 20px;
@@ -834,17 +769,17 @@ body {
     top: -150%;
     left: 0%;
   }
-
+  
   .sidebarVsc {
     position: relative;
-    top: -10.1%;
+    top: -9%;
     left: 0%;
     background-color: rgba(67, 67, 67, 0.755);
     margin: 0%;
     height: 95.5%;
     width: 8%;
     border-right: 1px solid $fondoClaro;
-
+  
     .itemSelected {
       background-color: $colorGris;
       width: 100%;
@@ -886,7 +821,7 @@ body {
   }
   .texto {
     font-weight: 800;
-    font-size: 29px;
+    font-size: 1.7vw;
     opacity: 0;
     display: inline;
     position: relative;
@@ -897,16 +832,16 @@ body {
     width: 92%;
     height: 95.2%;
     position: relative;
-    top: -105.3%;
+    top: -104%;
     left: 8%;
     display: block;
     background-color: rgba(0, 0, 0, 0.782);
     overflow: hidden;
-
+  
     #bodyCode1 {
       color: aliceblue;
-      font-weight: 900;
-      font-size: 18px;
+      font-weight: 500;
+      font-size: 1vw;
       float: left;
       left: 0;
       width: 92%;
@@ -915,43 +850,55 @@ body {
     }
     #bodyCode2 {
       color: aliceblue;
-      font-weight: 900;
-      font-size: 18px;
+      font-weight: 500;
+      font-size: 1vw;
       float: left;
       text-align: left;
-      margin-left: 12.5px;
+      margin-left: 0.5vw;
       width: 92%;
       display: flex;
     }
     #bodyCode3 {
       color: aliceblue;
-      font-weight: 900;
-      font-size: 18px;
+      font-weight: 500;
+      font-size: 1vw;
       float: left;
       text-align: left;
-      margin-left: 25px;
+      margin-left: 1vw;
       width: 92%;
       display: flex;
     }
     #bodyCode4 {
       color: aliceblue;
-      font-weight: 900;
-      font-size: 18px;
+      font-weight: 500;
+      font-size: 1vw;
       float: left;
       text-align: left;
-      margin-left: 37.5px;
+      margin-left: 1.5vw;
       width: 92%;
       display: flex;
+      a{
+        text-decoration: none;
+        color:$fondoClaro;
+        font-size: 14px;
+        font-weight: 500;
+      }
     }
     #bodyCode5 {
       color: aliceblue;
-      font-weight: 900;
-      font-size: 18px;
+      font-weight: 500;
+      font-size: 1vw;
       float: left;
-      text-align: left;
-      margin-left: 50px;
+      text-align: left;/* 
+      margin-left: 2vw; */
       width: 92%;
       display: flex;
+      a{
+        text-decoration: none;
+        color:$fondoClaro;
+        font-size: 14px;
+        font-weight: 500;
+      }
     }
     #bodyCode6 {
       color: aliceblue;
@@ -961,30 +908,12 @@ body {
       font-size: 14px;
       float: left;
       text-align: left;
-      margin-left: 12.5px;
       width: 92%;
       display: flex;
-      a{
-        text-decoration: none;
-        color:$fondoClaro;
-        font-size: 14px;
-        font-weight: 900;
-      }
+      
     }
     .redText {
       color: rgb(223, 0, 0);
-      padding: 0;
-      margin: 0;
-      font-weight: 700;
-    }
-    .greenText {
-      color: rgb(17, 209, 0);
-      padding: 0;
-      margin: 0;
-      font-weight: 700;
-    }
-    .yellowText {
-      color: rgb(206, 192, 0);
       padding: 0;
       margin: 0;
       font-weight: 700;

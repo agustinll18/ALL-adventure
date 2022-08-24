@@ -1,123 +1,74 @@
 @import "../../variables"; /* 
 @import "./gauge.scss"; */
 
-.ServiciosContainer {
-    width: 100%;
-    position: absolute;
-    #cardContainer {
-        display: inline-flex;
-        margin: 0 auto;
-        position: relative;
-        #itemList {
-            display: contents;
-            margin: 0 auto;
-
-            #cardService {
-                background: linear-gradient(to top, rgba(255, 255, 255, 0.364), rgba(255, 255, 255, 0.7), $fondoClaro);
-                -webkit-backdrop-filter: blur(18px);
-                backdrop-filter: blur(18px);
-                border: 3px solid rgb(255, 255, 255);
-                border-radius: 12px;
-                width: 18rem;
-                height: 445px;
-                justify-content: center;
-                margin: 25px;
-                margin-bottom: 80px;
-                transition: box-shadow 2.5s ease;
-                .cardImg {
-                    img {
-                        position: relative;
-                        width: 100px;
-                        height: 80px;
-                        justify-content: center;
-                        top: 35px;
-                    }
-                }
-                .cardSection {
-                    .productosModelo {
-                        font-size: 22px;
-                        font-weight: 900;
-                        transform: translateY(20px);
-                        margin: 25px;
-                    }
-
-                    .herramientas {
-                        width: 75%;
-                        padding: 0px 0px 0px 2px;
-                        transform: translateY(-50%);
-                        margin: 5px auto;
-                        list-style-image: url("https://lesser-dawns.000webhostapp.com/multimedia/recursos/rbg/icons8-treasure-chest-30.png");
-                        li {
-                            color: black;
-                            font-size: 24px;
-                            transform: translateY(0%);
-                        }
-                    }
-                }
-                .porcentajeResponsive {
-                    opacity: 0;
-                    height: 0;
-                }
-                .progressResponsiveMobile {
-                    opacity: 0;
-                    height: 0;
-                    width: 0;
-                }
-                .overlay {
-                    position: absolute;
-                    bottom: 100%;
-                    left: 0;
-                    right: 0;
-                    background: linear-gradient(to bottom, rgba(1, 88, 113), rgba(18, 62, 75));
-                    overflow: hidden;
-                    width: 100%;
-                    height: 0;
-                    transition: 2.5s ease;
-                    border-radius: 12px;
-                    h4 {
-                        color: rgb(255, 255, 255);
-                        position: relative;
-                        font-weight: bolder;
-                        transition: 2.1s ease;
-                        transition-delay: 0.15s;
-                        transform: translateY(-100px);
-                    }
-
-                    .progress000 {
-                        width: 80%;
-                        height: 45px;
-                        margin: 0% 10% 0%;
-                        transition: 2.1s ease;
-                        transition-delay: 0.15s;
-                    }
-                    img {
-                        transition: 2.1s ease;
-                        transition-delay: 0.15s;
-                    }
-                }
-                &:hover {
-                    -webkit-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
-                    -moz-box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
-                    box-shadow: 11px 11px 15.5px 7.5px #8f8e8e;
-                }
-                &:hover .overlay {
-                    bottom: 0;
-                    height: 100%;
-
-                    img {
-                        transform: translateY(100px);
-                    }
-                    .progress000 {
-                        transform: translateY(80px);
-                    }
-                    h4 {
-                        transform: translateY(60px);
-                    }
-                }
+.cards {
+    margin: 0px auto 0px auto;
+    text-align: center;
+    transform: translateY(-15%);
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+       /*  img {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            justify-content: center;
+            top: 15px;
+        }
+        .progressResponsiveMobile {
+            opacity: 0;
+            height: 0;
+            width: 0;
+        }
+        .herramientas {
+            width: 75%;
+            padding: 0px 0px 0px 2px;
+            transform: translateY(0%);
+            margin: 5px auto;
+            list-style-image: url("https://lesser-dawns.000webhostapp.com/multimedia/recursos/rbg/icons8-treasure-chest-30.png");
+            li {
+                color: black;
+                font-size: 20px;
+                transform: translateY(0%);
             }
         }
+        .overlay {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to bottom, rgba(1, 88, 113), rgba(18, 62, 75));
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: 2.5s ease;
+            border-radius: 12px;
+            h4 {
+                color: rgb(255, 255, 255);
+                position: relative;
+                font-weight: bolder;
+                transition: 2.1s ease;
+                transition-delay: 0.15s;
+                transform: translateY(-100px);
+            }
+
+            .progress000 {
+                width: 80%;
+                height: 45px;
+                margin: 0% 10% 0%;
+                transition: 2.1s ease;
+                transition-delay: 0.15s;
+            }
+            img {
+                transition: 2.1s ease;
+                transition-delay: 0.15s;
+            }
+        } */
     }
 }
+
 /* DARK MODE */
 
 .sec3Night.ServiciosContainer {

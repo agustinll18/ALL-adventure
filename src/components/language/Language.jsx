@@ -56,7 +56,7 @@ $(document).ready(function () {
     $(".textEN").css({"opacity": 1 , "display" : "list-item" })
     $(".saludo").text("Hola! soy Agustín LLadós");
     $("#navH").text("Soy Front-end developer").css("fontSize", "38px");
-    $("#navP").text("Tengo 20 años, nacido en 2002, y soy desarrolador Full-stack mejorando mi conocimiento en el area del Back-end. Me gusta programar en el area del Front-end, usar librerias y hacer frente a los desafios que se presenten. Mis hobbis son : hacer deporte, especialmente me gusta el Tenis y el futbol, salir con amigos y comer con mi familia en los domingos ")
+    $("#navP").text("Tengo 20 años, nacido en 2002, y soy desarrolador Full-stack mejorando mi conocimiento en el area del Back-end. Me gusta programar en el area del Front-end, usar librerias y hacer frente a los desafios que se presenten. Mis hobbis son : hacer deporte, especialmente me gusta el Tenis y el futbol, salir con amigos y comer con mi familia en los domingos ").css("fontSize","3vh")
 
     $("#filesVsc").text("Archivos");
     $(".asd").text("> Educacion Y Proyectos <");

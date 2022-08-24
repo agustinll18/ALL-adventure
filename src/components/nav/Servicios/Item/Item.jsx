@@ -1,50 +1,51 @@
 import React from "react";
 
-export default function Item(productos) {
+export default function Item(x) {
   return (
-    <div id="cardService">
-      <div class="cardImg">
-        <img
-          classname="cardItem"
-          src={productos.pic}
-          variant="top"
-          alt="product pic"
-        />
-      </div>
-
-      <div class="cardSection">
-        <h3 className="productosModelo">{productos.modelo}</h3>
-        <progress
-          value={productos.porcentaje}
-          max="100"
-          class="progressResponsiveMobile" /* style={{width: "80%",height: "60px",backgroundColor: "linear-gradient(to bottom, white, black)",margin:"40% 10% 0%"}} */
-        ></progress>
-        <h4 className="porcentajeResponsive"> {productos.porcentaje}%</h4>
-
-        <ul className="herramientas">
-          <li>
-            <p className="liTools">{productos.herramienta1}</p>
-          </li>
-          <li>
-            <p className="liTools">{productos.herramienta2}</p>
-          </li>
-          <li>
-            <p className="liTools">{productos.herramienta3}</p>
-          </li>
-        </ul>
-      </div>
-
-      <div class="overlay">
-        <img
-          src="https://lesser-dawns.000webhostapp.com/multimedia/recursos/rbg/icons8-ship-50-removebg-preview.png"
-          alt=""
-        />
-        <progress
-          value={productos.porcentaje}
-          max="100"
-          class="progress000" /* style={{width: "80%",height: "60px",backgroundColor: "linear-gradient(to bottom, white, black)",margin:"40% 10% 0%"}} */
-        ></progress>
-        <h4> {productos.porcentaje}%</h4>
+    <div class="col">
+      <div class="wrapper">
+        <div class="container">
+          <div class="top"></div>
+          <div class="bottom">
+            <h1>{x.modelo}</h1>
+          </div>
+        </div>
+        <div class="inside">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-info-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+            </svg>
+          </div>
+          <div class="contents">
+            <table>
+              <tr>
+                <th>Code:</th>
+              </tr>
+              <tr>
+                <td>{x.herramienta1}</td>
+              </tr>
+              <tr>
+                <th>Processor:</th>
+              </tr>
+              <tr>
+                <td>{x.herramienta2}</td>
+              </tr>
+              <tr>
+                <th>Tools:</th>
+              </tr>
+              <tr>
+                <td>{x.herramienta3}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   );
